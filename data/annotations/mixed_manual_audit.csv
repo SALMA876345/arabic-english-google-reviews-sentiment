@@ -1,0 +1,448 @@
+﻿review_id,review_text,automatic_label,manual_category,include_as_real_codeswitch,agreement_status,notes
+AR-JOR-00418,"اهلا وسهلا سيد موسى
+كيف ممكن نساعدكzxcbnmvvmm",mixed_arabic_english,other,no,DISAGREEMENT-ARBITRATED,"ARBITRATED (lead reviewer): Arabic greeting followed by 'zxcbnmvvmm', which is keyboard-mashing noise, not English or any language. A called it incidental_english, B called it other; 'other' is more accurate since the Latin string is not English. Not genuine code-switch."
+AR-JOR-00709,"لمحبي المطبخ الاردني التقليدي، لا بد ان يكون مطعم خاشوكه على رأس اختياراتهم لتناول اشهى المأكولات الشعبيه والذها.
+اجواء المطعم هادئه والخدمه كانت اكثر من ممتازه واخص بالذكر الشباب محمد ابو سلامه، محمد ابو المصري ويزن الحموري الذين جعلو من تواجدنا تجربه ممتعه من خلال لطافتهم وادبهم ومهنيتهم العاليه
+
+ממליץ בחום לכל אוהבי המטבח הירדני ומאכליו האותנטים
+השירות היה נחמד ומעבר לציפיות
+
+I would really recommend this restaurant for all typical lovers of Jordanian cuisine
+Service was beyond our expectations many thanks guys
+
+Per chi è alla ricerca della tipica cucina giordana questo ristorante sarebbe una scelta naturale. Qui abbiamo mangiato dei squisitissimi piatti tipici che sommati all'ambiente calmo e ottimo servizio dei simpatici ragazzi che lavorano dentro, rende l'esperienza bellissima con tanta voglia di tornare.",mixed_arabic_english,bilingual_translation_pair,no,AGREED,"[Reviewer A]: ""Full Arabic paragraph followed by separate full Hebrew, English, and Italian paragraphs restating the same review; a multilingual translation set, not interleaved code-switching."" | [Reviewer B]: ""Full Arabic paragraph is followed by its own separate full Hebrew, English, and Italian translations (a 4-language parallel-translation set), not interleaved code-switching."""
+AR-JOR-00748,"مكان عائلي - قائمة متنوعة - أصناف لذيذة - أسعار رخيصة - خدمات سريعة - يوجد تراس وإطلالة عالية - يوجد أرجيل - أماكن وقوف السيارات
+A family place - a varied menu - delicious items - cheap prices - fast services - there is a terrace and a high view - there is an argyle - parking spaces",mixed_arabic_english,bilingual_translation_pair,no,AGREED,"[Reviewer A]: ""Arabic bullet-point list followed by a matching full English translation of the same list."" | [Reviewer B]: Arabic bulleted list is followed by its own complete English translation of the same bullets."
+AR-JOR-01270,الأسعار أغلى شوي من المحلات الثانية. لكن ال packaging  و الأكل ممتاز,mixed_arabic_english,genuine_code_switch,yes,AGREED,"[Reviewer A]: ""English word """"packaging"""" embedded mid-sentence inside an Arabic sentence (""""لكن ال packaging ممتاز"""")."" | [Reviewer B]: ""English word """"packaging"""" is embedded directly inside the Arabic sentence with the Arabic definite article (""""لكن ال packaging و الأكل ممتاز"""")."""
+AR-JOR-01313,"شيء مخزي
+سيء جدا
+Bad …",mixed_arabic_english,incidental_english,no,AGREED,"[Reviewer A]: ""Arabic complaint followed by a single English interjection """"Bad …"""" on its own line; not a full bilingual sentence."" | [Reviewer B]: ""Two Arabic lines are followed only by a single stray English word """"Bad …"""", likely truncated, with no real bilingual sentence structure."""
+AR-JOR-01451,"مطعم لذيذ خصوصا شاورما الحم على الطريقة العراقية   أسعاره مناسبة لكن اعلى من السعر المتعارف عليه لسعر ساندويش الشورما
+A delicious restaurant, especially the Iraqi-style meat shawarma, its prices are reasonable, but higher than the usual price for the price of a shawarma sandwich",mixed_arabic_english,bilingual_translation_pair,no,AGREED,"[Reviewer A]: ""Arabic sentence followed by its own closely matching English translation."" | [Reviewer B]: Arabic sentence is followed by its own full English translation."
+AR-JOR-01565,الخدمه سئيه من قبل الكاشير وتأخير في الطلب والطعام بارد للعلم هذه ثالث مره أئتي بها لهذا المطعم .الشيئ الجيد الخدمه جيده في الطابق العلوي فقط 🇩🇪Service von Kasse ist nicht so Gut und das Essen ist immer kalt. …,mixed_arabic_english,other,no,AGREED,"[Reviewer A]: ""Arabic sentence followed by a German sentence (flagged with a German flag emoji), not English; heuristic likely mistook German Latin-script text for English."" | [Reviewer B]: ""Arabic text is mixed with a German sentence (""""Service von Kasse ist nicht so Gut..."""") rather than English; this is a different-language mismatch, not Arabic-English code-switching."""
+AR-JOR-02572,لذيذ  delicious,mixed_arabic_english,bilingual_translation_pair,no,AGREED,"[Reviewer A]: ""Single Arabic word immediately followed by its literal English translation (""""لذيذ delicious""""); a minimal self-translation rather than interleaved code-switching."" | [Reviewer B]: ""Single Arabic word """"لذيذ"""" is paired with its direct English translation """"delicious""""; a minimal translation pair, not an integrated code-switch sentence."""
+AR-JOR-03956,الطعم راءع ..ممتاز ..اجواء حلوة ومكان اكثر من راقي ... لكن .... السعر ناااااار .. تعامل لطيف جدا ...it is a very nice place.. great ... but the Prices are very high  ... too much,mixed_arabic_english,bilingual_translation_pair,no,DISAGREEMENT-ARBITRATED,"ARBITRATED: reviewer writes the same opinion first in Arabic then restates it in English immediately after ('...it is a very nice place.. great...but the Prices are very high'). This is a user-authored self-translation (same structure as the Google-generated translation pairs, just without the UI markup), not interleaved code-switching with new content. A marked uncertain, B marked bilingual_translation_pair; siding with B."
+AR-JOR-04340,"مطعم سيئ الخدمة فاشلة الطعام بارد الأجواء غير نضيفة الحمامات سيئ لا يوجد موقف
+
+Bad restaurant, poor service, cold food, unclean atmosphere, bad bathrooms
+There is no parking",mixed_arabic_english,bilingual_translation_pair,no,AGREED,"[Reviewer A]: ""Full Arabic paragraph followed by a closely matching full English translation."" | [Reviewer B]: Arabic paragraph is followed by its own full English translation."
+AR-JOR-04350,"خدمة سيئة جداً على call center
+التوصيل مبالغ فيه جداً جداً داخل عمان 👎🏻👎🏻
+لا انصح به …",mixed_arabic_english,genuine_code_switch,yes,AGREED,"[Reviewer A]: ""English phrase """"call center"""" embedded directly inside an Arabic sentence (""""خدمة سيئة جداً على call center"""")."" | [Reviewer B]: ""English phrase """"call center"""" is embedded directly inside the Arabic sentence (""""خدمة سيئة جداً على call center"""")."""
+AR-JOR-04600,"احسن خدمة واروع فريق عادل وسعيد ساعدونا كتير وكانوا كتير بسوطين ومتعاونين واهتمامهم كان كبير فينا طول الوقت شكرا كتير
+Hire more people like Adel and Saeed!",mixed_arabic_english,genuine_code_switch,yes,DISAGREEMENT-ARBITRATED,"ARBITRATED: Arabic thank-you message followed by 'Hire more people like Adel and Saeed!' -- this is NOT a translation of the Arabic content (it introduces new semantic content, a suggestion, naming the same staff members). This is genuine intra-document code-switching continuing the same review thread. A called it bilingual_translation_pair, B called it genuine_code_switch; siding with B after reading the full text -- the English sentence adds new content rather than restating the Arabic."
+AR-JOR-05044,"صواني لحمة لذيذة في وسط البلد وسعر مناسب جدا
+Nice oven meat dishes good prices and good service",mixed_arabic_english,bilingual_translation_pair,no,AGREED,"[Reviewer A]: ""Arabic sentence followed by a matching English translation."" | [Reviewer B]: Arabic sentence is followed by its own English translation."
+AR-JOR-05498,"الطعم والكمية ممتازة . مع الخبز  الساخن .  الاسعار مناسبة جدا. الخدمة سريعة والمكان نظيف بشكل عام ومناسب للعائلات .
+A good choice for travelers and to try authentic Jordanian dishes. Reasonable …",mixed_arabic_english,bilingual_translation_pair,no,AGREED,"[Reviewer A]: ""Arabic paragraph followed by an English paragraph restating the same recommendation."" | [Reviewer B]: Arabic paragraph is followed by an English paraphrase/translation covering similar points (price, quality)."
+AR-JOR-05580,"مطعم شعبي من الدرة الاولى ولديه خيارات كثيرة قائمة طعام كبيرة واصناف كثيرة وشاملة اكثر الاطعمة الشعبية والسريعة .
+النظتفة والخدمة والجودة عالية ويستحق خمس نجوم وانصح بزيارته وتجربة اصنافه.
+it's one of best public restaurants in Jordan",mixed_arabic_english,bilingual_translation_pair,no,AGREED,"[Reviewer A]: ""Two Arabic paragraphs followed by a short English summary sentence of the same praise."" | [Reviewer B]: Arabic paragraph is followed by a short English summary restating the same praise."
+AR-JOR-06215,"قصر الضيافة رائع من ناحية الخدمة والأكل اللذيذ والنظافة
+Service and quality wise are great",mixed_arabic_english,bilingual_translation_pair,no,AGREED,"[Reviewer A]: ""Arabic sentence followed by a matching English translation."" | [Reviewer B]: Arabic sentence is followed by an English paraphrase of the same content (service and quality)."
+AR-JOR-06216,المطعم جدا اكلو طيب وخاصه المشاوي والموظفين تعاملون كتير محترم بتستحقو Five star,mixed_arabic_english,genuine_code_switch,yes,AGREED,"[Reviewer A]: ""English phrase """"Five star"""" embedded at the end of an otherwise Arabic sentence with no punctuation break."" | [Reviewer B]: ""Arabic sentence ends with the English phrase """"Five star"""" used in place of an Arabic equivalent, embedded in the sentence."""
+AR-JOR-06646,مطعم ممتاز وأكل ممتاز وانا انصح بلمشاوي وشكر خاص لجميع النوادل وبلأخص محمد هلال mohammed❤️,mixed_arabic_english,named_entity_or_brand,no,AGREED,"[Reviewer A]: ""The Latin-script """"mohammed"""" simply repeats the same staff member's name already given in Arabic (محمد) for emphasis; not genuine English content."" | [Reviewer B]: ""Arabic review names staff member """"محمد هلال"""" followed only by the same name transliterated in Latin script (""""mohammed""""); no other English content."""
+AR-JOR-06927,"جوهم حلو وخدمتهم جيده جدا  واكلهم عادي بس مع الجو الحلو بصير كل اشي زاكي                    restaurant for traditional oriental food, especially Mansaf. The food is always fresh and delicious, and there are many varieties to choose from. …",mixed_arabic_english,bilingual_translation_pair,no,AGREED,"[Reviewer A]: ""Arabic sentence followed by an English paragraph restating the same restaurant description."" | [Reviewer B]: ""Arabic review is followed, after a gap, by an English block describing the restaurant generically; reads as an appended translation/description rather than interleaved code-switching."""
+AR-JOR-07320,مكان نظيف و اسعاره معقولة طعامه لذيذ ويقدم حلويات ايضا العاملين لطفاء ويوجد play area للاطفال,mixed_arabic_english,genuine_code_switch,yes,AGREED,"[Reviewer A]: ""English phrase """"play area"""" embedded mid-sentence inside an Arabic sentence (""""يوجد play area للاطفال"""")."" | [Reviewer B]: ""English phrase """"play area"""" is embedded directly inside the Arabic sentence (""""ويوجد play area للاطفال"""")."""
+AR-JOR-07449,مطعم حلو كتير ومرتب واكلو زاكي ونضيف وال staff كتير ذوق,mixed_arabic_english,genuine_code_switch,yes,AGREED,"[Reviewer A]: ""English word """"staff"""" embedded mid-sentence inside an Arabic sentence (""""وال staff كتير ذوق"""")."" | [Reviewer B]: ""English word """"staff"""" is embedded directly inside the Arabic sentence with the Arabic article (""""وال staff كتير ذوق"""")."""
+AR-JOR-07691,"اسعار ع الlist شكل
+وع الكاش مفاجأه",mixed_arabic_english,genuine_code_switch,yes,AGREED,"[Reviewer A]: ""English word """"list"""" embedded directly inside an Arabic phrase (""""ع الlist شكل"""")."" | [Reviewer B]: ""English word """"list"""" is embedded inside an Arabic sentence with the Arabic definite article (""""ع الlist شكل"""")."""
+AR-JOR-07779,"فيه شب بيجي بعد الساعة ١١ اله لحية، شايف حاله بشكل خرائي و ما برد السلام، مش عارف كيف مشغلينه، والله بشوه سمعة هالمطعم العريق.
+I don't recommend it at all especially after 23:00",mixed_arabic_english,bilingual_translation_pair,no,AGREED,"[Reviewer A]: ""Arabic narrative about a specific incident followed by an English sentence summarizing the same recommendation (avoid after 23:00)."" | [Reviewer B]: Arabic paragraph is followed by an English summary/translation of the same complaint."
+AR-JOR-07936,"كانت تجربة مخيبة اقل من التوقعات بكثير
+
+It was a disappointing experience that far below expectations",mixed_arabic_english,bilingual_translation_pair,no,AGREED,"[Reviewer A]: ""Arabic sentence followed by a matching English translation."" | [Reviewer B]: Arabic sentence is followed by its own direct English translation."
+AR-JOR-07953,"السندويشة تقريبا خبز فقط، وكأن المطعم يتصدق على زبائنه بالشاورما!!
+
+It’s like you are buying an empty sandwich, barely any meat inside!",mixed_arabic_english,bilingual_translation_pair,no,AGREED,"[Reviewer A]: ""Arabic sentence followed by an English paraphrase of the same complaint."" | [Reviewer B]: Arabic sentence is followed by its own English translation."
+AR-JOR-08087,"اكثر من مرة اللحمة مش مستوية
+More than ones the meat does not cooked well",mixed_arabic_english,bilingual_translation_pair,no,AGREED,"[Reviewer A]: ""Arabic sentence followed by a matching English translation."" | [Reviewer B]: Arabic sentence is followed by its own English translation."
+AR-JOR-08106,"والله العظيم بيرسلوا طلبات فاسدة (خربانة) وسلامتكم
+Just to flag — we've been receiving items that are spoiled or include expired ingredients",mixed_arabic_english,bilingual_translation_pair,no,AGREED,"[Reviewer A]: ""Arabic complaint followed by an English paragraph restating the same complaint."" | [Reviewer B]: Arabic sentence is followed by an English paraphrase/translation of the same complaint about spoiled items."
+AR-JOR-08532,"لذيذ ورايق انصح به اسعاره عاليه شوي
+Very delicious i recommend to try it
+Prices are high",mixed_arabic_english,bilingual_translation_pair,no,AGREED,"[Reviewer A]: ""Arabic sentence followed by two English sentences restating the same points (high price, delicious food)."" | [Reviewer B]: Arabic sentence is followed by its own English translation."
+EN-WY-0053527,"(Translated by Google) I do not like it
+
+(Original)
+لا احبه",mixed_arabic_english,bilingual_translation_pair,no,AGREED,"[Reviewer A]: ""Standard Google """"(Translated by Google)/(Original)"""" pair with an Arabic original."" | [Reviewer B]: ""Standard Google """"(Translated by Google)/(Original)"""" structure; the Original is Arabic."""
+EN-WY-0053600,"(Translated by Google) Last row
+
+(Original)
+صف اخير",mixed_arabic_english,bilingual_translation_pair,no,AGREED,"[Reviewer A]: ""Standard Google translation pair, Arabic original."" | [Reviewer B]: Same Translated/Original structural pattern; Original is Arabic."
+EN-WY-0064292,"(Translated by Google) One of the most beautiful natural places in America.
+
+(Original)
+من اجمل الاماكن الطبيعية في امريكا.",mixed_arabic_english,bilingual_translation_pair,no,AGREED,"[Reviewer A]: ""Standard Google translation pair, Arabic original."" | [Reviewer B]: Same Translated/Original structural pattern; Original is Arabic."
+EN-WY-0105582,"(Translated by Google) No safety and no peace
+
+(Original)
+لا امان و لا سلام",mixed_arabic_english,bilingual_translation_pair,no,AGREED,"[Reviewer A]: ""Standard Google translation pair, Arabic original."" | [Reviewer B]: Same Translated/Original structural pattern; Original is Arabic."
+EN-WY-0114115,"(Translated by Google) Great place
+
+(Original)
+جای بزرگ و خوبی",mixed_arabic_english,other,no,AGREED,"[Reviewer A]: ""The """"(Original)"""" text (""""جای بزرگ و خوبی"""") is Persian/Farsi, not Arabic; heuristic mislabeled the source language."" | [Reviewer B]: """"""(Original)"""" text """"جای بزرگ و خوبی"""" is Persian/Farsi, not Arabic; this is a language-ID error by the heuristic."""
+EN-WY-0221008,"(Translated by Google) The Wind River is a desert experience to make your holiday trip truly memorable. Their crown forms a beautiful continental rift for a hundred miles, showing the continental rift. There are 45 peaks of more than 13,000 feet, and more than 1,300 lakes are named after the highest mountains of Wyoming, all of which are fed by the clearest streams you have ever seen.
+In this range, 7 out of 10 large refrigerators in the bottom 48 have left their mark. The landscape is covered with jagged granite peaks, ridges and walls, alpine circuses and magical suspended valleys. While the whole trip will be an incredible visual celebration, your ""cherry"" trip will be time spent in the legendary Titcomb Basin. The pond, pictured above, is on the life list of many backpackers
+
+(Original)
+رشته کوه Wind River تجربه ای بیابانی را رقم می زند تا سفر تعطیلات خود را واقعاً خاطره انگیز کند. تاج آنها شکاف قاره ای زیبا را برای صد مایل تشکیل می دهد ، شکاف قاره را نشان می دهد. 45 قله بیش از 13000 پا وجود دارد و بیش از 1300 دریاچه با نامگذاری در بالاترین کوههای وایومینگ پاشیده شده اند که همگی از زلال ترین جویبارهایی که دیده اید تغذیه می شوند.
+در این محدوده ، 7 مورد از 10 یخچال بزرگ در 48 پایین ، اثر خود را برجای گذاشته اند. چشم انداز پوشیده از قله های گرانیت دندانه دار ، پشته ها و دیواره ها ، سیرک های آلپ و دره های معلق جادویی است. در حالی که کل سفر یک جشن بصری باورنکردنی خواهد بود ، ""گیلاس"" سفر شما زمان صرف شده در حوضه افسانه ای Titcomb خواهد بود. حوضچه ، در تصویر بالا ، در لیست زندگی بسیاری از کوله گردان است",mixed_arabic_english,other,no,AGREED,"[Reviewer A]: ""The """"(Original)"""" text is a long Persian/Farsi paragraph, not Arabic."" | [Reviewer B]: """"""(Original)"""" is a long Persian/Farsi paragraph (not Arabic script conventions), misflagged as Arabic-English mixing."""
+EN-WY-0229278,"(Translated by Google) Garden and park Raye summer and time channel with family
+
+(Original)
+حديقه ومنتزه راىع للصيف وقناى الوقت مع العاىله",mixed_arabic_english,bilingual_translation_pair,no,AGREED,"[Reviewer A]: ""Standard Google translation pair, Arabic original."" | [Reviewer B]: Standard Translated/Original pattern; Original is Arabic."
+EN-WY-0238992,"(Translated by Google) Good refueling
+
+(Original)
+جيد للتزود بالوقود",mixed_arabic_english,bilingual_translation_pair,no,AGREED,"[Reviewer A]: ""Standard Google translation pair, Arabic original."" | [Reviewer B]: Standard Translated/Original pattern; Original is Arabic."
+EN-WY-0274215,"(Translated by Google) The screen is small but the chairs are very comfortable .. The prices of soft drinks and popcorn are very expensive .. We hope to increase the screening of movies and thank you very much
+
+The screen is small but the chairs are very comfortable .. The prices of soft drinks and popcorn are very expensive .. and we hope to increase the screening of films and thank you very much
+
+(Original)
+الشاشة صغيرة لكن الكراسي مريحة جدا.. وأسعار المشروبات الغازية والفشار غالية جدا.. ونرجو تكثير عرض الأفلام وشكرا جزيلا لكم
+
+The screen is small but the chairs are very comfortable .. The prices of soft drinks and popcorn are very expensive .. and we hope to increase the screening of films and thank you very much",mixed_arabic_english,bilingual_translation_pair,no,AGREED,"[Reviewer A]: ""Standard Google translation pair (English translation duplicated twice), Arabic original."" | [Reviewer B]: ""Standard Translated/Original pattern with duplicated English text; Original is Arabic."""
+EN-WY-0285320,"(Translated by Google) Yellowstone Falls (Yellowstone Falls) is a waterfall located in the United States of America, and its tallest downfall is 2 meters high. The catchment of this waterfall is the Yellowstone River.
+
+(Original)
+آبشار یلو استون (به انگلیسی: Yellowstone Falls) آبشاری است که در کشور ایالات متحده آمریکا واقع شده‌است و بلندترین ریزشگاه آن ۳۳ متر ارتفاع دارد. حوضهٔ آبریز این آبشار، رودخانه یلو استون است.",mixed_arabic_english,other,no,AGREED,"[Reviewer A]: ""The """"(Original)"""" text is Persian/Farsi, not Arabic; only a parenthetical English gloss (""""Yellowstone Falls"""") appears, which is a named-entity gloss, not code-switching."" | [Reviewer B]: """"""(Original)"""" text is Persian/Farsi, not Arabic; language-ID error."""
+EN-WY-0329185,"(Translated by Google) Elena Tbgana frightened her squared
+
+(Original)
+ايلينا تبغانا نفزع لها يربع",mixed_arabic_english,bilingual_translation_pair,no,AGREED,"[Reviewer A]: ""Standard Google translation pair, Arabic original (machine translation is garbled but the structure is a translation pair)."" | [Reviewer B]: Standard Translated/Original pattern; Original is Arabic (machine-mistranslated but script is Arabic)."
+EN-WY-0329190,"(Translated by Google) Jay Y Damon and Stephan come to you, I will scare you this pious Klaus
+
+(Original)
+جاي ي دايمن وستيفان جايكم افزعلكم اللطش كلاوس الورع ذا",mixed_arabic_english,bilingual_translation_pair,no,AGREED,"[Reviewer A]: ""Standard Google translation pair, Arabic original."" | [Reviewer B]: Standard Translated/Original pattern; Original is Arabic."
+EN-WY-0329191,"(Translated by Google) Vinegar, go Corona and Jake, Steven
+
+(Original)
+خل يروح كورونا و جايك يا ستيفين😜😂",mixed_arabic_english,bilingual_translation_pair,no,AGREED,"[Reviewer A]: ""Standard Google translation pair, Arabic original."" | [Reviewer B]: Standard Translated/Original pattern; Original is Arabic."
+EN-WY-0364211,"(Translated by Google) We like the store, we wear it a lot to buy our family necessities
+
+(Original)
+يعجبنا المتجر نرتداده كثيرالشراء مستلزماتنا العائليه",mixed_arabic_english,bilingual_translation_pair,no,AGREED,"[Reviewer A]: ""Standard Google translation pair, Arabic original."" | [Reviewer B]: Standard Translated/Original pattern; Original is Arabic."
+EN-WY-0368831,"(Translated by Google) I could not visit
+
+(Original)
+لم اتمكن من زيارتها",mixed_arabic_english,bilingual_translation_pair,no,AGREED,"[Reviewer A]: ""Standard Google translation pair, Arabic original."" | [Reviewer B]: Standard Translated/Original pattern; Original is Arabic."
+EN-WY-0384218,"(Translated by Google) Fabulous
+
+(Original)
+رائع",mixed_arabic_english,bilingual_translation_pair,no,AGREED,"[Reviewer A]: ""Standard Google translation pair, single Arabic word translated."" | [Reviewer B]: Standard Translated/Original pattern; Original is Arabic."
+EN-WY-0415483,"(Translated by Google) Great Bright Water Spring - America
+It is the largest hot spring in the United States located in a nature reserve and is one of a large group of water springs and hot springs active in the park. The bright water spring is 90 meters in diameter and 50 meters deep.
+The rate of flow of hot water, which is more than 70 degrees Celsius 2100 liters per minute and there is a pool of active hot springs in the world, containing nearly 10,000 thermal springs, including 200-300 erupt every year. In addition to the bright water spring in the middle of Yellowstone Park, there is the longest spring of hot water (due to the high water flowing from it is 120 meters).
+
+(Original)
+نبع الماء البراق الكبير – أمريكا
+هو أكبر نبع ماء حار في الولايات المتحدة يقع في محمية لطبيعية وهو واحد من ضمن مجموعة كبيرة من عيون الماء و الينابيع الحارة الناشطة في الحديقة يبلغ قطر نبع الماء البراق 90 متراً و عمقه 50 متراً.
+ويبلغ معدل تدفق الماء الساخن و الذي تبلغ درجة حرارته أكثر من 70 درجة مئوية 2100 لتر في الدقيقة الواحدة كما يوجد تجمع للينابيع الحارة الناشطة في العالم إذ تحتوي على ما يقارب 10.000 ينبوع حراري منها 200-300 تثور كل سنة. بالإضافة إلى نبع الماء البراق الذي يقع في وسط منتزه يلوستون يوجد أطول ينبوع ماء حار (نظراً لارتفاع الماء المتدفق منه و هو 120 متراً).",mixed_arabic_english,bilingual_translation_pair,no,AGREED,"[Reviewer A]: ""Standard Google translation pair, long Arabic paragraph."" | [Reviewer B]: Standard Translated/Original pattern; Original is Arabic."
+EN-WY-0415604,"(Translated by Google) Hallelujah Originator of the heavens and the earth ...
+
+(Original)
+سبحان الله بديع السموات والأرض...",mixed_arabic_english,bilingual_translation_pair,no,AGREED,"[Reviewer A]: ""Standard Google translation pair, Arabic original."" | [Reviewer B]: Standard Translated/Original pattern; Original is Arabic."
+EN-WY-0441444,"(Translated by Google) Excellent close to a gas station and a supermarket or a swimming pool on the street with warm water
+
+(Original)
+ممتاز قريب من محطة وقود و سوبر ماركت او فيه بركة سباحة على الشارع بماء دافئ",mixed_arabic_english,bilingual_translation_pair,no,AGREED,"[Reviewer A]: ""Standard Google translation pair, Arabic original."" | [Reviewer B]: Standard Translated/Original pattern; Original is Arabic."
+EN-WY-0497135,"(Translated by Google) A fourth and delicious pizza worth repeating
+
+(Original)
+بيتزا رابعه ولذيذه تستحق التكرار",mixed_arabic_english,bilingual_translation_pair,no,AGREED,"[Reviewer A]: ""Standard Google translation pair, Arabic original."" | [Reviewer B]: Standard Translated/Original pattern; Original is Arabic."
+EN-WY-0498427,"(Translated by Google) Let me go there 😭😭
+
+(Original)
+ادعولي اروح هناك 😭😭",mixed_arabic_english,bilingual_translation_pair,no,AGREED,"[Reviewer A]: ""Standard Google translation pair, Arabic original."" | [Reviewer B]: Standard Translated/Original pattern; Original is Arabic."
+EN-WY-0506176,"(Translated by Google) Grand Teton National Park
+Grand Teton National Park is a national park in Wyoming on the Titanic Mountains in the United States.
+Grand Teton National Park
+
+The park has an area of ​​2 square kilometers.
+The park is named after the Les Trois Tetons, which means ""three breasts."" This is the name that the Canadian-French used to refer to the three tall peaks adjacent to each other in this park.
+Much of the land in the gift park is dedicated to John Rockefeller's eldest son, John D. Rockefeller was the son of the National Parks Authority of America.
+
+(Original)
+پارک ملی گراند تیتون
+پارک ملی گراند تیتون (به انگلیسی: Grand Teton National Park) یک پارک ملی در ایالت وایومینگ در رشته کوه تیتان در آمریکا است.
+پارک ملی گراند تیتون
+
+مساحت این پارک ۱۲۵۵ کیلومتر مربع است.
+نام این پارک از واژه Les Trois Tetons که به معنای «سه پستان» است، گرفته شده. این واژه نامیست که فرانسویان کانادایی‌تبار به سه قلهٔ بلند مجاور یکدیگر در این پارک اطلاق می‌کردند.
+قسمت اعظمی از زمینهای این پارک هدیه و وقف سرمایه شخصی فرزند ارشد جان راکفلر، جان دی. راکفلر پسر، به سازمان پارک‌های ملی آمریکا بود.",mixed_arabic_english,other,no,AGREED,"[Reviewer A]: ""The """"(Original)"""" text is Persian/Farsi, not Arabic; also contains an embedded French phrase (""""Les Trois Tetons"""") used as a name gloss."" | [Reviewer B]: """"""(Original)"""" is a Persian/Farsi paragraph about Grand Teton (uses letters/grammar not found in Arabic), not Arabic; language-ID error."""
+EN-WY-0506263,"(Translated by Google) Good experience. About things. Be. For you. Help. Others. About it. Opinion. Truthful. Accurate description. Thank you.
+
+(Original)
+جيدة التجربة.حيال.اشياء.تكن.لك.فيها.مساعدة.الاخرين.عنها.بالرائ.الصادق.والوصوف الدقيقة.وشكرا",mixed_arabic_english,bilingual_translation_pair,no,AGREED,"[Reviewer A]: ""Standard Google translation pair, fragmented Arabic original."" | [Reviewer B]: Standard Translated/Original pattern; Original is Arabic."
+EN-WY-0506286,"(Translated by Google) Grand Teton Park in the United States
+Grand Titton Park in the United States
+
+(Original)
+منتزه غراند تيتون في الولايات المتحدة
+Grand Titton Park in the United States",mixed_arabic_english,bilingual_translation_pair,no,AGREED,"[Reviewer A]: ""The """"(Original)"""" field itself contains an Arabic sentence plus a duplicated English sentence, but this is a self-translation pair (reviewer wrote the same line in both languages), not interleaved code-switching."" | [Reviewer B]: ""Standard Translated/Original pattern; Original is Arabic with a duplicated English line appended as an apparent scraping artifact, not reviewer code-switching."""
+EN-WY-0506311,"(Translated by Google) Nice place and quiet
+
+O God, if I was living in the sky, I would bring him down, but if he was in the earth, I would bring him out. Praise be to Allaah Who does not forget what He has mentioned, Praise be to Allah Who does not disappoint from His Glory, Praise be to Allah Who is the one who is entrusted with his power. When the tricks and the rope are cut off from us
+
+(Original)
+مكان جميل وهادئ
+
+اللّهم إن كان رزقي في السّماء فأنزله، وإن كان في الأرض فأخرجه، وإن كان بعيداً فقرّبه وإن كان قريباً فيسّره، وإن كان قليلاً فكثّره، وإن كان كثيراً فبارك لي فيه. الحمد لله الذي لا ينسى من ذكره، الحمد لله الذي لا يخيب من رجاه، الحمد لله الذي من توكّل عليه كفاه، الحمد لله الذي من وثق به لم يكله إلى غيره، الحمد لله الذي هو ثقتنا حين تسوء ظنوننا بأعمالنا، الحمد لله الذي هو رجاؤنا حين ينقطع الحيل والحبل منا",mixed_arabic_english,bilingual_translation_pair,no,AGREED,"[Reviewer A]: ""Standard Google translation pair, Arabic religious text."" | [Reviewer B]: Standard Translated/Original pattern; Original is Arabic (a religious prayer/dua)."
+EN-WY-0506338,"(Translated by Google) Very excellent
+
+(Original)
+ممممتاز جدآ",mixed_arabic_english,bilingual_translation_pair,no,AGREED,"[Reviewer A]: ""Standard Google translation pair, single Arabic word."" | [Reviewer B]: Standard Translated/Original pattern; Original is Arabic."
+EN-WY-0506360,"(Translated by Google) Great recreation place. With great features
+
+(Original)
+مکان تفریحی عالی. با امکانات عالی",mixed_arabic_english,other,no,AGREED,"[Reviewer A]: ""The """"(Original)"""" text is Persian/Farsi (""""مکان تفریحی عالی. با امکانات عالی""""), not Arabic."" | [Reviewer B]: """"""(Original)"""" text """"مکان تفریحی عالی. با امکانات عالی"""" is Persian/Farsi, not Arabic; language-ID error."""
+EN-WY-0506388,"(Translated by Google) The summit of comfort, tranquility and the splendor of the place, beautiful views that please the eye and force the mind
+
+(Original)
+قمة الراحة والهدوء و روعة المكان مناظر جميله تسر العين و تجبر الخاطر",mixed_arabic_english,bilingual_translation_pair,no,AGREED,"[Reviewer A]: ""Standard Google translation pair, Arabic original."" | [Reviewer B]: Standard Translated/Original pattern; Original is Arabic."
+EN-WY-0506460,"(Translated by Google) I was struck by the charm of his beauty in all respects very perfect
+
+(Original)
+أدهشني سحر جماله من جميع النواحي ممتاذة جدآ",mixed_arabic_english,bilingual_translation_pair,no,AGREED,"[Reviewer A]: ""Standard Google translation pair, Arabic original."" | [Reviewer B]: Standard Translated/Original pattern; Original is Arabic."
+EN-WY-0506526,"(Translated by Google) A suitable place for recreation and recreation
+
+(Original)
+مكان مناسب للإستجمام والترويح عن النفس",mixed_arabic_english,bilingual_translation_pair,no,AGREED,"[Reviewer A]: ""Standard Google translation pair, Arabic original."" | [Reviewer B]: Standard Translated/Original pattern; Original is Arabic."
+EN-WY-0506610,"(Translated by Google) A place of utmost splendor and beauty
+
+(Original)
+مكان في منتهي الروعه والجمال",mixed_arabic_english,bilingual_translation_pair,no,AGREED,"[Reviewer A]: ""Standard Google translation pair, Arabic original."" | [Reviewer B]: Standard Translated/Original pattern; Original is Arabic."
+EN-WY-0506625,"(Translated by Google) Nature and charming scenery adoration will not end
+
+(Original)
+الطبيعة والمناظر الساحرة عشق لن ينتهى",mixed_arabic_english,bilingual_translation_pair,no,AGREED,"[Reviewer A]: ""Standard Google translation pair, Arabic original."" | [Reviewer B]: Standard Translated/Original pattern; Original is Arabic."
+EN-WY-0506644,"(Translated by Google) Wonderful wonderful park
+
+(Original)
+منتزه رائع رائع رائع",mixed_arabic_english,bilingual_translation_pair,no,AGREED,"[Reviewer A]: ""Standard Google translation pair, Arabic original."" | [Reviewer B]: Standard Translated/Original pattern; Original is Arabic."
+EN-WY-0506647,"(Translated by Google) Nice
+
+(Original)
+جميل",mixed_arabic_english,bilingual_translation_pair,no,AGREED,"[Reviewer A]: ""Standard Google translation pair, single Arabic word."" | [Reviewer B]: Standard Translated/Original pattern; Original is Arabic."
+EN-WY-0506648,"(Translated by Google) nice place
+
+(Original)
+مكان جميل",mixed_arabic_english,bilingual_translation_pair,no,AGREED,"[Reviewer A]: ""Standard Google translation pair, Arabic original."" | [Reviewer B]: Standard Translated/Original pattern; Original is Arabic."
+EN-WY-0506654,"(Translated by Google) Excellent
+
+(Original)
+بسیار عالیست",mixed_arabic_english,other,no,AGREED,"[Reviewer A]: ""The """"(Original)"""" text is Persian/Farsi (""""بسیار عالیست""""), not Arabic."" | [Reviewer B]: """"""(Original)"""" text """"بسیار عالیست"""" is Persian/Farsi, not Arabic; language-ID error."""
+EN-WY-0506656,"(Translated by Google) روووووووعه جميل جدا
+
+(Original)
+روووووووعه جميل جدا",mixed_arabic_english,other,no,AGREED,"[Reviewer A]: ""The """"(Translated by Google)"""" field actually just repeats the same Arabic text verbatim (translation failed); there is no English content at all in this row despite the mixed-language flag."" | [Reviewer B]: ""Translated and Original fields contain the identical Arabic text (""""روووووووعه جميل جدا""""); Google did not actually translate it, so no English is present at all despite the flag."""
+EN-WY-0506661,"(Translated by Google) Magnificence magnificence magnificence in everything
+
+(Original)
+روعة روعة روعة بكل شيئ",mixed_arabic_english,bilingual_translation_pair,no,AGREED,"[Reviewer A]: ""Standard Google translation pair, Arabic original."" | [Reviewer B]: Standard Translated/Original pattern; Original is Arabic."
+EN-WY-0506667,"(Translated by Google) Sweet
+
+(Original)
+حلوة",mixed_arabic_english,bilingual_translation_pair,no,AGREED,"[Reviewer A]: ""Standard Google translation pair, single Arabic word."" | [Reviewer B]: Standard Translated/Original pattern; Original is Arabic."
+EN-WY-0506683,"(Translated by Google) Excellent and wonderful
+
+(Original)
+ممتاز ورائع",mixed_arabic_english,bilingual_translation_pair,no,AGREED,"[Reviewer A]: ""Standard Google translation pair, Arabic original."" | [Reviewer B]: Standard Translated/Original pattern; Original is Arabic."
+EN-WY-0506684,"(Translated by Google) Stunning views
+
+(Original)
+مناظر خلابة",mixed_arabic_english,bilingual_translation_pair,no,AGREED,"[Reviewer A]: ""Standard Google translation pair, Arabic original."" | [Reviewer B]: Standard Translated/Original pattern; Original is Arabic."
+EN-WY-0506685,"(Translated by Google) Jmeyiel and quiet
+
+(Original)
+جمييييل وهادئ",mixed_arabic_english,bilingual_translation_pair,no,AGREED,"[Reviewer A]: ""Standard Google translation pair, Arabic original."" | [Reviewer B]: Standard Translated/Original pattern; Original is Arabic."
+EN-WY-0506701,"(Translated by Google) I do not adore him, but I wrote this to indicate something I do not like
+
+(Original)
+لااعشقه انما كتبت هذا لكي تدل على شي مدري وشو",mixed_arabic_english,bilingual_translation_pair,no,AGREED,"[Reviewer A]: ""Standard Google translation pair, Arabic original."" | [Reviewer B]: Standard Translated/Original pattern; Original is Arabic."
+EN-WY-0506727,"(Translated by Google) Very cool
+
+(Original)
+رائع جداً",mixed_arabic_english,bilingual_translation_pair,no,AGREED,"[Reviewer A]: ""Standard Google translation pair, Arabic original."" | [Reviewer B]: Standard Translated/Original pattern; Original is Arabic."
+EN-WY-0506729,"(Translated by Google) Beautiful park
+
+(Original)
+پارکی زیبا",mixed_arabic_english,other,no,AGREED,"[Reviewer A]: ""The """"(Original)"""" text is Persian/Farsi (""""پارکی زیبا""""), not Arabic."" | [Reviewer B]: """"""(Original)"""" text """"پارکی زیبا"""" is Persian/Farsi, not Arabic; language-ID error."""
+EN-WY-0506734,"(Translated by Google) An excellent place
+
+(Original)
+مكان ممتاز",mixed_arabic_english,bilingual_translation_pair,no,AGREED,"[Reviewer A]: ""Standard Google translation pair, Arabic original."" | [Reviewer B]: Standard Translated/Original pattern; Original is Arabic."
+EN-WY-0506745,"(Translated by Google) One tiger
+
+(Original)
+نمرة واحد",mixed_arabic_english,bilingual_translation_pair,no,AGREED,"[Reviewer A]: ""Standard Google translation pair, Arabic original (machine mistranslated """"نمرة"""" as """"tiger"""")."" | [Reviewer B]: Standard Translated/Original pattern; Original is Arabic."
+EN-WY-0506747,"(Translated by Google) Hello
+
+(Original)
+مرحبا",mixed_arabic_english,bilingual_translation_pair,no,AGREED,"[Reviewer A]: ""Standard Google translation pair, single Arabic word """"مرحبا""""."" | [Reviewer B]: Standard Translated/Original pattern; Original is Arabic."
+EN-WY-0506751,"(Translated by Google) To distinguish its place and area
+
+(Original)
+لتميز مكانه ومساحه",mixed_arabic_english,bilingual_translation_pair,no,AGREED,"[Reviewer A]: ""Standard Google translation pair, Arabic original."" | [Reviewer B]: Standard Translated/Original pattern; Original is Arabic."
+EN-WY-0506769,"(Translated by Google) Enjoyable
+
+(Original)
+ممتع",mixed_arabic_english,bilingual_translation_pair,no,AGREED,"[Reviewer A]: ""Standard Google translation pair, single Arabic word."" | [Reviewer B]: Standard Translated/Original pattern; Original is Arabic."
+EN-WY-0506770,"(Translated by Google) Ranaaaa
+
+(Original)
+راااااااااائع",mixed_arabic_english,bilingual_translation_pair,no,AGREED,"[Reviewer A]: ""Standard Google translation pair, Arabic original."" | [Reviewer B]: Standard Translated/Original pattern; Original is Arabic."
+EN-WY-0506773,"(Translated by Google) Excellent
+
+(Original)
+ممتاز",mixed_arabic_english,bilingual_translation_pair,no,AGREED,"[Reviewer A]: ""Standard Google translation pair, single Arabic word."" | [Reviewer B]: Standard Translated/Original pattern; Original is Arabic."
+EN-WY-0516292,"(Translated by Google) We waited a long time and at night it got cold but the scenery is wonderful
+
+(Original)
+انتظرنا وقت طويل وفي الليل الجو يصبح بارد لكن المشهد رائع",mixed_arabic_english,bilingual_translation_pair,no,AGREED,"[Reviewer A]: ""Standard Google translation pair, Arabic original."" | [Reviewer B]: Standard Translated/Original pattern; Original is Arabic."
+EN-WY-0594521,"(Translated by Google) nice place! And the prices are suitable
+
+(Original)
+موقع جميل! واسعار مناسبه",mixed_arabic_english,bilingual_translation_pair,no,AGREED,"[Reviewer A]: ""Standard Google translation pair, Arabic original."" | [Reviewer B]: Standard Translated/Original pattern; Original is Arabic."
+EN-WY-0765559,"(Translated by Google) A very sweet place for horse and capoe enthusiasts excellent for boys
+
+(Original)
+مكان حلو جدا لهواة الخيل والكابوي ممتاز للأولاد",mixed_arabic_english,bilingual_translation_pair,no,AGREED,"[Reviewer A]: ""Standard Google translation pair, Arabic original."" | [Reviewer B]: Standard Translated/Original pattern; Original is Arabic."
+EN-WY-0819321,"(Translated by Google) i lost my kids. i can’t find them. poopy lava hole. hot. We touched in the house from where in the house what is in Phochatth
+
+(Original)
+i lost my kids. i can’t find them. poopy lava hole. hot. نمس في البيت من وين من البيت ما في فخصعثح",mixed_arabic_english,other,no,DISAGREEMENT-ARBITRATED,"ARBITRATED: the 'Arabic' span ('نمس في البيت من وين من البيت ما في فخصعثح') does not parse as coherent Arabic -- it appears to be garbled/keyboard-mashed text (mirrored by the garbled English word 'Phochatth' in Google's own translation attempt). Counting non-semantic gibberish as genuine Arabic-English code-switching would be scientifically misleading. A marked uncertain, B marked genuine_code_switch; siding with A's caution after reading the full text -- this is not reliable evidence of genuine bilingual competence."
+EN-WY-0819349,"(Translated by Google) Yellowstone volcano in is one of the most feared volcanoes in the world. If it does, the consequences will be dire. About 87,000 people are expected to die soon after it explodes and two-thirds of's lands will be uninhabitable. Ash from the explosion will encircle the globe in less than 48 ° C and cause temperatures to drop by at least 2 ° C for up to 20 years. Ash will block sunlight due to wind currents and its particles will remain suspended in the air for about 15-20 years, global warming will end and an ice age will begin. Plants around the world will begin to die, herbivores will begin to die out, and this will affect carnivores, starting a series of mass extinctions. The population will drop from billions to millions or even hundreds of thousands. Analysts expect that if this eruption occurs, a global war will occur, the stronger countries will seize the remaining resources, the borders of countries will change and the governments will fall. The USGS watches it constantly and believe it first exploded 631,000 years ago. The chance of it erupting is very remote, as it occurs once or twice every million years.
+
+Crater 👇
+
+(Original)
+‏يعد بركان يلوستون في 🇺🇸 أحد أكثر البراكين إثارة للخوف بالعالم. إذا ثار، ستكون العواقب وخيمة. يتوقع موت حوالي 87000 شخص فور انفجاره وسيصبح ثلثي أراضي 🇺🇸 غير صالحة للسكن. سيطوق الرماد الناتج عن الانفجار الكرة الأرضية في أقل من 48س، وسيؤدي لانخفاض درجات الحرارة بمقدار درجتين ‏مئويتين على الأقل لمدة تصل إلى 20 عام. سيحجب الرماد ضوء الشمس بسبب تيارات الرياح وتبقى جزيئاته معلقة في الهواء حوالي 15-20 عام، سينتهي الاحتباس الحراري وتكون بداية عصر جليدي. ستبدأ النباتات حول العالم بالموت، وتبدأ الحيوانات العاشبة بالانقراض، وهذا سيؤثر على آكلات اللحوم، ‏لتبدأ سلسلة انقراض جماعي. سينخفض التعداد السكاني من مليارات إلى ملايين أو حتى مئات الآلاف. يتوقع المحللون أنه إذا حدث هذا الانفجار، ستحدث حرب عالمية، تستولي الدول الأقوى على الموارد المتبقية وستتغير حدود الدول وتسقط الحكومات.‏تشكل خلال آخر 3 أحداث كبيرة على مدار 2.1 مليون سنة، يتسبب البركان عند ثورانه بحدوث زلازل ضخمة. تراقبه هيئة المسح الجيولوجي الأمريكية USGS باستمرار ويعتقدون أنه انفجر أول مرة قبل 631000 عام. فرصة ثورانه بعيدة للغاية، فهي تحدث مرة أو مرتين كل مليون سنة.
+
+فوهة البركان 👇",mixed_arabic_english,bilingual_translation_pair,no,AGREED,"[Reviewer A]: ""Standard Google translation pair; Arabic original contains the English acronym """"USGS"""" as a named-entity abbreviation, not genuine code-switching."" | [Reviewer B]: Standard Translated/Original pattern; Original is Arabic."
+EN-WY-0819366,"(Translated by Google) Yellowstone Caldera is a volcanic caldera and massive volcano located in the Yellowstone National Park in the United States, sometimes referred to as the Yellowstone Supervolcano volcano. The volcano is located in the northwestern corner of Wyoming, which is the vast majority of the park. The area of ​​the Caldera Yellowstone area is about 55 km in 70 km
+
+(Original)
+كالديرا يلوستون (بالإنجليزية:Yellowstone Caldera) هي كالديرا بركانية وبركان هائل تقع في حديقة يلوستون الوطنية في الولايات المتحدة، يشار إليها أحيانا بإسم بركان يلوستون الهائل (Yellowstone Supervolcano). يقع البركان في الركن الشمالي الغربي من وايومنغ، الذي يكون الغالبية العظمى من الحديقة. مساحة منطقة كالديرا يلوستون هي نحو 55 كيلومتر في 70 كيلومتر",mixed_arabic_english,bilingual_translation_pair,no,AGREED,"[Reviewer A]: ""Standard Google translation pair; Arabic original contains parenthetical English name glosses (""""Yellowstone Caldera"""", """"Yellowstone Supervolcano""""), which are named-entity glosses, not code-switching."" | [Reviewer B]: Standard Translated/Original pattern; Original is Arabic."
+EN-WY-0819431,"(Translated by Google) ""Cursed be He cursing your grandfather, one, one, you infidels.""
+
+(Original)
+يا ملعون يلعن جدكم واحد واحد يا كفار",mixed_arabic_english,bilingual_translation_pair,no,AGREED,"[Reviewer A]: ""Standard Google translation pair, Arabic original."" | [Reviewer B]: Standard Translated/Original pattern; Original is Arabic."
+EN-WY-0828669,"(Translated by Google) Visitors enjoy watching the Grand Prismatic Spring in Yellowstone National Park, America's largest hot spring in the country. More than a third of this park is located within a giant volcanic crater called ""caldera"", which is the crater of an ancient but still active supervolcano.
+Photo: Ian Shive, Tandem Stock
+
+Visitors enjoy seeing the ""Grand Prismatic Spring"" in Yellowstone National Park in America, the largest hot spring in the country. More than a third of this park is located within a giant volcanic crater called ""caldera"", which is the crater of an ancient but still active supervolcano.
+Photo: Ian Shive, Tandem Stock
+
+(Original)
+زوار يستمتعون بمشاهدة ""نبع غراند بريزماتيك"" الواقع بـ""منتزه يلوستون الوطني"" في أميركا أكبر ينبوع ساخن في البلد. يقع أزيد من ثلث هذا المنتزه ضمن حفرة بركانية عملاقة تسمى ""كالديرا""، وهي حفرة لبركان هائل قديم لكنه ما زال نشطا
+الصورة: Ian Shive, Tandem Stock
+
+Visitors enjoy seeing the ""Grand Prismatic Spring"" in Yellowstone National Park in America, the largest hot spring in the country.  More than a third of this park is located within a giant volcanic crater called ""caldera"", which is the crater of an ancient but still active supervolcano.
+Photo: Ian Shive, Tandem Stock",mixed_arabic_english,bilingual_translation_pair,no,AGREED,"[Reviewer A]: ""Standard Google translation pair; the Arabic original has an English photo-credit caption pasted after it (""""Photo: Ian Shive, Tandem Stock""""), which is incidental pasted content, not organic code-switching."" | [Reviewer B]: ""Standard Translated/Original pattern; Original is Arabic with a duplicated English photo-credit paragraph pasted in as a scraping artifact, not reviewer code-switching."""
+EN-WY-0836330,"(Translated by Google) We ordered American coffee and ice cream to spend a nice time on the road and we enjoyed it
+
+(Original)
+طلبنا قهوه امريكي وايس كريم لقضاء وقت جميل في الطريق استمتعنا بها",mixed_arabic_english,bilingual_translation_pair,no,AGREED,"[Reviewer A]: ""Standard Google translation pair, Arabic original."" | [Reviewer B]: Standard Translated/Original pattern; Original is Arabic."
+EN-WY-0898137,"(Translated by Google) The worst place I have ever seen
+
+(Original)
+أسوء مكان شاهدت فى حياتي",mixed_arabic_english,bilingual_translation_pair,no,AGREED,"[Reviewer A]: ""Standard Google translation pair, Arabic original."" | [Reviewer B]: Standard Translated/Original pattern; Original is Arabic."
+EN-WY-0904375,"(Translated by Google) Excellent. Not far from the reserves, but you have to wake up before dawn to see nature.
+
+(Original)
+ممتاز. ليس بعيد عن المحميات، لكن يجب ان تستيقظ قبل الفجر كي تشاهد الطبيعة.",mixed_arabic_english,bilingual_translation_pair,no,AGREED,"[Reviewer A]: ""Standard Google translation pair, Arabic original."" | [Reviewer B]: Standard Translated/Original pattern; Original is Arabic."
+EN-WY-1008968,"(Translated by Google) Because these pictures are archaeological and I admire that I saw in America and these dinosaurs wonderful by all standards artists and they are wonderful because they discover these technical specifications and I am based on a five - star and the most approach Thank you, my dear, thank you for this discovery
+
+(Original)
+لان هذه الصور الاثريه و انا معجب لاني رايتها في امريكا وهذه الديناصورات رائعه بكل المقاييس الفنانين وهم رائعون لانهم اكتشاف و هذه المواصفات الفنيه وانا قاعد في يوم خمس نجوم واشد منهج شكرا لكم يا ايها الشرفاء الاعزاء شكرا لكم على هذا الاكتشاف",mixed_arabic_english,bilingual_translation_pair,no,AGREED,"[Reviewer A]: ""Standard Google translation pair, Arabic original."" | [Reviewer B]: Standard Translated/Original pattern; Original is Arabic."
+EN-WY-1056541,"(Translated by Google) The rooms and bathrooms are spectacular
+
+(Original)
+الغرف والحمامات راىعه",mixed_arabic_english,bilingual_translation_pair,no,AGREED,"[Reviewer A]: ""Standard Google translation pair, Arabic original."" | [Reviewer B]: Standard Translated/Original pattern; Original is Arabic."
+EN-WY-1064090,"(Translated by Google) Excellent place to shop and buy the most important daily needs
+
+(Original)
+مكان ممتاز للتسوق وشراء اهم الحاجات اليومية",mixed_arabic_english,bilingual_translation_pair,no,AGREED,"[Reviewer A]: ""Standard Google translation pair, Arabic original."" | [Reviewer B]: Standard Translated/Original pattern; Original is Arabic."
+EN-WY-1126501,"(Translated by Google) It's okay
+
+(Original)
+لا بأس👏",mixed_arabic_english,bilingual_translation_pair,no,AGREED,"[Reviewer A]: ""Standard Google translation pair, Arabic original."" | [Reviewer B]: Standard Translated/Original pattern; Original is Arabic."
+EN-VT-0068105,"(Translated by Google) Large goat caramel milk. A really great experience.
+
+(Original)
+كبير الماعز الكرمل الحليب .  تجربة رائعة حقا .",mixed_arabic_english,bilingual_translation_pair,no,AGREED,"[Reviewer A]: ""Standard Google translation pair, Arabic original."" | [Reviewer B]: Standard Translated/Original pattern; Original is Arabic."
+EN-VT-0213840,"(Translated by Google) The place is cramped and there is no air conditioning in it I prefer to take a takeaway
+
+(Original)
+المكان ضيق ولا يوجد تكييف فيه يفضل اخذ الاكل takeaway",mixed_arabic_english,genuine_code_switch,yes,AGREED,"[Reviewer A]: ""The """"(Original)"""" Arabic sentence itself embeds the English word """"takeaway"""" mid-sentence (""""يفضل اخذ الاكل takeaway"""")."" | [Reviewer B]: ""The Arabic """"Original"""" sentence itself ends with the English word """"takeaway"""" embedded directly in it (""""يفضل اخذ الاكل takeaway""""), independent of the surrounding Google translation structure."""
+EN-VT-0342452,"(Translated by Google) Suitable price and folding services
+
+(Original)
+سعر مناسب وخدمات طيية",mixed_arabic_english,bilingual_translation_pair,no,AGREED,"[Reviewer A]: ""Standard Google translation pair, Arabic original."" | [Reviewer B]: Standard Translated/Original pattern; Original is Arabic."
+EN-VT-0506655,"(Translated by Google) Fairmont
+
+(Original)
+فيرمونت",mixed_arabic_english,named_entity_or_brand,no,DISAGREEMENT-ARBITRATED,"ARBITRATED: the entire content is a single transliterated proper noun ('Fairmont' / 'فيرمونت'), nothing else. Textbook named-entity case, not code-switching. A marked bilingual_translation_pair, B marked named_entity_or_brand; siding with B."
+EN-VT-0537106,"(Translated by Google) Beautiful atmosphere in the summer
+
+(Original)
+أجواء جميلة في الصيف",mixed_arabic_english,bilingual_translation_pair,no,AGREED,"[Reviewer A]: ""Standard Google translation pair, Arabic original."" | [Reviewer B]: Standard Translated/Original pattern; Original is Arabic."
+EN-VT-0570289,"(Translated by Google) Excellent management
+
+Dear staff
+
+friendly
+
+Polite people
+
+The prices are reasonable
+
+(Original)
+مدیریت عالی
+
+پرسنل محترم
+
+رفتار دوستانه
+
+انسانهای با ادب
+
+قیمتهای مناسب میباشد",mixed_arabic_english,other,no,AGREED,"[Reviewer A]: ""The """"(Original)"""" text is Persian/Farsi (""""مدیریت عالی...""""), not Arabic."" | [Reviewer B]: """"""(Original)"""" text (""""مدیریت عالی ... قیمتهای مناسب میباشد"""") is Persian/Farsi, not Arabic; language-ID error."""
+EN-VT-0613379,"(Translated by Google) I spend amazing moments with my family in this place, the food was delicious and tasty also, the staff was friendly and helpful.
+
+The restaurant was very nice and the food was delicious especially the burger and the service was a magnificence, very good staff, clean and clean, high ...
+
+(Original)
+I spend amazing moments with my family in this place, the food was delicious and tasty also, the staff was friendly and helpful.
+
+مطعم جميل جداً الاكل كان لذيذ خصوصاً البرقر والخدمه كانت روعه موظفين جداً طيبين وخلوقين ونظافه عاليه وترتيب ولا اروع...",mixed_arabic_english,genuine_code_switch,yes,DISAGREEMENT-ARBITRATED,"ARBITRATED: critically, the mixing is present in the review's own '(Original)' field, not only in Google's '(Translated by Google)' overlay -- the native text itself opens with one English sentence then continues in Arabic with NEW content (mentions the burger specifically, cleanliness, arrangement) not found in the English part. This is genuine discourse-level code-switching by the reviewer, not a platform translation artifact. A marked bilingual_translation_pair (misled by the surrounding Google-translation markup), B marked genuine_code_switch; siding with B after checking the Original field specifically."
+EN-VT-0689632,"(Translated by Google) A good and high price chocolate factory
+
+(Original)
+مصنع شوكولاته طيب ومرتفع السعر",mixed_arabic_english,bilingual_translation_pair,no,AGREED,"[Reviewer A]: ""Standard Google translation pair, Arabic original."" | [Reviewer B]: Standard Translated/Original pattern; Original is Arabic."
+EN-VT-0721494,"(Translated by Google) The place is designed by Jamieel and explains the chest
+
+(Original)
+تصميم المكان جمييييل و يشرح الصدر",mixed_arabic_english,bilingual_translation_pair,no,AGREED,"[Reviewer A]: ""Standard Google translation pair, Arabic original."" | [Reviewer B]: Standard Translated/Original pattern; Original is Arabic."
+EN-VT-0774962,"(Translated by Google) A very good supermarket diversified goods ..
+
+(Original)
+سوبرماركت جيد جدا متنوع البضائع ..",mixed_arabic_english,bilingual_translation_pair,no,AGREED,"[Reviewer A]: ""Standard Google translation pair, Arabic original."" | [Reviewer B]: Standard Translated/Original pattern; Original is Arabic."
+EN-VT-0781579,"(Translated by Google) Excellent
+
+(Original)
+عالی",mixed_arabic_english,other,no,AGREED,"[Reviewer A]: ""The """"(Original)"""" text is Persian/Farsi (""""عالی""""), not Arabic."" | [Reviewer B]: """"""(Original)"""" single word """"عالی"""" uses Persian orthography (undotted yeh); ambiguous but more likely Farsi than Arabic."""
+EN-VT-0815057,"(Translated by Google) Factory visit was disappointing the factory was very small
+
+(Original)
+زيارة المصنع كانت مخيبه للتوقعات المصنع جدا صغير",mixed_arabic_english,bilingual_translation_pair,no,AGREED,"[Reviewer A]: ""Standard Google translation pair, Arabic original."" | [Reviewer B]: Standard Translated/Original pattern; Original is Arabic."
+EN-VT-0815072,"(Translated by Google) Ice Cream Factory
+
+(Original)
+مصنع ايس كريم",mixed_arabic_english,bilingual_translation_pair,no,AGREED,"[Reviewer A]: ""Standard Google translation pair; Arabic original contains the assimilated loanword """"ايس كريم"""" (ice cream) spelled in Arabic script, not Latin-script code-switching."" | [Reviewer B]: ""Standard Translated/Original pattern; Original is Arabic, with """"ice cream"""" transliterated into Arabic script (ايس كريم) rather than actual Latin-script English."""
+EN-VT-0828698,"(Translated by Google) The place is good for shopping and change but the prices are high for the big city shops .. I do not recommend shopping if you are going to visit a bigger city ..
+
+(Original)
+المكان جيد للتسوق و التغيير لكن أسعاره مرتفعة عن محلات المدن الكبيرة ..لاأنصح بالتسوق ان كنت ستزور مدينة أكبر ..",mixed_arabic_english,bilingual_translation_pair,no,AGREED,"[Reviewer A]: ""Standard Google translation pair, Arabic original."" | [Reviewer B]: Standard Translated/Original pattern; Original is Arabic."

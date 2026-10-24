@@ -1,0 +1,68 @@
+
+=== Grid search: [E1/logreg] ===
+[E1/logreg] ngram=(1, 1) C=0.1 class_weight=None -> val_macro_f1=0.375266 val_acc=0.667568 val_weighted_f1=0.566042
+[E1/logreg] ngram=(1, 1) C=0.1 class_weight=balanced -> val_macro_f1=0.727075 val_acc=0.802703 val_weighted_f1=0.808493
+[E1/logreg] ngram=(1, 1) C=1.0 class_weight=None -> val_macro_f1=0.715807 val_acc=0.800000 val_weighted_f1=0.793254
+[E1/logreg] ngram=(1, 1) C=1.0 class_weight=balanced -> val_macro_f1=0.738367 val_acc=0.808108 val_weighted_f1=0.813443
+[E1/logreg] ngram=(1, 1) C=10.0 class_weight=None -> val_macro_f1=0.746479 val_acc=0.813514 val_weighted_f1=0.812193
+[E1/logreg] ngram=(1, 1) C=10.0 class_weight=balanced -> val_macro_f1=0.749237 val_acc=0.813514 val_weighted_f1=0.817024
+[E1/logreg] ngram=(1, 2) C=0.1 class_weight=None -> val_macro_f1=0.335702 val_acc=0.656757 val_weighted_f1=0.538257
+[E1/logreg] ngram=(1, 2) C=0.1 class_weight=balanced -> val_macro_f1=0.730707 val_acc=0.805405 val_weighted_f1=0.811202
+[E1/logreg] ngram=(1, 2) C=1.0 class_weight=None -> val_macro_f1=0.677612 val_acc=0.775676 val_weighted_f1=0.765316
+[E1/logreg] ngram=(1, 2) C=1.0 class_weight=balanced -> val_macro_f1=0.739928 val_acc=0.808108 val_weighted_f1=0.813065
+[E1/logreg] ngram=(1, 2) C=10.0 class_weight=None -> val_macro_f1=0.722734 val_acc=0.800000 val_weighted_f1=0.797088
+[E1/logreg] ngram=(1, 2) C=10.0 class_weight=balanced -> val_macro_f1=0.740166 val_acc=0.810811 val_weighted_f1=0.814512
+[E1/logreg] SELECTED: ngram=(1, 1) C=10.0 class_weight=balanced (val_macro_f1=0.749237)
+Saved predictions (calibrated_probability) -> C:\Users\Acer\Downloads\arabic-english-google-reviews-sentiment\results\predictions\E1_tfidf_logreg_test.csv
+[E1/logreg] TEST RESULTS -- macro_f1=0.704756 accuracy=0.785908 weighted_f1=0.793324 (score_type=calibrated_probability)
+
+=== Grid search: [E1/svm] ===
+[E1/svm] ngram=(1, 1) C=0.1 class_weight=None -> val_macro_f1=0.705515 val_acc=0.797297 val_weighted_f1=0.786183
+[E1/svm] ngram=(1, 1) C=0.1 class_weight=balanced -> val_macro_f1=0.706119 val_acc=0.789189 val_weighted_f1=0.790051
+[E1/svm] ngram=(1, 1) C=1.0 class_weight=None -> val_macro_f1=0.727192 val_acc=0.800000 val_weighted_f1=0.799069
+[E1/svm] ngram=(1, 1) C=1.0 class_weight=balanced -> val_macro_f1=0.745184 val_acc=0.813514 val_weighted_f1=0.815409
+[E1/svm] ngram=(1, 1) C=10.0 class_weight=None -> val_macro_f1=0.730276 val_acc=0.800000 val_weighted_f1=0.798663
+[E1/svm] ngram=(1, 1) C=10.0 class_weight=balanced -> val_macro_f1=0.735004 val_acc=0.802703 val_weighted_f1=0.802486
+[E1/svm] ngram=(1, 2) C=0.1 class_weight=None -> val_macro_f1=0.666633 val_acc=0.772973 val_weighted_f1=0.757856
+[E1/svm] ngram=(1, 2) C=0.1 class_weight=balanced -> val_macro_f1=0.721414 val_acc=0.805405 val_weighted_f1=0.804238
+[E1/svm] ngram=(1, 2) C=1.0 class_weight=None -> val_macro_f1=0.734140 val_acc=0.802703 val_weighted_f1=0.801008
+[E1/svm] ngram=(1, 2) C=1.0 class_weight=balanced -> val_macro_f1=0.722808 val_acc=0.797297 val_weighted_f1=0.798644
+[E1/svm] ngram=(1, 2) C=10.0 class_weight=None -> val_macro_f1=0.725842 val_acc=0.797297 val_weighted_f1=0.796350
+[E1/svm] ngram=(1, 2) C=10.0 class_weight=balanced -> val_macro_f1=0.729241 val_acc=0.800000 val_weighted_f1=0.799457
+[E1/svm] SELECTED: ngram=(1, 1) C=1.0 class_weight=balanced (val_macro_f1=0.745184)
+Saved predictions (decision_function_margin_NOT_a_probability) -> C:\Users\Acer\Downloads\arabic-english-google-reviews-sentiment\results\predictions\E1_tfidf_svm_test.csv
+[E1/svm] TEST RESULTS -- macro_f1=0.704820 accuracy=0.796748 weighted_f1=0.798273 (score_type=decision_function_margin_NOT_a_probability)
+
+=== Grid search: [E2/logreg] ===
+[E2/logreg] ngram=(1, 1) C=0.1 class_weight=None -> val_macro_f1=0.308554 val_acc=0.602273 val_weighted_f1=0.473133
+[E2/logreg] ngram=(1, 1) C=0.1 class_weight=balanced -> val_macro_f1=0.644502 val_acc=0.715909 val_weighted_f1=0.717928
+[E2/logreg] ngram=(1, 1) C=1.0 class_weight=None -> val_macro_f1=0.617923 val_acc=0.741477 val_weighted_f1=0.706145
+[E2/logreg] ngram=(1, 1) C=1.0 class_weight=balanced -> val_macro_f1=0.638061 val_acc=0.713068 val_weighted_f1=0.714543
+[E2/logreg] ngram=(1, 1) C=10.0 class_weight=None -> val_macro_f1=0.602015 val_acc=0.715909 val_weighted_f1=0.693056
+[E2/logreg] ngram=(1, 1) C=10.0 class_weight=balanced -> val_macro_f1=0.621397 val_acc=0.696023 val_weighted_f1=0.697453
+[E2/logreg] ngram=(1, 2) C=0.1 class_weight=None -> val_macro_f1=0.253275 val_acc=0.582386 val_weighted_f1=0.431656
+[E2/logreg] ngram=(1, 2) C=0.1 class_weight=balanced -> val_macro_f1=0.622501 val_acc=0.710227 val_weighted_f1=0.705788
+[E2/logreg] ngram=(1, 2) C=1.0 class_weight=None -> val_macro_f1=0.581989 val_acc=0.730114 val_weighted_f1=0.681684
+[E2/logreg] ngram=(1, 2) C=1.0 class_weight=balanced -> val_macro_f1=0.677016 val_acc=0.752841 val_weighted_f1=0.746501
+[E2/logreg] ngram=(1, 2) C=10.0 class_weight=None -> val_macro_f1=0.622129 val_acc=0.738636 val_weighted_f1=0.712047
+[E2/logreg] ngram=(1, 2) C=10.0 class_weight=balanced -> val_macro_f1=0.637799 val_acc=0.735795 val_weighted_f1=0.722207
+[E2/logreg] SELECTED: ngram=(1, 2) C=1.0 class_weight=balanced (val_macro_f1=0.677016)
+Saved predictions (calibrated_probability) -> C:\Users\Acer\Downloads\arabic-english-google-reviews-sentiment\results\predictions\E2_tfidf_logreg_test.csv
+[E2/logreg] TEST RESULTS -- macro_f1=0.687062 accuracy=0.760309 weighted_f1=0.764618 (score_type=calibrated_probability)
+
+=== Grid search: [E2/svm] ===
+[E2/svm] ngram=(1, 1) C=0.1 class_weight=None -> val_macro_f1=0.574195 val_acc=0.727273 val_weighted_f1=0.674699
+[E2/svm] ngram=(1, 1) C=0.1 class_weight=balanced -> val_macro_f1=0.633058 val_acc=0.741477 val_weighted_f1=0.719020
+[E2/svm] ngram=(1, 1) C=1.0 class_weight=None -> val_macro_f1=0.582467 val_acc=0.707386 val_weighted_f1=0.679656
+[E2/svm] ngram=(1, 1) C=1.0 class_weight=balanced -> val_macro_f1=0.607107 val_acc=0.704545 val_weighted_f1=0.696744
+[E2/svm] ngram=(1, 1) C=10.0 class_weight=None -> val_macro_f1=0.559539 val_acc=0.656250 val_weighted_f1=0.652717
+[E2/svm] ngram=(1, 1) C=10.0 class_weight=balanced -> val_macro_f1=0.562908 val_acc=0.653409 val_weighted_f1=0.652521
+[E2/svm] ngram=(1, 2) C=0.1 class_weight=None -> val_macro_f1=0.520311 val_acc=0.704545 val_weighted_f1=0.635412
+[E2/svm] ngram=(1, 2) C=0.1 class_weight=balanced -> val_macro_f1=0.608691 val_acc=0.732955 val_weighted_f1=0.702057
+[E2/svm] ngram=(1, 2) C=1.0 class_weight=None -> val_macro_f1=0.626708 val_acc=0.744318 val_weighted_f1=0.715108
+[E2/svm] ngram=(1, 2) C=1.0 class_weight=balanced -> val_macro_f1=0.654027 val_acc=0.755682 val_weighted_f1=0.735881
+[E2/svm] ngram=(1, 2) C=10.0 class_weight=None -> val_macro_f1=0.622011 val_acc=0.721591 val_weighted_f1=0.705275
+[E2/svm] ngram=(1, 2) C=10.0 class_weight=balanced -> val_macro_f1=0.622220 val_acc=0.724432 val_weighted_f1=0.709260
+[E2/svm] SELECTED: ngram=(1, 2) C=1.0 class_weight=balanced (val_macro_f1=0.654027)
+Saved predictions (decision_function_margin_NOT_a_probability) -> C:\Users\Acer\Downloads\arabic-english-google-reviews-sentiment\results\predictions\E2_tfidf_svm_test.csv
+[E2/svm] TEST RESULTS -- macro_f1=0.650639 accuracy=0.744845 weighted_f1=0.738152 (score_type=decision_function_margin_NOT_a_probability)

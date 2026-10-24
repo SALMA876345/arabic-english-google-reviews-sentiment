@@ -1,0 +1,71 @@
+# Phase 3 model registry: exact model IDs/revisions used.
+# git_commit note: this repository has no commits yet (never requested by the
+# user) -- experiments/registry.csv records git_commit as "uncommitted_no_git_history"
+# rather than fabricating a hash.
+
+classical:
+  tfidf_logreg:
+    vectorizer: TfidfVectorizer
+    ngram_range_candidates: [[1,1], [1,2]]   # selected via validation only, see configs/training.yaml
+    classifier: LogisticRegression
+  tfidf_svm:
+    vectorizer: TfidfVectorizer
+    ngram_range_candidates: [[1,1], [1,2]]
+    classifier: LinearSVC
+
+transformers:
+  marbert:
+    hf_model_id: UBC-NLP/MARBERT
+    revision: main
+    tokenizer: UBC-NLP/MARBERT (BertTokenizerFast, native)
+    rationale: >
+      Selected over AraBERT per methodology_plan.md S7 and the verified
+      DialectSentEval-2026 finding that MARBERTv2 > AraBERT on 3-class
+      dialectal sentiment. AraBERT is NOT run in Phase 3 given the strict
+      4-day compute/time constraint and the explicit instruction to prefer
+      one strong Arabic-specific transformer over exhaustive model count;
+      this is a documented scope decision, not an oversight (decisions.md).
+  xlm_roberta:
+    hf_model_id: FacebookAI/xlm-roberta-base
+    revision: main
+    tokenizer: FacebookAI/xlm-roberta-base (XLMRobertaTokenizerFast, native)
+    rationale: >
+      Base (not large) variant selected given the CPU-only compute
+      environment confirmed at Phase 3 start (no CUDA GPU available) --
+      base model size is the literature-informed default appropriate to
+      a ~2,800-example fine-tuning set under a strict time budget.
+
+compute_environment:
+  device: cpu
+  cuda_available: false
+  torch_version: "2.12.0+cpu"
+  transformers_version: "4.57.6"
+  cpu_cores: 12
+  total_ram_gb: 8.28
+  available_ram_gb_at_phase3_start: 1.31
+  note: >
+    No GPU detected at Phase 3 start. All transformer runs are on CPU.
+    CRITICAL FINDING during Phase 3 execution: full fine-tuning of
+    XLM-R-base/MARBERT (270-480M params) OOM'd during the Adam optimizer
+    step (exp_avg/exp_avg_sq buffers for the full parameter set require
+    roughly 2x model size, ~2-4GB, on a machine with ~1.3GB free RAM).
+    This is a hard infrastructure constraint, not a bug -- see decisions.md
+    D14 for the full reasoning and the adopted mitigation (LoRA).
+
+fine_tuning_method:
+  method: LoRA (Low-Rank Adaptation, Hu et al. 2021) via the `peft` library (v0.21.2)
+  reason_for_deviation: >
+    Standard full fine-tuning (every parameter trainable, full Adam optimizer
+    state) was attempted first and OOM'd on this machine (confirmed via a
+    direct reproduction, see decisions.md D14). LoRA freezes the base model
+    and trains small low-rank adapter matrices only, cutting trainable
+    parameters to ~0.3% of the model and avoiding the optimizer-state OOM,
+    while still being genuine gradient-based fine-tuning (not frozen-feature
+    extraction with an external classifier).
+  config: {r: 8, lora_alpha: 16, lora_dropout: 0.1, target_modules: ["query", "value"]}
+  task_type: SEQ_CLS
+  honest_caveat: >
+    LoRA-adapted models are NOT directly equivalent to a fully fine-tuned
+    model and may underperform one on this small a dataset -- this must be
+    stated wherever transformer results are reported in Phase 3, not
+    presented as if it were standard full fine-tuning.

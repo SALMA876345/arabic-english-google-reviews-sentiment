@@ -1,0 +1,19 @@
+{
+  "task": "BINARY (Positive/Negative only -- Jordan source has zero Neutral examples, confirmed)",
+  "train_n": 8364,
+  "eval_n": 300,
+  "selected_hyperparameters": {
+    "ngram": [
+      1,
+      2
+    ],
+    "C": 1.0,
+    "class_weight": null,
+    "val_binary_macro_f1": 0.9170593827367608
+  },
+  "test_binary_macro_f1": 0.9233324814720164,
+  "test_accuracy": 0.9233333333333333,
+  "test_precision_macro_binary": 0.9233965954042402,
+  "test_recall_macro_binary": 0.9234530583214794,
+  "note": "NOT comparable to the primary 3-class E1/E2/E3/E4 results -- different task, different label provenance (LLM-weak train, human-gold eval). Report separately, never pooled."
+}

@@ -1,0 +1,110 @@
+﻿review_id,manual_category,include_as_real_codeswitch,notes
+AR-JOR-00418,other,no,"""Arabic sentence ends with """"zxcbnmvvmm"""" which is keyboard-mashed gibberish in Latin script, not real English content."""
+AR-JOR-00709,bilingual_translation_pair,no,"""Full Arabic paragraph is followed by its own separate full Hebrew, English, and Italian translations (a 4-language parallel-translation set), not interleaved code-switching."""
+AR-JOR-00748,bilingual_translation_pair,no,Arabic bulleted list is followed by its own complete English translation of the same bullets.
+AR-JOR-01270,genuine_code_switch,yes,"""English word """"packaging"""" is embedded directly inside the Arabic sentence with the Arabic definite article (""""لكن ال packaging و الأكل ممتاز"""")."""
+AR-JOR-01313,incidental_english,no,"""Two Arabic lines are followed only by a single stray English word """"Bad …"""", likely truncated, with no real bilingual sentence structure."""
+AR-JOR-01451,bilingual_translation_pair,no,Arabic sentence is followed by its own full English translation.
+AR-JOR-01565,other,no,"""Arabic text is mixed with a German sentence (""""Service von Kasse ist nicht so Gut..."""") rather than English; this is a different-language mismatch, not Arabic-English code-switching."""
+AR-JOR-02572,bilingual_translation_pair,no,"""Single Arabic word """"لذيذ"""" is paired with its direct English translation """"delicious""""; a minimal translation pair, not an integrated code-switch sentence."""
+AR-JOR-03956,bilingual_translation_pair,no,Arabic paragraph is followed by its own English paraphrase/translation of the same review.
+AR-JOR-04340,bilingual_translation_pair,no,Arabic paragraph is followed by its own full English translation.
+AR-JOR-04350,genuine_code_switch,yes,"""English phrase """"call center"""" is embedded directly inside the Arabic sentence (""""خدمة سيئة جداً على call center"""")."""
+AR-JOR-04600,genuine_code_switch,yes,"""Arabic praise of two named staff is immediately followed by an English imperative (""""Hire more people like Adel and Saeed!"""") naming the same people -- a continuation of the same thought in English, not a translation."""
+AR-JOR-05044,bilingual_translation_pair,no,Arabic sentence is followed by its own English translation.
+AR-JOR-05498,bilingual_translation_pair,no,"Arabic paragraph is followed by an English paraphrase/translation covering similar points (price, quality)."
+AR-JOR-05580,bilingual_translation_pair,no,Arabic paragraph is followed by a short English summary restating the same praise.
+AR-JOR-06215,bilingual_translation_pair,no,Arabic sentence is followed by an English paraphrase of the same content (service and quality).
+AR-JOR-06216,genuine_code_switch,yes,"""Arabic sentence ends with the English phrase """"Five star"""" used in place of an Arabic equivalent, embedded in the sentence."""
+AR-JOR-06646,named_entity_or_brand,no,"""Arabic review names staff member """"محمد هلال"""" followed only by the same name transliterated in Latin script (""""mohammed""""); no other English content."""
+AR-JOR-06927,bilingual_translation_pair,no,"""Arabic review is followed, after a gap, by an English block describing the restaurant generically; reads as an appended translation/description rather than interleaved code-switching."""
+AR-JOR-07320,genuine_code_switch,yes,"""English phrase """"play area"""" is embedded directly inside the Arabic sentence (""""ويوجد play area للاطفال"""")."""
+AR-JOR-07449,genuine_code_switch,yes,"""English word """"staff"""" is embedded directly inside the Arabic sentence with the Arabic article (""""وال staff كتير ذوق"""")."""
+AR-JOR-07691,genuine_code_switch,yes,"""English word """"list"""" is embedded inside an Arabic sentence with the Arabic definite article (""""ع الlist شكل"""")."""
+AR-JOR-07779,bilingual_translation_pair,no,Arabic paragraph is followed by an English summary/translation of the same complaint.
+AR-JOR-07936,bilingual_translation_pair,no,Arabic sentence is followed by its own direct English translation.
+AR-JOR-07953,bilingual_translation_pair,no,Arabic sentence is followed by its own English translation.
+AR-JOR-08087,bilingual_translation_pair,no,Arabic sentence is followed by its own English translation.
+AR-JOR-08106,bilingual_translation_pair,no,Arabic sentence is followed by an English paraphrase/translation of the same complaint about spoiled items.
+AR-JOR-08532,bilingual_translation_pair,no,Arabic sentence is followed by its own English translation.
+EN-WY-0053527,bilingual_translation_pair,no,"""Standard Google """"(Translated by Google)/(Original)"""" structure; the Original is Arabic."""
+EN-WY-0053600,bilingual_translation_pair,no,Same Translated/Original structural pattern; Original is Arabic.
+EN-WY-0064292,bilingual_translation_pair,no,Same Translated/Original structural pattern; Original is Arabic.
+EN-WY-0105582,bilingual_translation_pair,no,Same Translated/Original structural pattern; Original is Arabic.
+EN-WY-0114115,other,no,"""""""(Original)"""" text """"جای بزرگ و خوبی"""" is Persian/Farsi, not Arabic; this is a language-ID error by the heuristic."""
+EN-WY-0221008,other,no,"""""""(Original)"""" is a long Persian/Farsi paragraph (not Arabic script conventions), misflagged as Arabic-English mixing."""
+EN-WY-0229278,bilingual_translation_pair,no,Standard Translated/Original pattern; Original is Arabic.
+EN-WY-0238992,bilingual_translation_pair,no,Standard Translated/Original pattern; Original is Arabic.
+EN-WY-0274215,bilingual_translation_pair,no,"""Standard Translated/Original pattern with duplicated English text; Original is Arabic."""
+EN-WY-0285320,other,no,"""""""(Original)"""" text is Persian/Farsi, not Arabic; language-ID error."""
+EN-WY-0329185,bilingual_translation_pair,no,Standard Translated/Original pattern; Original is Arabic (machine-mistranslated but script is Arabic).
+EN-WY-0329190,bilingual_translation_pair,no,Standard Translated/Original pattern; Original is Arabic.
+EN-WY-0329191,bilingual_translation_pair,no,Standard Translated/Original pattern; Original is Arabic.
+EN-WY-0364211,bilingual_translation_pair,no,Standard Translated/Original pattern; Original is Arabic.
+EN-WY-0368831,bilingual_translation_pair,no,Standard Translated/Original pattern; Original is Arabic.
+EN-WY-0384218,bilingual_translation_pair,no,Standard Translated/Original pattern; Original is Arabic.
+EN-WY-0415483,bilingual_translation_pair,no,Standard Translated/Original pattern; Original is Arabic.
+EN-WY-0415604,bilingual_translation_pair,no,Standard Translated/Original pattern; Original is Arabic.
+EN-WY-0441444,bilingual_translation_pair,no,Standard Translated/Original pattern; Original is Arabic.
+EN-WY-0497135,bilingual_translation_pair,no,Standard Translated/Original pattern; Original is Arabic.
+EN-WY-0498427,bilingual_translation_pair,no,Standard Translated/Original pattern; Original is Arabic.
+EN-WY-0506176,other,no,"""""""(Original)"""" is a Persian/Farsi paragraph about Grand Teton (uses letters/grammar not found in Arabic), not Arabic; language-ID error."""
+EN-WY-0506263,bilingual_translation_pair,no,Standard Translated/Original pattern; Original is Arabic.
+EN-WY-0506286,bilingual_translation_pair,no,"""Standard Translated/Original pattern; Original is Arabic with a duplicated English line appended as an apparent scraping artifact, not reviewer code-switching."""
+EN-WY-0506311,bilingual_translation_pair,no,Standard Translated/Original pattern; Original is Arabic (a religious prayer/dua).
+EN-WY-0506338,bilingual_translation_pair,no,Standard Translated/Original pattern; Original is Arabic.
+EN-WY-0506360,other,no,"""""""(Original)"""" text """"مکان تفریحی عالی. با امکانات عالی"""" is Persian/Farsi, not Arabic; language-ID error."""
+EN-WY-0506388,bilingual_translation_pair,no,Standard Translated/Original pattern; Original is Arabic.
+EN-WY-0506460,bilingual_translation_pair,no,Standard Translated/Original pattern; Original is Arabic.
+EN-WY-0506526,bilingual_translation_pair,no,Standard Translated/Original pattern; Original is Arabic.
+EN-WY-0506610,bilingual_translation_pair,no,Standard Translated/Original pattern; Original is Arabic.
+EN-WY-0506625,bilingual_translation_pair,no,Standard Translated/Original pattern; Original is Arabic.
+EN-WY-0506644,bilingual_translation_pair,no,Standard Translated/Original pattern; Original is Arabic.
+EN-WY-0506647,bilingual_translation_pair,no,Standard Translated/Original pattern; Original is Arabic.
+EN-WY-0506648,bilingual_translation_pair,no,Standard Translated/Original pattern; Original is Arabic.
+EN-WY-0506654,other,no,"""""""(Original)"""" text """"بسیار عالیست"""" is Persian/Farsi, not Arabic; language-ID error."""
+EN-WY-0506656,other,no,"""Translated and Original fields contain the identical Arabic text (""""روووووووعه جميل جدا""""); Google did not actually translate it, so no English is present at all despite the flag."""
+EN-WY-0506661,bilingual_translation_pair,no,Standard Translated/Original pattern; Original is Arabic.
+EN-WY-0506667,bilingual_translation_pair,no,Standard Translated/Original pattern; Original is Arabic.
+EN-WY-0506683,bilingual_translation_pair,no,Standard Translated/Original pattern; Original is Arabic.
+EN-WY-0506684,bilingual_translation_pair,no,Standard Translated/Original pattern; Original is Arabic.
+EN-WY-0506685,bilingual_translation_pair,no,Standard Translated/Original pattern; Original is Arabic.
+EN-WY-0506701,bilingual_translation_pair,no,Standard Translated/Original pattern; Original is Arabic.
+EN-WY-0506727,bilingual_translation_pair,no,Standard Translated/Original pattern; Original is Arabic.
+EN-WY-0506729,other,no,"""""""(Original)"""" text """"پارکی زیبا"""" is Persian/Farsi, not Arabic; language-ID error."""
+EN-WY-0506734,bilingual_translation_pair,no,Standard Translated/Original pattern; Original is Arabic.
+EN-WY-0506745,bilingual_translation_pair,no,Standard Translated/Original pattern; Original is Arabic.
+EN-WY-0506747,bilingual_translation_pair,no,Standard Translated/Original pattern; Original is Arabic.
+EN-WY-0506751,bilingual_translation_pair,no,Standard Translated/Original pattern; Original is Arabic.
+EN-WY-0506769,bilingual_translation_pair,no,Standard Translated/Original pattern; Original is Arabic.
+EN-WY-0506770,bilingual_translation_pair,no,Standard Translated/Original pattern; Original is Arabic.
+EN-WY-0506773,bilingual_translation_pair,no,Standard Translated/Original pattern; Original is Arabic.
+EN-WY-0516292,bilingual_translation_pair,no,Standard Translated/Original pattern; Original is Arabic.
+EN-WY-0594521,bilingual_translation_pair,no,Standard Translated/Original pattern; Original is Arabic.
+EN-WY-0765559,bilingual_translation_pair,no,Standard Translated/Original pattern; Original is Arabic.
+EN-WY-0819321,genuine_code_switch,yes,"""The """"(Original)"""" field itself mixes English sentences directly with Arabic text in the same block (""""...hot. نمس في البيت..."""") -- the underlying text, not the Google translation apparatus, interleaves the two languages, even though the content is spam/gibberish."""
+EN-WY-0819349,bilingual_translation_pair,no,Standard Translated/Original pattern; Original is Arabic.
+EN-WY-0819366,bilingual_translation_pair,no,Standard Translated/Original pattern; Original is Arabic.
+EN-WY-0819431,bilingual_translation_pair,no,Standard Translated/Original pattern; Original is Arabic.
+EN-WY-0828669,bilingual_translation_pair,no,"""Standard Translated/Original pattern; Original is Arabic with a duplicated English photo-credit paragraph pasted in as a scraping artifact, not reviewer code-switching."""
+EN-WY-0836330,bilingual_translation_pair,no,Standard Translated/Original pattern; Original is Arabic.
+EN-WY-0898137,bilingual_translation_pair,no,Standard Translated/Original pattern; Original is Arabic.
+EN-WY-0904375,bilingual_translation_pair,no,Standard Translated/Original pattern; Original is Arabic.
+EN-WY-1008968,bilingual_translation_pair,no,Standard Translated/Original pattern; Original is Arabic.
+EN-WY-1056541,bilingual_translation_pair,no,Standard Translated/Original pattern; Original is Arabic.
+EN-WY-1064090,bilingual_translation_pair,no,Standard Translated/Original pattern; Original is Arabic.
+EN-WY-1126501,bilingual_translation_pair,no,Standard Translated/Original pattern; Original is Arabic.
+EN-VT-0068105,bilingual_translation_pair,no,Standard Translated/Original pattern; Original is Arabic.
+EN-VT-0213840,genuine_code_switch,yes,"""The Arabic """"Original"""" sentence itself ends with the English word """"takeaway"""" embedded directly in it (""""يفضل اخذ الاكل takeaway""""), independent of the surrounding Google translation structure."""
+EN-VT-0342452,bilingual_translation_pair,no,Standard Translated/Original pattern; Original is Arabic.
+EN-VT-0506655,named_entity_or_brand,no,"""Entire review is just a single proper noun, the hotel/place name """"Fairmont"""" and its Arabic transliteration """"فيرمونت""""; no other content."""
+EN-VT-0537106,bilingual_translation_pair,no,Standard Translated/Original pattern; Original is Arabic.
+EN-VT-0570289,other,no,"""""""(Original)"""" text (""""مدیریت عالی ... قیمتهای مناسب میباشد"""") is Persian/Farsi, not Arabic; language-ID error."""
+EN-VT-0613379,genuine_code_switch,yes,"""The reviewer's own text (identical in both Translated and Original fields) begins in English and then continues with new, non-translated Arabic content about the same visit (burger, staff) -- a mid-review language switch continuing the same thought, not a translation of the English part."""
+EN-VT-0689632,bilingual_translation_pair,no,Standard Translated/Original pattern; Original is Arabic.
+EN-VT-0721494,bilingual_translation_pair,no,Standard Translated/Original pattern; Original is Arabic.
+EN-VT-0774962,bilingual_translation_pair,no,Standard Translated/Original pattern; Original is Arabic.
+EN-VT-0781579,other,no,"""""""(Original)"""" single word """"عالی"""" uses Persian orthography (undotted yeh); ambiguous but more likely Farsi than Arabic."""
+EN-VT-0815057,bilingual_translation_pair,no,Standard Translated/Original pattern; Original is Arabic.
+EN-VT-0815072,bilingual_translation_pair,no,"""Standard Translated/Original pattern; Original is Arabic, with """"ice cream"""" transliterated into Arabic script (ايس كريم) rather than actual Latin-script English."""
+EN-VT-0828698,bilingual_translation_pair,no,Standard Translated/Original pattern; Original is Arabic.

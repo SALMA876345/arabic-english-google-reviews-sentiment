@@ -1,0 +1,7 @@
+Rows = true label, Columns = predicted label
+Label order: Negative, Neutral, Positive
+
+            Negative    Neutral     Positive    
+Negative    72          14          20          
+Neutral     12          22          27          
+Positive    9           17          195         

@@ -1,0 +1,6 @@
+{
+  "rule": "E8 (full-English scale experiment) MUST exclude these review_ids from training/eval, because they are already committed to the frozen matched-comparison train/val/test (english_matched_frozen.csv) -- training on them in E8 would leak the matched comparison's test set into a different experiment's training data.",
+  "excluded_review_id_count": 3525,
+  "source_of_exclusion_list": "data/processed/frozen_v1/english_matched_frozen.csv (all rows, all splits)",
+  "e8_scale_pool_definition": "data/processed/english_ucsd_v2.csv MINUS the review_ids in english_matched_frozen.csv"
+}

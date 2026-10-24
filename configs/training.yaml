@@ -1,0 +1,58 @@
+# Phase 3 training configuration. All hyperparameter selection uses
+# TRAIN/VALIDATION only -- the test set is touched exactly once, after
+# selection, per experiment. seed=42 throughout (project-wide convention).
+
+seed: 42
+
+classical:
+  tfidf:
+    max_features: 20000
+    min_df: 2
+    sublinear_tf: true
+    ngram_search_space: [[1,1], [1,2]]   # word n-grams; selected on validation macro-F1
+  logreg:
+    C_search_space: [0.1, 1.0, 10.0]
+    max_iter: 2000
+    class_weight_search_space: [null, "balanced"]   # compared on validation only, per class-imbalance policy
+  svm:
+    C_search_space: [0.1, 1.0, 10.0]
+    class_weight_search_space: [null, "balanced"]
+  selection_rule: "highest validation macro-F1; ties broken by simpler hyperparameters (lower C, no class_weight)"
+
+transformer_common:
+  max_seq_length: 64          # revised down from the original 128 (see note) -- covers the ~90th percentile of word counts for both languages
+  batch_size: 8                # revised down from 16 after the OOM finding (decisions.md D14)
+  epochs: 3                    # revised down from 4 under the confirmed compute constraint
+  optimizer: AdamW
+  learning_rate: 2e-5
+  weight_decay: 0.01
+  warmup_ratio: 0.1
+  scheduler: linear
+  fine_tuning_method: LoRA (see models.yaml fine_tuning_method) -- NOT full fine-tuning
+  early_stopping:
+    monitor: validation_macro_f1
+    patience: 1
+  rationale: >
+    Original defaults (max_seq_length=128, batch_size=16, epochs=4, full
+    fine-tuning) were literature-informed but assumed a full-fine-tuning-
+    capable environment. Phase 3 execution confirmed this machine has only
+    ~1.3GB free RAM and OOMs on full fine-tuning's optimizer state
+    (decisions.md D14). The revised values here are what was ACTUALLY run,
+    not the original plan -- both are recorded for an honest paper-trail.
+
+class_imbalance_policy:
+  validation_test: "natural distribution, never rebalanced"
+  training_options_compared: ["natural (no reweighting)", "class_weight=balanced"]
+  oversampling_undersampling: "not used in Phase 3 -- natural vs class-weighting comparison only, per frozen policy"
+  smote_on_embeddings: "explicitly not used"
+  synthetic_neutral_generation: "explicitly not used"
+
+bootstrap:
+  n_iterations: 2000
+  seed: 42
+  method: "resample test-set rows with replacement, recompute macro-F1 each iteration, report 2.5/97.5 percentiles"
+  exclusions: "not computed for the 9-example code-switch diagnostic set (sample too small for a meaningful interval)"
+
+significance_testing:
+  method: "paired bootstrap on macro-F1 difference between two models' predictions on the identical frozen test rows"
+  multiple_comparison_correction: "Holm-Bonferroni across all pairwise model comparisons reported in a single experiment"

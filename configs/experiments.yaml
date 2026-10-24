@@ -1,0 +1,101 @@
+# Phase 3 experiment matrix -- PREPARED, NOT RUN.
+# No model listed here has been trained or evaluated. This file defines what
+# Phase 3 will run once approved; it is a plan artifact, not a results artifact.
+# See docs/experimental_dataset_protocol.md for dataset/split definitions
+# and docs/methodology_plan.md for model/metric rationale.
+
+seed: 42
+
+primary_experiments:
+  E1:
+    name: Arabic-only sentiment classification
+    data: arabic_tourism_primary
+    splits: {train: arabic_tourism_train_ids, val: arabic_tourism_val_ids, test: arabic_tourism_test_ids}
+    models: [tfidf_logreg, tfidf_svm, marbert, arabert]
+    status: PREPARED_NOT_RUN
+
+  E2:
+    name: English-only sentiment classification
+    data: english_matched_primary
+    splits: {train: english_matched_train_ids, val: english_matched_val_ids, test: english_matched_test_ids}
+    models: [tfidf_logreg, tfidf_svm, xlm_r]
+    status: PREPARED_NOT_RUN
+
+  E3:
+    name: Matched Arabic-vs-English comparison
+    data: [arabic_tourism_primary, english_matched_primary]
+    note: >
+      The primary cross-language comparison. Report stratified by dataset
+      origin per dataset_audit.md S7; treat as exploratory/confounded until
+      the matched-protocol validation slice (annotation_guidelines.md) is
+      annotated, per label_provenance_policy.md.
+    models: [tfidf_logreg, tfidf_svm, marbert, xlm_r]
+    status: PREPARED_NOT_RUN
+
+  E4:
+    name: Combined multilingual training
+    data: [arabic_tourism_primary, english_matched_primary, jordan_auxiliary_weak_train]
+    note: >
+      Jordan contributes training rows only (llm_weak_label, binary) --
+      never evaluation. Evaluate on arabic_tourism_test + english_matched_test only.
+    models: [xlm_r, marbert]
+    status: PREPARED_NOT_RUN
+
+  E5:
+    name: Cross-lingual / multilingual robustness
+    data: [arabic_tourism_primary, english_matched_primary]
+    note: Train on one language, zero-shot evaluate on the other; and vice versa.
+    models: [xlm_r]
+    status: PREPARED_NOT_RUN
+
+supplementary_experiments:
+  E6:
+    name: Real-world code-switch evaluation
+    data: codeswitch_diagnostic_verified
+    status: NOT_FEASIBLE_QUANTITATIVELY
+    note: >
+      Only 9 verified genuine code-switched reviews exist (codeswitch_audit.md).
+      Too few for a train/test split or any statistical comparison. Retained
+      only as a qualitative illustration set for RQ4 error analysis, not as
+      a runnable experiment. Re-evaluate if dedicated new data collection
+      (outside this sprint's scope) is undertaken later.
+
+  E7:
+    name: External SESA-CSD evaluation
+    data: SESA-CSD (Alghamdi et al. 2026, AbjadNLP)
+    status: BLOCKED_NO_CONFIRMED_ACCESS
+    note: >
+      No confirmed public download path found during Phase 1/2 audits
+      (research_raw/codeswitch_datasets_raw.md). Revisit only if the authors
+      can be contacted and grant access within remaining project time.
+
+  E8:
+    name: Full-English scale experiment
+    data: english_full_scale_pool_E8
+    n: 1035118
+    note: >
+      MUST exclude the 3,525 review_ids already committed to english_matched_primary
+      (data/splits/frozen_v1/english_e8_scale_pool_exclusion_rule.json) to avoid
+      leaking the matched comparison's test set into this experiment's training data.
+      Labels are rating_derived only -- report with the same caveat as E2/E3.
+    models: [tfidf_logreg, xlm_r]
+    status: PREPARED_NOT_RUN
+
+  E_jordan_binary_aux:
+    name: Jordan binary auxiliary experiment
+    data: jordan_auxiliary
+    train: jordan_auxiliary_weak_train (llm_weak_label, 8364 rows)
+    eval: jordan_auxiliary_eval_gold (human_annotated, 300 rows, binary Positive/Negative only)
+    note: Report separately from all 3-class results -- different task (binary, no Neutral).
+    models: [tfidf_logreg, marbert]
+    status: PREPARED_NOT_RUN
+
+metrics:
+  primary: macro_f1
+  also_report: [weighted_f1, per_class_f1, per_language_f1, precision, recall, accuracy, confusion_matrix]
+  statistical: [bootstrap_confidence_intervals, paired_bootstrap_or_mcnemar_for_model_comparisons]
+  rules:
+    - no_hyperparameter_tuning_on_test_set
+    - no_test_set_inspection_before_split_freeze_is_final
+    - never_rebalance_validation_or_test_data
+    - class_weighting_and_oversampling_if_used_must_be_train_only_and_documented_as_separate_experimental_choice

@@ -1,0 +1,9 @@
+# Phase 3: pinned to the versions actually used for the reported results.
+pandas==2.2.3
+numpy==2.4.4
+scikit-learn==1.7.2
+scipy==1.17.1
+torch==2.12.0  # CPU build used; no CUDA available in the Phase 3 environment
+transformers==4.57.6
+accelerate==1.15.0
+peft==0.21.2   # LoRA fine-tuning -- see configs/models.yaml for why this is used instead of full fine-tuning

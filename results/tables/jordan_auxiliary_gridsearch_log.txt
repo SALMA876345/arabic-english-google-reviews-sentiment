@@ -1,0 +1,13 @@
+ngram=(1, 1) C=0.1 class_weight=None -> val_binary_macro_f1=0.904976
+ngram=(1, 1) C=0.1 class_weight=balanced -> val_binary_macro_f1=0.901019
+ngram=(1, 1) C=1.0 class_weight=None -> val_binary_macro_f1=0.913076
+ngram=(1, 1) C=1.0 class_weight=balanced -> val_binary_macro_f1=0.912282
+ngram=(1, 1) C=10.0 class_weight=None -> val_binary_macro_f1=0.904338
+ngram=(1, 1) C=10.0 class_weight=balanced -> val_binary_macro_f1=0.905939
+ngram=(1, 2) C=0.1 class_weight=None -> val_binary_macro_f1=0.900961
+ngram=(1, 2) C=0.1 class_weight=balanced -> val_binary_macro_f1=0.904290
+ngram=(1, 2) C=1.0 class_weight=None -> val_binary_macro_f1=0.917059
+ngram=(1, 2) C=1.0 class_weight=balanced -> val_binary_macro_f1=0.916280
+ngram=(1, 2) C=10.0 class_weight=None -> val_binary_macro_f1=0.909127
+ngram=(1, 2) C=10.0 class_weight=balanced -> val_binary_macro_f1=0.909937
+SELECTED: {'ngram': (1, 2), 'C': 1.0, 'class_weight': None, 'val_binary_macro_f1': 0.9170593827367608}

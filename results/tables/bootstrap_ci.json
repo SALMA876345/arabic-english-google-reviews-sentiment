@@ -1,0 +1,34 @@
+{
+  "run_E1_tfidf_logreg_001": {
+    "point_estimate": 0.7039143656325653,
+    "ci_lower_2.5": 0.6477138819782838,
+    "ci_upper_97.5": 0.7596013175033708,
+    "n_iterations": 2000,
+    "seed": 42,
+    "n": 369
+  },
+  "run_E1_tfidf_svm_001": {
+    "point_estimate": 0.703760229590073,
+    "ci_lower_2.5": 0.646762593398569,
+    "ci_upper_97.5": 0.7621320778451093,
+    "n_iterations": 2000,
+    "seed": 42,
+    "n": 369
+  },
+  "run_E2_tfidf_logreg_001": {
+    "point_estimate": 0.6857374574404314,
+    "ci_lower_2.5": 0.6341109190485882,
+    "ci_upper_97.5": 0.7393392262319238,
+    "n_iterations": 2000,
+    "seed": 42,
+    "n": 388
+  },
+  "run_E2_tfidf_svm_001": {
+    "point_estimate": 0.6494074852446431,
+    "ci_lower_2.5": 0.5984391343988535,
+    "ci_upper_97.5": 0.7003510934739761,
+    "n_iterations": 2000,
+    "seed": 42,
+    "n": 388
+  }
+}

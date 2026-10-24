@@ -1,0 +1,40 @@
+[
+  {
+    "experiment_id": "E1",
+    "language": "arabic",
+    "run_a": "run_E1_tfidf_logreg_001",
+    "run_b": "run_E1_tfidf_svm_001",
+    "test_result": {
+      "observed_diff_macro_f1": -6.324493445808432e-05,
+      "ci_lower_2.5": -0.02361982087714722,
+      "ci_upper_97.5": 0.027318454652580364,
+      "p_value_two_sided": 0.988,
+      "n_iterations": 2000,
+      "seed": 42,
+      "n": 369
+    },
+    "multiple_comparison_correction": {
+      "raw_p": 0.988,
+      "holm_bonferroni_adjusted_p": 0.988
+    }
+  },
+  {
+    "experiment_id": "E2",
+    "language": "english",
+    "run_a": "run_E2_tfidf_logreg_001",
+    "run_b": "run_E2_tfidf_svm_001",
+    "test_result": {
+      "observed_diff_macro_f1": 0.03642370304295006,
+      "ci_lower_2.5": -0.0001768256721125821,
+      "ci_upper_97.5": 0.0743763143975718,
+      "p_value_two_sided": 0.053,
+      "n_iterations": 2000,
+      "seed": 42,
+      "n": 388
+    },
+    "multiple_comparison_correction": {
+      "raw_p": 0.053,
+      "holm_bonferroni_adjusted_p": 0.053
+    }
+  }
+]
