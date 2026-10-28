@@ -71,7 +71,9 @@ python results/human_gold_evaluation/01_build_comparison_dataset.py  # ... throu
 
 ## Paper
 
-Working manuscript (Abstract through Conclusion, drafted and internally audited): [`paper/MANUSCRIPT_DRAFT.md`](paper/MANUSCRIPT_DRAFT.md). A camera-ready PDF/DOCX has not yet been produced — see the project's final status report for what remains before a submission-ready document exists. Supporting audit trail: `paper/notes/` (scientific framing, dataset provenance, literature verification, consistency audit, reproducibility manifest).
+**Official university-submission manuscript:** [`paper/final/Evaluation_Label_Reliability_Arabic_English_Sentiment_University_Final.docx`](paper/final/Evaluation_Label_Reliability_Arabic_English_Sentiment_University_Final.docx) — *"When Evaluation Labels Change the Conclusion: Human-Adjudicated Re-evaluation of Arabic-English Sentiment Classifiers."* 11 pages, two-column, 31 references. (DOCX only; no PDF export has been produced yet.)
+
+The full-length working draft and complete audit trail remain available for provenance: [`paper/MANUSCRIPT_DRAFT.md`](paper/MANUSCRIPT_DRAFT.md) (Abstract through Conclusion, internally audited, 15 references) and `paper/notes/` (scientific framing, dataset provenance, literature verification, consistency audit, reproducibility manifest).
 
 ## Data availability
 

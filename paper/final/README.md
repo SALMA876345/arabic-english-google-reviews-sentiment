@@ -1,13 +1,15 @@
-# Final Manuscript — Status
+# Final Manuscript
 
-**No PDF or DOCX manuscript exists in this repository as of this cleanup pass.** A repository-wide search found zero `.pdf` or `.docx` files anywhere in the project. This directory is created as the intended publication location per the project's release plan, but is currently empty of a final document.
+**Official university-submission manuscript:** [`Evaluation_Label_Reliability_Arabic_English_Sentiment_University_Final.docx`](Evaluation_Label_Reliability_Arabic_English_Sentiment_University_Final.docx)
 
-What exists instead is the complete, internally audited **Markdown draft**: [`../MANUSCRIPT_DRAFT.md`](../MANUSCRIPT_DRAFT.md) — Abstract through Conclusion (12 sections), drafted across six staged passes and verified in a full manuscript-wide consistency audit (`../notes/FINAL_MANUSCRIPT_CONSISTENCY_AUDIT.md`, Grade A, zero numerical/statistical/citation discrepancies found). This draft:
+*"When Evaluation Labels Change the Conclusion: Human-Adjudicated Re-evaluation of Arabic-English Sentiment Classifiers"* — University Submission Version.
 
-- Has **15 verified references** (`../notes/LITERATURE_VERIFICATION.md`), not the ~31 referenced in some external description of this project's intended final form.
-- Is **not yet formatted** as an 11-page, two-column document — it is single-column Markdown prose with inline table/figure placeholders, at approximately 16,700 words (the consistency audit recommends trimming to 8,000-9,500 words for journal submission, Section 12 of that audit).
-- Has not been converted to PDF or DOCX, and no LaTeX/Word source file for such a conversion exists in this repository.
+- 11 pages, two-column academic layout
+- 31 references (verified by direct extraction from the file, not assumed)
+- Sections 1–12: Abstract, Introduction, Related Work, Data and Dataset Audit, Human Annotation and Adjudication, Experimental Methodology, Evaluation Protocol and Statistical Analysis, Results, Discussion, Limitations, Reproducibility and Data Availability, Conclusion, References
+- Verified clean of drafting artifacts: no `[FIGURE N placeholder]` text, no stray Markdown `**` syntax, no dangling cross-references (the earlier `Section 9.4` reference was corrected to point only at sections that exist in this shortened version)
+- All frozen scientific results (757/369/388 reviews, 2,271 annotations, 179 adjudicated cases, 82.6% original/reference agreement, κ=0.662, 82.9% Neutral revision rate, 13/16 Macro-F1 decreases, the 3-lost/1-survived/1-new significance result) verified present and unchanged from the audited `paper/MANUSCRIPT_DRAFT.md` / `paper/notes/FINAL_MANUSCRIPT_CONSISTENCY_AUDIT.md` record.
 
-**Action needed before this directory can hold a real final manuscript:** either (a) format `MANUSCRIPT_DRAFT.md` into a two-column PDF/DOCX (via LaTeX, Word, or a Markdown-to-PDF pipeline) and expand its reference list to the intended ~31 if additional literature review is required, or (b) confirm that the 15-reference Markdown draft at its current length is in fact the intended final version, in which case this directory should hold a rendered PDF/DOCX of that draft as-is.
+**Format note:** only the DOCX is currently available; **no PDF exists in this repository**. If a PDF is required for submission, export one from this DOCX (e.g. Word's "Save as PDF") — that export has not been performed or verified as part of this release.
 
-This gap is reported explicitly rather than filled with a fabricated or auto-generated substitute, consistent with this project's standing no-fabrication rule.
+**Supersedes:** the in-repository Markdown working draft, `paper/MANUSCRIPT_DRAFT.md` (16,700 words, 15 references) — that file remains in place as the full-length working version and audit trail, but this DOCX is the authoritative, submission-ready document.
