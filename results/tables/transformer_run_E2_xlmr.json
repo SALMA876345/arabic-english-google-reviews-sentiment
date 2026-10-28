@@ -1,0 +1,91 @@
+{
+  "E2_xlmr": {
+    "out_name": "E2_xlmr",
+    "model_id": "FacebookAI/xlm-roberta-base",
+    "fine_tuning_method": "LoRA",
+    "lora_config": {
+      "r": 8,
+      "lora_alpha": 16,
+      "lora_dropout": 0.1,
+      "target_modules": [
+        "query",
+        "value"
+      ]
+    },
+    "epochs_requested": 3,
+    "epochs_actually_run": 3,
+    "best_val_macro_f1": 0.6394409454861282,
+    "train_n": 2785,
+    "val_n": 352,
+    "test_n": 388,
+    "elapsed_sec": 3145.7203402519226,
+    "history": [
+      {
+        "epoch": 1,
+        "train_loss": 0.9190998936828274,
+        "val_macro_f1": 0.2446043165467626
+      },
+      {
+        "epoch": 2,
+        "train_loss": 0.7198244030166476,
+        "val_macro_f1": 0.6394409454861282
+      },
+      {
+        "epoch": 3,
+        "train_loss": 0.5925890779980543,
+        "val_macro_f1": 0.6038049451133706
+      }
+    ],
+    "test_metrics": {
+      "n": 388,
+      "accuracy": 0.7809278350515464,
+      "precision_macro": 0.7204256740634692,
+      "recall_macro": 0.6287064160647247,
+      "macro_f1": 0.6110121425107348,
+      "weighted_f1": 0.7400076973809444,
+      "per_class": {
+        "Negative": {
+          "precision": 0.6929133858267716,
+          "recall": 0.8301886792452831,
+          "f1": 0.7553648068669528,
+          "support": 106
+        },
+        "Neutral": {
+          "precision": 0.6363636363636364,
+          "recall": 0.11475409836065574,
+          "f1": 0.19444444444444445,
+          "support": 61
+        },
+        "Positive": {
+          "precision": 0.832,
+          "recall": 0.9411764705882353,
+          "f1": 0.8832271762208068,
+          "support": 221
+        }
+      },
+      "confusion_matrix": [
+        [
+          88,
+          2,
+          16
+        ],
+        [
+          28,
+          7,
+          26
+        ],
+        [
+          11,
+          2,
+          208
+        ]
+      ],
+      "label_order": [
+        "Negative",
+        "Neutral",
+        "Positive"
+      ]
+    },
+    "prediction_file": "C:\\Users\\Acer\\Downloads\\arabic-english-google-reviews-sentiment\\results\\predictions\\E2_xlmr_test.csv"
+  }
+}

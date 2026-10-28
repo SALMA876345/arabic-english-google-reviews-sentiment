@@ -1,0 +1,65 @@
+{
+  "software_versions": {
+    "python": "NOT RECOVERABLE FROM PRESERVED ARTIFACTS",
+    "pytorch_phase3a_local": "2.12.0",
+    "pytorch_phase3b_kaggle": "NOT RECOVERABLE FROM PRESERVED ARTIFACTS",
+    "pytorch_backend_serving": "2.12.0",
+    "transformers_phase3a_local": "4.57.6",
+    "transformers_backend_serving": "4.57.6",
+    "transformers_phase3b_kaggle_deployment_checkpoint_recovered": {
+      "value": "5.16.1",
+      "source": "backend/model/config.json, key transformers_version, saved at deployment-checkpoint training time",
+      "caveat": "Deployment checkpoint is a separate GPU training pass from the E1/E2/E4/E5 Phase 3B research runs (docs/decisions.md D17); same Kaggle platform family, not confirmed to be the identical notebook session as the research runs."
+    },
+    "accelerate": "1.15.0",
+    "peft": "0.21.2",
+    "scikit_learn": "1.7.2",
+    "numpy": "2.4.4",
+    "pandas": "2.2.3",
+    "scipy": "1.17.1",
+    "krippendorff": "0.9.0",
+    "statsmodels": "0.15.0",
+    "cuda_version": "NOT RECOVERABLE FROM PRESERVED ARTIFACTS",
+    "cuda_driver_version": "NOT RECOVERABLE FROM PRESERVED ARTIFACTS"
+  },
+  "hardware": {
+    "phase3a": {"description": "8.3GB RAM, CPU-only laptop", "cpu_model": "NOT RECOVERABLE FROM PRESERVED ARTIFACTS"},
+    "phase3b": {"description": "2x Tesla T4 GPUs (Kaggle)", "source": "configs/training.yaml phase3b_gpu.hardware"}
+  },
+  "seeds": {
+    "training_seed_all_phases": 42,
+    "data_seed_phase3b": 42,
+    "phase3a_bootstrap_significance": {"seed": 42, "n_iterations": 2000, "source": "scripts/evaluate.py, src/evaluation/metrics.py"},
+    "phase3b_original_bootstrap_significance": {"seed": 42, "n_iterations": 10000, "source": "results/phase3b_kaggle_gpu/README_PHASE3B.txt", "implementation_script_present_in_repo": false},
+    "annotator_presentation_order": {"annotator_1": 1001, "annotator_2": 2002, "annotator_3": 3003},
+    "adjudication_presentation_order": 9009,
+    "human_gold_bootstrap_ci": {"seed": 42, "n_iterations": 10000},
+    "human_gold_permutation_test": {"seed": 42, "n_iterations": 10000}
+  },
+  "model_identifiers": {
+    "marbert": "UBC-NLP/MARBERT",
+    "xlm_roberta": "FacebookAI/xlm-roberta-base",
+    "deployment_checkpoint_base": "FacebookAI/xlm-roberta-base"
+  },
+  "dataset_identifiers": {
+    "arabic_tourism_primary": {"source": "Zenodo", "id": "17011574", "license": "CC-BY-4.0"},
+    "jordan_auxiliary": {"source": "Zenodo", "id": "22061934", "license": "CC-BY-4.0 (corrected 2026: live Zenodo record inspection confirmed this explicitly, superseding the prior 'not independently reconfirmed' status; see paper/notes/LITERATURE_VERIFICATION.md)"},
+    "english_google_local": {"source": "UCSD/McAuley Google Local Review Dataset", "url": "https://mcauleylab.ucsd.edu/public_datasets/gdrive/googlelocal/", "doi": "none found on official page (verified live 2026-10-27)", "license": "no explicit license found (verified live 2026-10-27)"}
+  },
+  "split_identifiers": {
+    "manifest": "data/splits/frozen_v1/manifest.json",
+    "integrity_check": "MD5 byte-for-byte match between results/phase3b_kaggle_gpu/input_data_bundle_sent_to_kaggle/ and data/processed/frozen_v1/ + data/splits/frozen_v1/ (docs/decisions.md D17); logged at integration time, not re-run in this audit"
+  },
+  "human_gold_hash": {
+    "file": "paper/annotation/full/human_gold_757.csv",
+    "sha256": "7b53ca621d237106413e27395010ad9ba2417d733b2bc5694d49749a03be53fd"
+  },
+  "unrecoverable_items": [
+    "Python interpreter version (Phase 3A or Phase 3B)",
+    "PyTorch version actually used on Kaggle for Phase 3B training",
+    "CUDA/driver/cuDNN version on Kaggle",
+    "Specific CPU model for the Phase 3A laptop",
+    "Phase 3B Kaggle-side significance-testing implementation script (outputs preserved, code not present in repo)",
+    "accelerate/peft/numpy/pandas/sklearn/scipy versions as used inside the Kaggle training notebook itself"
+  ]
+}

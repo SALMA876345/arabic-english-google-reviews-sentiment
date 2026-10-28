@@ -1,0 +1,10 @@
+﻿review_id,model,true_label_source_NOT_gold,label_provenance,predicted_label,confidence,matches_source_label
+AR-JOR-01270,MARBERT_E1,Negative,llm_weak_label,Positive,0.4264,False
+AR-JOR-04350,MARBERT_E1,Negative,llm_weak_label,Negative,0.6565,True
+AR-JOR-04600,MARBERT_E1,Positive,llm_weak_label,Positive,0.9089,True
+AR-JOR-06216,MARBERT_E1,Positive,llm_weak_label,Positive,0.9384,True
+AR-JOR-07320,MARBERT_E1,Positive,llm_weak_label,Positive,0.9368,True
+AR-JOR-07449,MARBERT_E1,Positive,llm_weak_label,Positive,0.934,True
+AR-JOR-07691,MARBERT_E1,Negative,llm_weak_label,Neutral,0.3781,False
+EN-VT-0213840,MARBERT_E1,Negative,rating_derived,Negative,0.5311,True
+EN-VT-0613379,MARBERT_E1,Positive,rating_derived,Positive,0.9404,True

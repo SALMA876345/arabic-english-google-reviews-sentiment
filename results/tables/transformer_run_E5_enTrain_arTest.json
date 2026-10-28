@@ -1,0 +1,59 @@
+{
+  "E5_enTrain_arTest": {
+    "out_name": "E5_enTrain_arTest",
+    "adapter_used": "E2_xlmr",
+    "test_metrics": {
+      "n": 369,
+      "accuracy": 0.7588075880758808,
+      "precision_macro": 0.5876805187150015,
+      "recall_macro": 0.5671381886087768,
+      "macro_f1": 0.5411136695763789,
+      "weighted_f1": 0.7124683986175614,
+      "per_class": {
+        "Negative": {
+          "precision": 0.6091954022988506,
+          "recall": 0.7066666666666667,
+          "f1": 0.654320987654321,
+          "support": 75
+        },
+        "Neutral": {
+          "precision": 0.3333333333333333,
+          "recall": 0.05357142857142857,
+          "f1": 0.09230769230769231,
+          "support": 56
+        },
+        "Positive": {
+          "precision": 0.8205128205128205,
+          "recall": 0.9411764705882353,
+          "f1": 0.8767123287671232,
+          "support": 238
+        }
+      },
+      "confusion_matrix": [
+        [
+          53,
+          3,
+          19
+        ],
+        [
+          23,
+          3,
+          30
+        ],
+        [
+          11,
+          3,
+          224
+        ]
+      ],
+      "label_order": [
+        "Negative",
+        "Neutral",
+        "Positive"
+      ]
+    },
+    "test_n": 369,
+    "prediction_file": "C:\\Users\\Acer\\Downloads\\arabic-english-google-reviews-sentiment\\results\\predictions\\E5_enTrain_arTest_test.csv",
+    "fine_tuning_method": "LoRA (reused adapter from the source-language training run, inference only -- no new training)"
+  }
+}

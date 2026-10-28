@@ -41,7 +41,9 @@ LABEL2ID = {l: i for i, l in enumerate(LABEL_ORDER)}
 ID2LABEL = {i: l for l, i in LABEL2ID.items()}
 
 MAX_LEN = 64
-BATCH_SIZE = 8
+BATCH_SIZE = 2  # further reduced for E4 specifically after 2 OOM failures at batch=4 on the combined train set
+# shared machine fluctuates due to other processes (observed 747MB free vs ~1.3GB
+# earlier); batch=4 trades more steps for a larger per-step memory safety margin.
 EPOCHS = 3
 LR = 2e-5
 PATIENCE = 1
@@ -93,8 +95,13 @@ def evaluate(model, tokenizer, texts, labels):
     return m, y_pred, confidences
 
 
-def run_one(model_id, train_df, val_df, test_df, out_name, experiment_id, language_for_output):
+def run_one(model_id, train_df, val_df, test_df, out_name, experiment_id, language_for_output,
+            epochs_override=None, extra_test_sets=None):
+    """extra_test_sets: optional list of (test_df, out_name, experiment_id, language) tuples
+    evaluated with the SAME trained model (no retraining) -- used by E4 so the combined
+    model is trained exactly once and evaluated on both language test sets, not trained twice."""
     t0 = time.time()
+    epochs_to_run = epochs_override if epochs_override is not None else EPOCHS
     tokenizer, model = build_model(model_id)
     opt = torch.optim.AdamW([p for p in model.parameters() if p.requires_grad], lr=LR)
 
@@ -107,7 +114,7 @@ def run_one(model_id, train_df, val_df, test_df, out_name, experiment_id, langua
     epochs_without_improvement = 0
     history = []
 
-    for epoch in range(1, EPOCHS + 1):
+    for epoch in range(1, epochs_to_run + 1):
         model.train()
         epoch_loss = 0.0
         n_batches = 0
@@ -164,14 +171,32 @@ def run_one(model_id, train_df, val_df, test_df, out_name, experiment_id, langua
 
     result = {
         "out_name": out_name, "model_id": model_id, "fine_tuning_method": "LoRA",
-        "lora_config": LORA_CFG, "epochs_requested": EPOCHS, "epochs_actually_run": len(history),
+        "lora_config": LORA_CFG, "epochs_requested": epochs_to_run, "epochs_actually_run": len(history),
         "best_val_macro_f1": best_val_f1, "train_n": len(train_df), "val_n": len(val_df), "test_n": len(test_df),
         "elapsed_sec": elapsed, "history": history, "test_metrics": test_metrics,
         "prediction_file": str(pred_path),
     }
 
+    extra_results = {}
+    if extra_test_sets:
+        for extra_test_df, extra_out_name, extra_experiment_id, extra_language in extra_test_sets:
+            m2, preds2, conf2 = evaluate(model, tokenizer, extra_test_df["text"].tolist(), extra_test_df["sentiment"].tolist())
+            pred_df2 = pd.DataFrame({
+                "review_id": extra_test_df["review_id"].tolist(), "experiment_id": extra_experiment_id,
+                "run_id": extra_out_name, "language": extra_language,
+                "true_label": extra_test_df["sentiment"].tolist(), "predicted_label": preds2,
+                "confidence_or_score": conf2, "label_provenance": extra_test_df["label_source"].tolist(),
+            })
+            pred_df2["correct"] = pred_df2["true_label"] == pred_df2["predicted_label"]
+            p2 = PREDICTIONS / f"{extra_out_name}_test.csv"
+            pred_df2.to_csv(p2, index=False, encoding="utf-8-sig")
+            print(f"[{extra_out_name}] (same trained model as {out_name}) TEST macro_f1={m2['macro_f1']:.4f}")
+            extra_results[extra_out_name] = {"test_metrics": m2, "test_n": len(extra_test_df), "prediction_file": str(p2)}
+
     del model, tokenizer, opt, train_enc
     gc.collect()
+    if extra_test_sets:
+        return result, extra_results
     return result
 
 
@@ -239,10 +264,18 @@ def main():
         cols = ["text", "sentiment", "review_id", "label_source"]
         combined_train = pd.concat([ar[ar.split == "train"][cols], en[en.split == "train"][cols], weak[cols]], ignore_index=True)
         combined_val = pd.concat([ar[ar.split == "val"][cols], en[en.split == "val"][cols]], ignore_index=True)
-        results["E4_xlmr_combined_evalAR"] = run_one("FacebookAI/xlm-roberta-base", combined_train, combined_val,
-                                                      ar[ar.split == "test"], "E4_xlmr_combined_evalAR", "E4", "arabic")
-        results["E4_xlmr_combined_evalEN"] = run_one("FacebookAI/xlm-roberta-base", combined_train, combined_val,
-                                                      en[en.split == "test"], "E4_xlmr_combined_evalEN", "E4", "english")
+        # EPOCHS REDUCED TO 1 for E4 ONLY: combined train set (~13,935 rows) is ~5x a
+        # single-language run; at the standard 3-epoch schedule this was projected to
+        # take 3-4+ hours. Documented compute-driven reduction, see decisions.md D15.
+        # Trained ONCE, evaluated on both language test sets (not retrained per language).
+        print("NOTE: E4 uses epochs_override=1 (not the standard 3) due to the combined "
+              "train set's size -- see docs/decisions.md D15. Trained once, evaluated twice.")
+        main_res, extra_res = run_one(
+            "FacebookAI/xlm-roberta-base", combined_train, combined_val, ar[ar.split == "test"],
+            "E4_xlmr_combined_evalAR", "E4", "arabic", epochs_override=1,
+            extra_test_sets=[(en[en.split == "test"], "E4_xlmr_combined_evalEN", "E4", "english")])
+        results["E4_xlmr_combined_evalAR"] = main_res
+        results["E4_xlmr_combined_evalEN"] = extra_res["E4_xlmr_combined_evalEN"]
     elif args.run == "E5_arTrain_enTest":
         en = load_english_matched()
         results["E5_arTrain_enTest"] = run_cross_lingual_eval(

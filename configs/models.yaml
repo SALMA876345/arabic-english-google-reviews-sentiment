@@ -69,3 +69,47 @@ fine_tuning_method:
     model and may underperform one on this small a dataset -- this must be
     stated wherever transformer results are reported in Phase 3, not
     presented as if it were standard full fine-tuning.
+
+# =============================================================================
+# PHASE 3B -- Kaggle GPU full fine-tuning models (separate track from the
+# LoRA models above). See training.yaml's phase3b_gpu section for the
+# exact protocol and paper/notes/phase3b_report.md for results.
+# =============================================================================
+phase3b_transformers:
+  marbert_fullft:
+    hf_model_id: UBC-NLP/MARBERT
+    fine_tuning_method: Full fine-tuning (100% trainable), weighted CrossEntropyLoss
+    arabic_test_macro_f1_primary: 0.785025
+    arabic_test_macro_f1_reproducibility_rerun: 0.765263
+    note: >
+      Original primary run's row-level predictions were lost; paired
+      statistical testing involving standalone MARBERT uses the
+      reproducibility rerun's predictions instead (see decisions.md D17).
+      The primary 0.785025 figure is preserved as the headline result and
+      must not be silently replaced by the rerun figure in any table.
+  xlmr_fullft:
+    hf_model_id: FacebookAI/xlm-roberta-base
+    fine_tuning_method: Full fine-tuning (100% trainable), weighted CrossEntropyLoss
+    arabic_test_macro_f1_primary: 0.740295
+    arabic_test_macro_f1_reproducibility_rerun: 0.740126
+    english_test_macro_f1_primary: 0.727644
+    note: "English run has no reproducibility-rerun entry; row-level predictions available for both primary runs."
+  xlmr_multilingual:
+    hf_model_id: FacebookAI/xlm-roberta-base
+    fine_tuning_method: Full fine-tuning on combined Arabic+English(+Jordan weak) train, weighted CrossEntropyLoss
+    arabic_test_macro_f1: 0.767865
+    english_test_macro_f1: 0.739722
+    note: >
+      This is the PRIMARY RESEARCH E4 result (the laptop LoRA attempt at
+      this experiment failed 3x with OOM, see decisions.md D15) -- distinct
+      from the deployment_model below, which is a separate training pass
+      optimized for serving, not interchangeable with this research figure.
+
+deployment_model:
+  location: backend/model/ (moved from the Kaggle export "final_multilingual_sentiment_model")
+  hf_base: FacebookAI/xlm-roberta-base
+  fine_tuning_method: Full fine-tuning
+  purpose: "Deployment artifact for the FastAPI backend -- NOT a substitute for the phase3b_transformers.xlmr_multilingual research figures above"
+  best_validation_macro_f1: 0.7999539459285145
+  max_length: 128
+  labels: {0: Negative, 1: Neutral, 2: Positive}

@@ -1,0 +1,19 @@
+model_key,phase,language,realization,file_path,status,n_rows,n_unique_ids,ids_match_frozen_test,n_duplicate_ids,n_missing_ids,n_unexpected_ids,label_values_valid,label_mapping_sanity
+E1_xlmr_lora,3A_laptop_LoRA,arabic,lora_primary,results\predictions\E1_xlmr_test.csv,VALID,369.0,369.0,True,0.0,0.0,0.0,True,n/a (no id column)
+E1_marbert_lora,3A_laptop_LoRA,arabic,lora_primary,results\predictions\E1_marbert_test.csv,VALID,369.0,369.0,True,0.0,0.0,0.0,True,n/a (no id column)
+E1_tfidf_logreg,3A_laptop_LoRA,arabic,baseline_primary,results\predictions\E1_tfidf_logreg_test.csv,VALID,369.0,369.0,True,0.0,0.0,0.0,True,n/a (no id column)
+E1_tfidf_svm,3A_laptop_LoRA,arabic,baseline_primary,results\predictions\E1_tfidf_svm_test.csv,VALID,369.0,369.0,True,0.0,0.0,0.0,True,n/a (no id column)
+E5_enTrain_arTest_lora,3A_laptop_LoRA,arabic,zeroshot_primary,results\predictions\E5_enTrain_arTest_test.csv,VALID,369.0,369.0,True,0.0,0.0,0.0,True,n/a (no id column)
+E2_xlmr_lora,3A_laptop_LoRA,english,lora_primary,results\predictions\E2_xlmr_test.csv,VALID,388.0,388.0,True,0.0,0.0,0.0,True,n/a (no id column)
+E2_tfidf_logreg,3A_laptop_LoRA,english,baseline_primary,results\predictions\E2_tfidf_logreg_test.csv,VALID,388.0,388.0,True,0.0,0.0,0.0,True,n/a (no id column)
+E2_tfidf_svm,3A_laptop_LoRA,english,baseline_primary,results\predictions\E2_tfidf_svm_test.csv,VALID,388.0,388.0,True,0.0,0.0,0.0,True,n/a (no id column)
+E5_arTrain_enTest_lora,3A_laptop_LoRA,english,zeroshot_primary,results\predictions\E5_arTrain_enTest_test.csv,VALID,388.0,388.0,True,0.0,0.0,0.0,True,n/a (no id column)
+E1_xlmr_fullft,3B_GPU_fullFT,arabic,RERUN_REALIZATION_not_primary,results\phase3b_kaggle_gpu\E1_xlmr_arabic_reproducibility_test_predictions.csv,VALID,369.0,369.0,True,0.0,0.0,0.0,True,consistent
+E1_marbert_fullft,3B_GPU_fullFT,arabic,RERUN_REALIZATION_not_primary,results\phase3b_kaggle_gpu\E1_marbert_arabic_reproducibility_test_predictions.csv,VALID,369.0,369.0,True,0.0,0.0,0.0,True,consistent
+E4_multilingual_xlmr_arabic,3B_GPU_fullFT,arabic,primary,results\phase3b_kaggle_gpu\E4_multilingual_xlmr_arabic_test_predictions.csv,VALID,369.0,369.0,True,0.0,0.0,0.0,True,consistent
+E5B_zeroshot_en_to_ar,3B_GPU_fullFT,arabic,primary,results\phase3b_kaggle_gpu\E5B_english_to_arabic_test_predictions.csv,VALID,369.0,369.0,True,0.0,0.0,0.0,True,consistent
+E2_xlmr_fullft,3B_GPU_fullFT,english,primary,results\phase3b_kaggle_gpu\E2_xlmr_fullft_gpu_3ep_test_predictions.csv,VALID,388.0,388.0,True,0.0,0.0,0.0,True,consistent
+E4_multilingual_xlmr_english,3B_GPU_fullFT,english,primary,results\phase3b_kaggle_gpu\E4_multilingual_xlmr_english_test_predictions.csv,VALID,388.0,388.0,True,0.0,0.0,0.0,True,consistent
+E5A_zeroshot_ar_to_en,3B_GPU_fullFT,english,primary,results\phase3b_kaggle_gpu\E5A_arabic_to_english_test_predictions.csv,VALID,388.0,388.0,True,0.0,0.0,0.0,True,consistent
+E1_xlmr_fullft_PRIMARY,3B_GPU_fullFT,arabic,primary,,"MISSING -- original primary row-level predictions lost (documented, D17/known_limitations.md)",,,,,,,,
+E1_marbert_fullft_PRIMARY,3B_GPU_fullFT,arabic,primary,,"MISSING -- original primary row-level predictions lost (documented, D17/known_limitations.md)",,,,,,,,

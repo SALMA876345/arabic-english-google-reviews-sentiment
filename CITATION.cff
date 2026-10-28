@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+message: >-
+  This work has not yet been submitted or published. No DOI, venue, or
+  finalized author list exists yet -- the fields below are placeholders
+  pending author/affiliation confirmation and, if accepted, a publication
+  DOI. Do not treat this file as a finalized citation record.
+title: >-
+  Evaluation-Label Reliability in Bilingual Sentiment Classification:
+  How Human-Adjudicated Reference Labels Change Model Rankings and
+  Statistical Conclusions
+authors:
+  - name: "[Author name(s) to be added]"
+type: software
+repository-code: "[GitHub URL to be added]"
+license: "[To be determined -- see paper/notes/DATA_LICENSING_AND_RELEASE.md for the data/code release policy]"
+date-released: "[Not yet released]"
+version: "unpublished-draft"

@@ -1,0 +1,23 @@
+{
+  "block": "overall_sentiment",
+  "n": 757,
+  "unanimous_3of3_n": 578,
+  "unanimous_3of3_rate": 0.7635402906208718,
+  "majority_2of3_n": 161,
+  "majority_2of3_rate": 0.21268163804491413,
+  "at_least_2of3_rate": 0.9762219286657859,
+  "disagreement_3way_n": 18,
+  "disagreement_3way_rate": 0.023778071334214,
+  "fleiss_kappa": 0.6498540607523889,
+  "krippendorff_alpha_nominal": 0.6500082421435149,
+  "pairwise_raw_agreement": {
+    "annotator_1_vs_annotator_2": 0.8652575957727873,
+    "annotator_1_vs_annotator_3": 0.8190224570673712,
+    "annotator_2_vs_annotator_3": 0.8190224570673712
+  },
+  "pairwise_cohen_kappa": {
+    "annotator_1_vs_annotator_2": 0.7001141845128516,
+    "annotator_1_vs_annotator_3": 0.629406888074155,
+    "annotator_2_vs_annotator_3": 0.6278429683855455
+  }
+}

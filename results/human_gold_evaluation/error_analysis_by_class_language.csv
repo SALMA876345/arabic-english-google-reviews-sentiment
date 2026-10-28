@@ -1,0 +1,124 @@
+model_key,language,phase,realization,true_human_gold_class,predicted_class,error_count
+E1_xlmr_lora,arabic,3A_laptop_LoRA,lora_primary,Negative,Neutral,2
+E1_xlmr_lora,arabic,3A_laptop_LoRA,lora_primary,Negative,Positive,17
+E1_xlmr_lora,arabic,3A_laptop_LoRA,lora_primary,Neutral,Negative,4
+E1_xlmr_lora,arabic,3A_laptop_LoRA,lora_primary,Neutral,Positive,3
+E1_xlmr_lora,arabic,3A_laptop_LoRA,lora_primary,Positive,Negative,16
+E1_xlmr_lora,arabic,3A_laptop_LoRA,lora_primary,Positive,Neutral,12
+E1_xlmr_lora,arabic,3A_laptop_LoRA,lora_primary,Neutral,ANY_OTHER (neutral-true summary),7
+E1_xlmr_lora,arabic,3A_laptop_LoRA,lora_primary,ANY_OTHER (neutral-pred summary),Neutral,14
+E1_marbert_lora,arabic,3A_laptop_LoRA,lora_primary,Negative,Neutral,3
+E1_marbert_lora,arabic,3A_laptop_LoRA,lora_primary,Negative,Positive,4
+E1_marbert_lora,arabic,3A_laptop_LoRA,lora_primary,Neutral,Negative,6
+E1_marbert_lora,arabic,3A_laptop_LoRA,lora_primary,Neutral,Positive,3
+E1_marbert_lora,arabic,3A_laptop_LoRA,lora_primary,Positive,Negative,12
+E1_marbert_lora,arabic,3A_laptop_LoRA,lora_primary,Positive,Neutral,13
+E1_marbert_lora,arabic,3A_laptop_LoRA,lora_primary,Neutral,ANY_OTHER (neutral-true summary),9
+E1_marbert_lora,arabic,3A_laptop_LoRA,lora_primary,ANY_OTHER (neutral-pred summary),Neutral,16
+E1_tfidf_logreg,arabic,3A_laptop_LoRA,baseline_primary,Negative,Neutral,19
+E1_tfidf_logreg,arabic,3A_laptop_LoRA,baseline_primary,Negative,Positive,9
+E1_tfidf_logreg,arabic,3A_laptop_LoRA,baseline_primary,Neutral,Negative,2
+E1_tfidf_logreg,arabic,3A_laptop_LoRA,baseline_primary,Positive,Negative,14
+E1_tfidf_logreg,arabic,3A_laptop_LoRA,baseline_primary,Positive,Neutral,46
+E1_tfidf_logreg,arabic,3A_laptop_LoRA,baseline_primary,Neutral,ANY_OTHER (neutral-true summary),2
+E1_tfidf_logreg,arabic,3A_laptop_LoRA,baseline_primary,ANY_OTHER (neutral-pred summary),Neutral,65
+E1_tfidf_svm,arabic,3A_laptop_LoRA,baseline_primary,Negative,Neutral,17
+E1_tfidf_svm,arabic,3A_laptop_LoRA,baseline_primary,Negative,Positive,11
+E1_tfidf_svm,arabic,3A_laptop_LoRA,baseline_primary,Neutral,Negative,3
+E1_tfidf_svm,arabic,3A_laptop_LoRA,baseline_primary,Neutral,Positive,2
+E1_tfidf_svm,arabic,3A_laptop_LoRA,baseline_primary,Positive,Negative,12
+E1_tfidf_svm,arabic,3A_laptop_LoRA,baseline_primary,Positive,Neutral,39
+E1_tfidf_svm,arabic,3A_laptop_LoRA,baseline_primary,Neutral,ANY_OTHER (neutral-true summary),5
+E1_tfidf_svm,arabic,3A_laptop_LoRA,baseline_primary,ANY_OTHER (neutral-pred summary),Neutral,56
+E5_enTrain_arTest_lora,arabic,3A_laptop_LoRA,zeroshot_primary,Negative,Neutral,3
+E5_enTrain_arTest_lora,arabic,3A_laptop_LoRA,zeroshot_primary,Negative,Positive,21
+E5_enTrain_arTest_lora,arabic,3A_laptop_LoRA,zeroshot_primary,Neutral,Negative,3
+E5_enTrain_arTest_lora,arabic,3A_laptop_LoRA,zeroshot_primary,Neutral,Positive,4
+E5_enTrain_arTest_lora,arabic,3A_laptop_LoRA,zeroshot_primary,Positive,Negative,22
+E5_enTrain_arTest_lora,arabic,3A_laptop_LoRA,zeroshot_primary,Positive,Neutral,4
+E5_enTrain_arTest_lora,arabic,3A_laptop_LoRA,zeroshot_primary,Neutral,ANY_OTHER (neutral-true summary),7
+E5_enTrain_arTest_lora,arabic,3A_laptop_LoRA,zeroshot_primary,ANY_OTHER (neutral-pred summary),Neutral,7
+E2_xlmr_lora,english,3A_laptop_LoRA,lora_primary,Negative,Neutral,5
+E2_xlmr_lora,english,3A_laptop_LoRA,lora_primary,Negative,Positive,7
+E2_xlmr_lora,english,3A_laptop_LoRA,lora_primary,Neutral,Negative,15
+E2_xlmr_lora,english,3A_laptop_LoRA,lora_primary,Neutral,Positive,16
+E2_xlmr_lora,english,3A_laptop_LoRA,lora_primary,Positive,Negative,9
+E2_xlmr_lora,english,3A_laptop_LoRA,lora_primary,Positive,Neutral,4
+E2_xlmr_lora,english,3A_laptop_LoRA,lora_primary,Neutral,ANY_OTHER (neutral-true summary),31
+E2_xlmr_lora,english,3A_laptop_LoRA,lora_primary,ANY_OTHER (neutral-pred summary),Neutral,9
+E2_tfidf_logreg,english,3A_laptop_LoRA,baseline_primary,Negative,Neutral,15
+E2_tfidf_logreg,english,3A_laptop_LoRA,baseline_primary,Negative,Positive,10
+E2_tfidf_logreg,english,3A_laptop_LoRA,baseline_primary,Neutral,Negative,9
+E2_tfidf_logreg,english,3A_laptop_LoRA,baseline_primary,Neutral,Positive,9
+E2_tfidf_logreg,english,3A_laptop_LoRA,baseline_primary,Positive,Negative,12
+E2_tfidf_logreg,english,3A_laptop_LoRA,baseline_primary,Positive,Neutral,38
+E2_tfidf_logreg,english,3A_laptop_LoRA,baseline_primary,Neutral,ANY_OTHER (neutral-true summary),18
+E2_tfidf_logreg,english,3A_laptop_LoRA,baseline_primary,ANY_OTHER (neutral-pred summary),Neutral,53
+E2_tfidf_svm,english,3A_laptop_LoRA,baseline_primary,Negative,Neutral,15
+E2_tfidf_svm,english,3A_laptop_LoRA,baseline_primary,Negative,Positive,21
+E2_tfidf_svm,english,3A_laptop_LoRA,baseline_primary,Neutral,Negative,6
+E2_tfidf_svm,english,3A_laptop_LoRA,baseline_primary,Neutral,Positive,14
+E2_tfidf_svm,english,3A_laptop_LoRA,baseline_primary,Positive,Negative,8
+E2_tfidf_svm,english,3A_laptop_LoRA,baseline_primary,Positive,Neutral,25
+E2_tfidf_svm,english,3A_laptop_LoRA,baseline_primary,Neutral,ANY_OTHER (neutral-true summary),20
+E2_tfidf_svm,english,3A_laptop_LoRA,baseline_primary,ANY_OTHER (neutral-pred summary),Neutral,40
+E5_arTrain_enTest_lora,english,3A_laptop_LoRA,zeroshot_primary,Negative,Neutral,3
+E5_arTrain_enTest_lora,english,3A_laptop_LoRA,zeroshot_primary,Negative,Positive,29
+E5_arTrain_enTest_lora,english,3A_laptop_LoRA,zeroshot_primary,Neutral,Negative,8
+E5_arTrain_enTest_lora,english,3A_laptop_LoRA,zeroshot_primary,Neutral,Positive,25
+E5_arTrain_enTest_lora,english,3A_laptop_LoRA,zeroshot_primary,Positive,Negative,2
+E5_arTrain_enTest_lora,english,3A_laptop_LoRA,zeroshot_primary,Positive,Neutral,3
+E5_arTrain_enTest_lora,english,3A_laptop_LoRA,zeroshot_primary,Neutral,ANY_OTHER (neutral-true summary),33
+E5_arTrain_enTest_lora,english,3A_laptop_LoRA,zeroshot_primary,ANY_OTHER (neutral-pred summary),Neutral,6
+E1_xlmr_fullft,arabic,3B_GPU_fullFT,RERUN_REALIZATION_not_primary,Negative,Neutral,23
+E1_xlmr_fullft,arabic,3B_GPU_fullFT,RERUN_REALIZATION_not_primary,Negative,Positive,1
+E1_xlmr_fullft,arabic,3B_GPU_fullFT,RERUN_REALIZATION_not_primary,Neutral,Negative,3
+E1_xlmr_fullft,arabic,3B_GPU_fullFT,RERUN_REALIZATION_not_primary,Positive,Negative,1
+E1_xlmr_fullft,arabic,3B_GPU_fullFT,RERUN_REALIZATION_not_primary,Positive,Neutral,79
+E1_xlmr_fullft,arabic,3B_GPU_fullFT,RERUN_REALIZATION_not_primary,Neutral,ANY_OTHER (neutral-true summary),3
+E1_xlmr_fullft,arabic,3B_GPU_fullFT,RERUN_REALIZATION_not_primary,ANY_OTHER (neutral-pred summary),Neutral,102
+E1_marbert_fullft,arabic,3B_GPU_fullFT,RERUN_REALIZATION_not_primary,Negative,Neutral,14
+E1_marbert_fullft,arabic,3B_GPU_fullFT,RERUN_REALIZATION_not_primary,Negative,Positive,1
+E1_marbert_fullft,arabic,3B_GPU_fullFT,RERUN_REALIZATION_not_primary,Neutral,Negative,2
+E1_marbert_fullft,arabic,3B_GPU_fullFT,RERUN_REALIZATION_not_primary,Positive,Negative,2
+E1_marbert_fullft,arabic,3B_GPU_fullFT,RERUN_REALIZATION_not_primary,Positive,Neutral,68
+E1_marbert_fullft,arabic,3B_GPU_fullFT,RERUN_REALIZATION_not_primary,Neutral,ANY_OTHER (neutral-true summary),2
+E1_marbert_fullft,arabic,3B_GPU_fullFT,RERUN_REALIZATION_not_primary,ANY_OTHER (neutral-pred summary),Neutral,82
+E4_multilingual_xlmr_arabic,arabic,3B_GPU_fullFT,primary,Negative,Neutral,24
+E4_multilingual_xlmr_arabic,arabic,3B_GPU_fullFT,primary,Negative,Positive,1
+E4_multilingual_xlmr_arabic,arabic,3B_GPU_fullFT,primary,Neutral,Negative,1
+E4_multilingual_xlmr_arabic,arabic,3B_GPU_fullFT,primary,Positive,Negative,2
+E4_multilingual_xlmr_arabic,arabic,3B_GPU_fullFT,primary,Positive,Neutral,75
+E4_multilingual_xlmr_arabic,arabic,3B_GPU_fullFT,primary,Neutral,ANY_OTHER (neutral-true summary),1
+E4_multilingual_xlmr_arabic,arabic,3B_GPU_fullFT,primary,ANY_OTHER (neutral-pred summary),Neutral,99
+E5B_zeroshot_en_to_ar,arabic,3B_GPU_fullFT,primary,Negative,Neutral,28
+E5B_zeroshot_en_to_ar,arabic,3B_GPU_fullFT,primary,Negative,Positive,3
+E5B_zeroshot_en_to_ar,arabic,3B_GPU_fullFT,primary,Neutral,Negative,2
+E5B_zeroshot_en_to_ar,arabic,3B_GPU_fullFT,primary,Neutral,Positive,1
+E5B_zeroshot_en_to_ar,arabic,3B_GPU_fullFT,primary,Positive,Negative,4
+E5B_zeroshot_en_to_ar,arabic,3B_GPU_fullFT,primary,Positive,Neutral,66
+E5B_zeroshot_en_to_ar,arabic,3B_GPU_fullFT,primary,Neutral,ANY_OTHER (neutral-true summary),3
+E5B_zeroshot_en_to_ar,arabic,3B_GPU_fullFT,primary,ANY_OTHER (neutral-pred summary),Neutral,94
+E2_xlmr_fullft,english,3B_GPU_fullFT,primary,Negative,Neutral,28
+E2_xlmr_fullft,english,3B_GPU_fullFT,primary,Negative,Positive,1
+E2_xlmr_fullft,english,3B_GPU_fullFT,primary,Neutral,Negative,5
+E2_xlmr_fullft,english,3B_GPU_fullFT,primary,Neutral,Positive,8
+E2_xlmr_fullft,english,3B_GPU_fullFT,primary,Positive,Negative,2
+E2_xlmr_fullft,english,3B_GPU_fullFT,primary,Positive,Neutral,34
+E2_xlmr_fullft,english,3B_GPU_fullFT,primary,Neutral,ANY_OTHER (neutral-true summary),13
+E2_xlmr_fullft,english,3B_GPU_fullFT,primary,ANY_OTHER (neutral-pred summary),Neutral,62
+E4_multilingual_xlmr_english,english,3B_GPU_fullFT,primary,Negative,Neutral,24
+E4_multilingual_xlmr_english,english,3B_GPU_fullFT,primary,Negative,Positive,2
+E4_multilingual_xlmr_english,english,3B_GPU_fullFT,primary,Neutral,Negative,6
+E4_multilingual_xlmr_english,english,3B_GPU_fullFT,primary,Neutral,Positive,6
+E4_multilingual_xlmr_english,english,3B_GPU_fullFT,primary,Positive,Neutral,47
+E4_multilingual_xlmr_english,english,3B_GPU_fullFT,primary,Neutral,ANY_OTHER (neutral-true summary),12
+E4_multilingual_xlmr_english,english,3B_GPU_fullFT,primary,ANY_OTHER (neutral-pred summary),Neutral,71
+E5A_zeroshot_ar_to_en,english,3B_GPU_fullFT,primary,Negative,Neutral,28
+E5A_zeroshot_ar_to_en,english,3B_GPU_fullFT,primary,Negative,Positive,1
+E5A_zeroshot_ar_to_en,english,3B_GPU_fullFT,primary,Neutral,Negative,7
+E5A_zeroshot_ar_to_en,english,3B_GPU_fullFT,primary,Neutral,Positive,7
+E5A_zeroshot_ar_to_en,english,3B_GPU_fullFT,primary,Positive,Negative,3
+E5A_zeroshot_ar_to_en,english,3B_GPU_fullFT,primary,Positive,Neutral,55
+E5A_zeroshot_ar_to_en,english,3B_GPU_fullFT,primary,Neutral,ANY_OTHER (neutral-true summary),14
+E5A_zeroshot_ar_to_en,english,3B_GPU_fullFT,primary,ANY_OTHER (neutral-pred summary),Neutral,83

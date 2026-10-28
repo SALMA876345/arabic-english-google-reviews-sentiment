@@ -2,6 +2,63 @@
   {
     "experiment_id": "E1",
     "language": "arabic",
+    "run_a": "E1_marbert",
+    "run_b": "run_E1_tfidf_logreg_001",
+    "test_result": {
+      "observed_diff_macro_f1": -0.08704408264313601,
+      "ci_lower_2.5": -0.1539769613086229,
+      "ci_upper_97.5": -0.01831888567612646,
+      "p_value_two_sided": 0.021,
+      "n_iterations": 2000,
+      "seed": 42,
+      "n": 369
+    },
+    "multiple_comparison_correction": {
+      "raw_p": 0.021,
+      "holm_bonferroni_adjusted_p": 0.09
+    }
+  },
+  {
+    "experiment_id": "E1",
+    "language": "arabic",
+    "run_a": "E1_marbert",
+    "run_b": "run_E1_tfidf_svm_001",
+    "test_result": {
+      "observed_diff_macro_f1": -0.0871073275775941,
+      "ci_lower_2.5": -0.15420037950619436,
+      "ci_upper_97.5": -0.017254589600655814,
+      "p_value_two_sided": 0.017,
+      "n_iterations": 2000,
+      "seed": 42,
+      "n": 369
+    },
+    "multiple_comparison_correction": {
+      "raw_p": 0.017,
+      "holm_bonferroni_adjusted_p": 0.09
+    }
+  },
+  {
+    "experiment_id": "E1",
+    "language": "arabic",
+    "run_a": "E1_marbert",
+    "run_b": "E1_xlmr",
+    "test_result": {
+      "observed_diff_macro_f1": -0.005597528683343955,
+      "ci_lower_2.5": -0.08049366785866785,
+      "ci_upper_97.5": 0.06567316606144669,
+      "p_value_two_sided": 0.866,
+      "n_iterations": 2000,
+      "seed": 42,
+      "n": 369
+    },
+    "multiple_comparison_correction": {
+      "raw_p": 0.866,
+      "holm_bonferroni_adjusted_p": 1.0
+    }
+  },
+  {
+    "experiment_id": "E1",
+    "language": "arabic",
     "run_a": "run_E1_tfidf_logreg_001",
     "run_b": "run_E1_tfidf_svm_001",
     "test_result": {
@@ -15,7 +72,45 @@
     },
     "multiple_comparison_correction": {
       "raw_p": 0.988,
-      "holm_bonferroni_adjusted_p": 0.988
+      "holm_bonferroni_adjusted_p": 1.0
+    }
+  },
+  {
+    "experiment_id": "E1",
+    "language": "arabic",
+    "run_a": "run_E1_tfidf_logreg_001",
+    "run_b": "E1_xlmr",
+    "test_result": {
+      "observed_diff_macro_f1": 0.08144655395979206,
+      "ci_lower_2.5": 0.015116086135124076,
+      "ci_upper_97.5": 0.14883676602857726,
+      "p_value_two_sided": 0.015,
+      "n_iterations": 2000,
+      "seed": 42,
+      "n": 369
+    },
+    "multiple_comparison_correction": {
+      "raw_p": 0.015,
+      "holm_bonferroni_adjusted_p": 0.09
+    }
+  },
+  {
+    "experiment_id": "E1",
+    "language": "arabic",
+    "run_a": "run_E1_tfidf_svm_001",
+    "run_b": "E1_xlmr",
+    "test_result": {
+      "observed_diff_macro_f1": 0.08150979889425014,
+      "ci_lower_2.5": 0.015349097535199158,
+      "ci_upper_97.5": 0.1476557683643318,
+      "p_value_two_sided": 0.016,
+      "n_iterations": 2000,
+      "seed": 42,
+      "n": 369
+    },
+    "multiple_comparison_correction": {
+      "raw_p": 0.016,
+      "holm_bonferroni_adjusted_p": 0.09
     }
   },
   {
@@ -34,7 +129,45 @@
     },
     "multiple_comparison_correction": {
       "raw_p": 0.053,
-      "holm_bonferroni_adjusted_p": 0.053
+      "holm_bonferroni_adjusted_p": 0.14400000000000002
+    }
+  },
+  {
+    "experiment_id": "E2",
+    "language": "english",
+    "run_a": "run_E2_tfidf_logreg_001",
+    "run_b": "E2_xlmr",
+    "test_result": {
+      "observed_diff_macro_f1": 0.07605009924017914,
+      "ci_lower_2.5": 0.0015672091683441292,
+      "ci_upper_97.5": 0.14630457179565462,
+      "p_value_two_sided": 0.048,
+      "n_iterations": 2000,
+      "seed": 42,
+      "n": 388
+    },
+    "multiple_comparison_correction": {
+      "raw_p": 0.048,
+      "holm_bonferroni_adjusted_p": 0.14400000000000002
+    }
+  },
+  {
+    "experiment_id": "E2",
+    "language": "english",
+    "run_a": "run_E2_tfidf_svm_001",
+    "run_b": "E2_xlmr",
+    "test_result": {
+      "observed_diff_macro_f1": 0.039626396197229075,
+      "ci_lower_2.5": -0.0332483178581501,
+      "ci_upper_97.5": 0.1095056785165997,
+      "p_value_two_sided": 0.307,
+      "n_iterations": 2000,
+      "seed": 42,
+      "n": 388
+    },
+    "multiple_comparison_correction": {
+      "raw_p": 0.307,
+      "holm_bonferroni_adjusted_p": 0.307
     }
   }
 ]

@@ -1,15 +1,33 @@
 # Per-Class Results (Phase 3)
 
-                 run_id experiment_id language    class  precision   recall       f1  support
-run_E1_tfidf_logreg_001            E1   arabic Negative   0.702703 0.693333 0.697987       75
-run_E1_tfidf_logreg_001            E1   arabic  Neutral   0.472222 0.607143 0.531250       56
-run_E1_tfidf_logreg_001            E1   arabic Positive   0.914798 0.857143 0.885033      238
-   run_E1_tfidf_svm_001            E1   arabic Negative   0.712329 0.693333 0.702703       75
-   run_E1_tfidf_svm_001            E1   arabic  Neutral   0.500000 0.535714 0.517241       56
-   run_E1_tfidf_svm_001            E1   arabic Positive   0.898305 0.890756 0.894515      238
-run_E2_tfidf_logreg_001            E2  english Negative   0.738739 0.773585 0.755760      106
-run_E2_tfidf_logreg_001            E2  english  Neutral   0.426471 0.475410 0.449612       61
-run_E2_tfidf_logreg_001            E2  english Positive   0.880383 0.832579 0.855814      221
-   run_E2_tfidf_svm_001            E2  english Negative   0.774194 0.679245 0.723618      106
-   run_E2_tfidf_svm_001            E2  english  Neutral   0.415094 0.360656 0.385965       61
-   run_E2_tfidf_svm_001            E2  english Positive   0.805785 0.882353 0.842333      221
+                 run_id       experiment_id language    class  precision   recall       f1  support
+             E1_marbert                  E1   arabic Negative   0.680412 0.880000 0.767442       75
+             E1_marbert                  E1   arabic  Neutral   0.375000 0.107143 0.166667       56
+             E1_marbert                  E1   arabic Positive   0.886719 0.953782 0.919028      238
+run_E1_tfidf_logreg_001                  E1   arabic Negative   0.702703 0.693333 0.697987       75
+run_E1_tfidf_logreg_001                  E1   arabic  Neutral   0.472222 0.607143 0.531250       56
+run_E1_tfidf_logreg_001                  E1   arabic Positive   0.914798 0.857143 0.885033      238
+   run_E1_tfidf_svm_001                  E1   arabic Negative   0.712329 0.693333 0.702703       75
+   run_E1_tfidf_svm_001                  E1   arabic  Neutral   0.500000 0.535714 0.517241       56
+   run_E1_tfidf_svm_001                  E1   arabic Positive   0.898305 0.890756 0.894515      238
+                E1_xlmr                  E1   arabic Negative   0.643678 0.746667 0.691358       75
+                E1_xlmr                  E1   arabic  Neutral   0.625000 0.178571 0.277778       56
+                E1_xlmr                  E1   arabic Positive   0.853383 0.953782 0.900794      238
+run_E2_tfidf_logreg_001                  E2  english Negative   0.738739 0.773585 0.755760      106
+run_E2_tfidf_logreg_001                  E2  english  Neutral   0.426471 0.475410 0.449612       61
+run_E2_tfidf_logreg_001                  E2  english Positive   0.880383 0.832579 0.855814      221
+   run_E2_tfidf_svm_001                  E2  english Negative   0.774194 0.679245 0.723618      106
+   run_E2_tfidf_svm_001                  E2  english  Neutral   0.415094 0.360656 0.385965       61
+   run_E2_tfidf_svm_001                  E2  english Positive   0.805785 0.882353 0.842333      221
+                E2_xlmr                  E2  english Negative   0.692913 0.830189 0.755365      106
+                E2_xlmr                  E2  english  Neutral   0.636364 0.114754 0.194444       61
+                E2_xlmr                  E2  english Positive   0.832000 0.941176 0.883227      221
+      E5_arTrain_enTest                  E5  english Negative   0.784946 0.688679 0.733668      106
+      E5_arTrain_enTest                  E5  english  Neutral   0.333333 0.032787 0.059701       61
+      E5_arTrain_enTest                  E5  english Positive   0.743945 0.972851 0.843137      221
+      E5_enTrain_arTest                  E5   arabic Negative   0.609195 0.706667 0.654321       75
+      E5_enTrain_arTest                  E5   arabic  Neutral   0.333333 0.053571 0.092308       56
+      E5_enTrain_arTest                  E5   arabic Positive   0.820513 0.941176 0.876712      238
+jordan_aux_tfidf_logreg E_jordan_binary_aux   arabic Negative   0.932886 0.914474 0.923588      152
+jordan_aux_tfidf_logreg E_jordan_binary_aux   arabic  Neutral   0.000000 0.000000 0.000000        0
+jordan_aux_tfidf_logreg E_jordan_binary_aux   arabic Positive   0.913907 0.932432 0.923077      148

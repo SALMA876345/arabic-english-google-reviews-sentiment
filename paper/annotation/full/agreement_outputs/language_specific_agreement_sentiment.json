@@ -1,0 +1,48 @@
+{
+  "arabic": {
+    "block": "sentiment_arabic",
+    "n": 369,
+    "unanimous_3of3_n": 300,
+    "unanimous_3of3_rate": 0.8130081300813008,
+    "majority_2of3_n": 58,
+    "majority_2of3_rate": 0.15718157181571815,
+    "at_least_2of3_rate": 0.9701897018970189,
+    "disagreement_3way_n": 11,
+    "disagreement_3way_rate": 0.02981029810298103,
+    "fleiss_kappa": 0.6705817738810889,
+    "krippendorff_alpha_nominal": 0.670879351321124,
+    "pairwise_raw_agreement": {
+      "annotator_1_vs_annotator_2": 0.8997289972899729,
+      "annotator_1_vs_annotator_3": 0.8455284552845529,
+      "annotator_2_vs_annotator_3": 0.8509485094850948
+    },
+    "pairwise_cohen_kappa": {
+      "annotator_1_vs_annotator_2": 0.7379714038959793,
+      "annotator_1_vs_annotator_3": 0.634418507639094,
+      "annotator_2_vs_annotator_3": 0.6502369668246446
+    }
+  },
+  "english": {
+    "block": "sentiment_english",
+    "n": 388,
+    "unanimous_3of3_n": 278,
+    "unanimous_3of3_rate": 0.7164948453608248,
+    "majority_2of3_n": 103,
+    "majority_2of3_rate": 0.2654639175257732,
+    "at_least_2of3_rate": 0.9819587628865979,
+    "disagreement_3way_n": 7,
+    "disagreement_3way_rate": 0.01804123711340206,
+    "fleiss_kappa": 0.6284799946007357,
+    "krippendorff_alpha_nominal": 0.6287991698631061,
+    "pairwise_raw_agreement": {
+      "annotator_1_vs_annotator_2": 0.8324742268041238,
+      "annotator_1_vs_annotator_3": 0.7938144329896907,
+      "annotator_2_vs_annotator_3": 0.788659793814433
+    },
+    "pairwise_cohen_kappa": {
+      "annotator_1_vs_annotator_2": 0.6674709597457906,
+      "annotator_1_vs_annotator_3": 0.6189400542617577,
+      "annotator_2_vs_annotator_3": 0.6051086646228698
+    }
+  }
+}

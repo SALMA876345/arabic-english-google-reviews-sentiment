@@ -1,0 +1,115 @@
+{
+  "overall": {
+    "n": 757,
+    "agree_count": 625,
+    "agree_pct": 82.56,
+    "disagree_count": 132,
+    "disagree_pct": 17.44,
+    "cohen_kappa": 0.662222642887083,
+    "confusion_matrix_original_rows_humangold_cols": {
+      "human_gold_Negative": {
+        "original_Negative": 161,
+        "original_Neutral": 36,
+        "original_Positive": 4
+      },
+      "human_gold_Neutral": {
+        "original_Negative": 11,
+        "original_Neutral": 20,
+        "original_Positive": 11
+      },
+      "human_gold_Positive": {
+        "original_Negative": 9,
+        "original_Neutral": 61,
+        "original_Positive": 444
+      }
+    }
+  },
+  "arabic": {
+    "n": 369,
+    "agree_count": 310,
+    "agree_pct": 84.01,
+    "disagree_count": 59,
+    "disagree_pct": 15.99,
+    "cohen_kappa": 0.659801546995859,
+    "confusion_matrix_original_rows_humangold_cols": {
+      "human_gold_Negative": {
+        "original_Negative": 69,
+        "original_Neutral": 16,
+        "original_Positive": 1
+      },
+      "human_gold_Neutral": {
+        "original_Negative": 1,
+        "original_Neutral": 6,
+        "original_Positive": 2
+      },
+      "human_gold_Positive": {
+        "original_Negative": 5,
+        "original_Neutral": 34,
+        "original_Positive": 235
+      }
+    }
+  },
+  "english": {
+    "n": 388,
+    "agree_count": 315,
+    "agree_pct": 81.19,
+    "disagree_count": 73,
+    "disagree_pct": 18.81,
+    "cohen_kappa": 0.65998007226804,
+    "confusion_matrix_original_rows_humangold_cols": {
+      "human_gold_Negative": {
+        "original_Negative": 92,
+        "original_Neutral": 20,
+        "original_Positive": 3
+      },
+      "human_gold_Neutral": {
+        "original_Negative": 10,
+        "original_Neutral": 14,
+        "original_Positive": 9
+      },
+      "human_gold_Positive": {
+        "original_Negative": 4,
+        "original_Neutral": 27,
+        "original_Positive": 209
+      }
+    }
+  },
+  "transitions_named": {
+    "Positive_to_Neutral": 11,
+    "Positive_to_Negative": 4,
+    "Neutral_to_Positive": 61,
+    "Neutral_to_Negative": 36,
+    "Negative_to_Neutral": 11,
+    "Negative_to_Positive": 9
+  },
+  "original_class_distribution": {
+    "Negative": 181,
+    "Neutral": 117,
+    "Positive": 459
+  },
+  "human_gold_class_distribution": {
+    "Negative": 201,
+    "Neutral": 42,
+    "Positive": 514
+  },
+  "original_class_distribution_arabic": {
+    "Negative": 75,
+    "Neutral": 56,
+    "Positive": 238
+  },
+  "human_gold_class_distribution_arabic": {
+    "Negative": 86,
+    "Neutral": 9,
+    "Positive": 274
+  },
+  "original_class_distribution_english": {
+    "Negative": 106,
+    "Neutral": 61,
+    "Positive": 221
+  },
+  "human_gold_class_distribution_english": {
+    "Negative": 115,
+    "Neutral": 33,
+    "Positive": 240
+  }
+}

@@ -28,6 +28,11 @@ PRED_DIR = ROOT / "results" / "predictions"
 TABLES = ROOT / "results" / "tables"
 FIGURES = ROOT / "results" / "figures"
 
+# Per project decisions.md D14: LoRA-adapted models must never be presented
+# as if they were standard fully fine-tuned transformers, in ANY table.
+LORA_RUN_IDS = {"E1_xlmr", "E1_marbert", "E2_xlmr", "E5_arTrain_enTest", "E5_enTrain_arTest",
+                "E4_xlmr_combined_evalAR", "E4_xlmr_combined_evalEN"}
+
 
 def load_all_predictions():
     frames = []
@@ -69,12 +74,34 @@ def main():
         pred_labels = df["predicted_label"].tolist()
 
         m = compute_metrics(true_labels, pred_labels)
-        comparison_rows.append({
+        observed_classes = set(true_labels)
+        is_binary_task = observed_classes < set(LABEL_ORDER)  # true labels don't cover all 3 classes
+        provenance_values = set(df["label_provenance"].dropna().unique())
+        provenance_note = (
+            "human_annotated" if provenance_values == {"human_annotated"} else
+            "rating_derived_NOT_human_verified" if provenance_values == {"rating_derived"} else
+            "llm_weak_label_NOT_ground_truth" if provenance_values == {"llm_weak_label"} else
+            "+".join(sorted(provenance_values))
+        )
+        row = {
             "run_id": run_id, "experiment_id": experiment_id, "language": language,
             "n": m["n"], "accuracy": m["accuracy"], "macro_f1": m["macro_f1"],
             "weighted_f1": m["weighted_f1"], "precision_macro": m["precision_macro"],
-            "recall_macro": m["recall_macro"],
-        })
+            "recall_macro": m["recall_macro"], "is_binary_or_partial_label_task": is_binary_task,
+            "LoRA_adapted_NOT_full_finetune": run_id in LORA_RUN_IDS,
+            "test_label_provenance": provenance_note,
+        }
+        if is_binary_task:
+            from sklearn.metrics import f1_score, precision_score, recall_score
+            observed = sorted(observed_classes)
+            row["macro_f1_CAUTION_forces_3class_incl_absent_class"] = m["macro_f1"]
+            row["precision_macro_CAUTION_forces_3class_incl_absent_class"] = m["precision_macro"]
+            row["recall_macro_CAUTION_forces_3class_incl_absent_class"] = m["recall_macro"]
+            row["macro_f1_observed_classes_only"] = f1_score(true_labels, pred_labels, labels=observed, average="macro", zero_division=0)
+            row["macro_f1"] = row["macro_f1_observed_classes_only"]  # use the task-correct number as THE macro_f1 for this row
+            row["precision_macro"] = precision_score(true_labels, pred_labels, labels=observed, average="macro", zero_division=0)
+            row["recall_macro"] = recall_score(true_labels, pred_labels, labels=observed, average="macro", zero_division=0)
+        comparison_rows.append(row)
         for cls, vals in m["per_class"].items():
             per_class_rows.append({
                 "run_id": run_id, "experiment_id": experiment_id, "language": language, "class": cls,
@@ -95,7 +122,25 @@ def main():
     comp_df = pd.DataFrame(comparison_rows).sort_values(["experiment_id", "language", "macro_f1"], ascending=[True, True, False])
     comp_df.to_csv(TABLES / "model_comparison.csv", index=False, encoding="utf-8-sig")
     with open(TABLES / "model_comparison.md", "w", encoding="utf-8") as f:
-        f.write("# Model Comparison (Phase 3)\n\n" + comp_df.to_string(index=False) + "\n")
+        f.write("# Model Comparison (Phase 3)\n\n")
+        f.write("**Note on `is_binary_or_partial_label_task` rows (currently: Jordan auxiliary):** "
+                "this source has zero Neutral examples (confirmed, see known_limitations.md #12). "
+                "The `macro_f1`/`precision_macro`/`recall_macro` columns for these rows are the "
+                "observed-classes-only (Positive/Negative) values, the task-appropriate numbers, NOT the "
+                "standard 3-class metrics forcing a phantom zero-support Neutral class -- those misleading "
+                "3-class numbers are preserved separately in the `*_CAUTION_forces_3class_incl_absent_class` "
+                "columns for transparency, but must never be quoted as THE Jordan result.\n\n")
+        f.write("**Note on `LoRA_adapted_NOT_full_finetune`:** per docs/decisions.md D14, these rows "
+                "(E1_xlmr, E1_marbert, E2_xlmr, E5_*, E4_*) are LoRA-adapted (only ~0.3% of parameters "
+                "trainable), not standard fully fine-tuned transformers, due to a confirmed CPU/RAM "
+                "constraint. They are NOT directly equivalent to a fully fine-tuned model and may "
+                "underperform one -- do not cite these as representative transformer performance without "
+                "this caveat.\n\n")
+        f.write("**Note on `test_label_provenance`:** `rating_derived_NOT_human_verified` means the test "
+                "labels were converted from star ratings, not assigned by a human reader of the text -- "
+                "per docs/label_provenance_policy.md, these are not acceptable as final evaluation ground "
+                "truth without the pending manual-validation slice (docs/annotation_guidelines.md).\n\n")
+        f.write(comp_df.to_string(index=False) + "\n")
 
     pc_df = pd.DataFrame(per_class_rows)
     pc_df.to_csv(TABLES / "per_class_results.csv", index=False, encoding="utf-8-sig")

@@ -1,0 +1,13 @@
+Language,Model,Family,Training_Setting,Test_Macro_F1,Result_Status
+Arabic,MARBERT Full FT + Weighted,Transformer,Standalone,0.785025,Primary
+Arabic,XLM-R Multilingual,Transformer,Multilingual,0.767865,Primary
+Arabic,MARBERT Full FT + Weighted,Transformer,Standalone,0.765263,Reproducibility rerun
+Arabic,XLM-R Full FT + Weighted,Transformer,Standalone,0.740295,Primary
+Arabic,XLM-R Full FT + Weighted,Transformer,Standalone,0.740126,Reproducibility rerun
+Arabic,TF-IDF + Logistic Regression,Classical,Standalone,0.705,Primary
+Arabic,XLM-R English→Arabic,Transformer,Zero-shot,0.679992,Primary
+Arabic,XLM-R + LoRA (Laptop),Transformer,Standalone,0.6233,Primary
+English,XLM-R Multilingual,Transformer,Multilingual,0.739722,Primary
+English,XLM-R Full FT + Weighted,Transformer,Standalone,0.727644,Primary
+English,TF-IDF + Logistic Regression,Classical,Standalone,0.687,Primary
+English,XLM-R Arabic→English,Transformer,Zero-shot,0.680415,Primary

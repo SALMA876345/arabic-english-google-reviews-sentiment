@@ -1,0 +1,180 @@
+review_id,language,adjudicated_sentiment,adjudication_confidence,adjudication_reason
+AR-TOUR-01100,arabic,Positive,medium,"Reviewer explicitly states the place is nice and they didn't regret visiting, despite many closed booths and lack of authentic Gulf representation."
+AR-TOUR-01104,arabic,Negative,medium,"Despite a brief mention that there is some fun, the primary focus is strong criticism of the Gulf section for lacking authenticity."
+AR-TOUR-01108,arabic,Positive,medium,"Strong praise and gratitude for the overall venue, reception, and entertainment; the hygiene complaint is isolated to one specific juice stall."
+AR-TOUR-01111,arabic,Negative,medium,"Opens with praise for the lively atmosphere, but the bulk of the review details multiple frustrations: drink ban, heat, and overpriced worn-out rides."
+AR-TOUR-01112,arabic,Positive,high,"Concludes that it is worth experiencing and calls the site good, with constructive suggestions for misting fans and pricing."
+AR-TOUR-01117,arabic,Positive,high,"Clearly favorable description of the concept and park, followed by factual details about shows, shops, and entry fees."
+AR-TOUR-01120,arabic,Positive,medium,Describes the place and events as beautiful and wonderful; complaints about limited and overpriced kids' rides do not overturn the positive opening.
+AR-TOUR-01125,arabic,Negative,high,"Entirely critical of the limited events, poor ticket organization, and high entry fee relative to what is offered."
+AR-TOUR-01129,arabic,Positive,high,Calls the place very beautiful and provides helpful factual details about its location and offerings.
+AR-TOUR-01131,arabic,Positive,medium,Describes the place as nice for kids with reasonable prices; notes it needs development compared to Dubai and mentions loud music as a minor caveat.
+AR-TOUR-01137,arabic,Neutral,medium,"Genuinely torn: repeatedly praises the beauty, organization, and variety of the venue, while equally emphasizing that nonstop loud music ruined the experience."
+AR-TOUR-01140,arabic,Neutral,medium,Balanced between praising the large size and variety of amenities and criticizing the lack of cultural authenticity in the regional zones.
+AR-TOUR-01142,arabic,Neutral,medium,"Mix of pros (nice for kids), cons (no comfortable seating for parents, noisy, high prices), and factual booking advice with no clear net lean."
+AR-TOUR-01144,arabic,Positive,high,"Enthusiastic praise for the venue, games, and a specific hibiscus drink, with only a minor note about some empty booths."
+AR-TOUR-01150,arabic,Positive,high,"Very favorable review calling it a distinctive family entertainment spot, with a minor suggestion to add water misting."
+AR-TOUR-01155,arabic,Neutral,medium,"Praises the cleanliness and staff supervision, but finds the entertainment and dining options mediocre and concludes they will not return because it is very ordinary."
+AR-TOUR-01156,arabic,Negative,medium,"Starts with brief praise for the spacious layout, but concludes the adult entry fee is not worth it, especially given the ban on outside items."
+AR-TOUR-01159,arabic,Negative,medium,Factual description of amenities is outweighed by clear frustration over expensive ride tickets (50 SAR for one ride) and disapproval of dance shows.
+AR-TOUR-01161,arabic,Negative,medium,"Calls the place nice in principle, but the core message is a complaint that entry should be free given the high costs inside for families."
+AR-TOUR-01163,arabic,Positive,high,"Explicitly states the place is excellent overall and has great events, despite recounting a rude supervisor incident and suggesting misting fans."
+AR-TOUR-01164,arabic,Neutral,medium,Balanced between enjoying the social atmosphere and cafe variety and strongly criticizing the gravel parking/walkways for strollers and wheelchairs.
+AR-TOUR-01169,arabic,Negative,medium,"Unfavorable comparison to Yanbu festival, high price complaints, and warnings about deceptive vendors outweigh praise for two Turkish treats."
+AR-TOUR-01172,arabic,Positive,low,"States the place is beautiful overall, though significantly tempered by disappointment with old electric rides and high prices."
+AR-TOUR-01174,arabic,Negative,medium,Lukewarm 'not bad' opening is outweighed by complaints about extreme heat and overpriced games.
+AR-TOUR-01179,arabic,Negative,high,"Describes the place as very ordinary with nothing special, terrible noise from Western music, and predicts visitors won't return."
+AR-TOUR-01190,arabic,Negative,high,Clear complaint about misleading opening hours on the app/website (12 PM vs 8 PM) after already purchasing tickets.
+AR-TOUR-01198,arabic,Positive,medium,"Favorable overall impression ('beautiful and enjoyable'), with a specific constructive complaint about horror house actors scaring young children outside."
+AR-TOUR-01199,arabic,Negative,medium,"Brief opening praise ('nice place') is overwhelmed by complaints about high prices, unbearable heat forcing them to leave, and ordinary/expensive kids' games."
+AR-TOUR-01209,arabic,Negative,medium,"Strong praise for one specific organizer (Noura), but the overall verdict on the venue itself is clear disappointment ('let down')."
+AR-TOUR-01211,arabic,Positive,high,"Repeatedly calls the project 'awesome' and 'strong', offering constructive feedback on parking and litter enforcement."
+AR-TOUR-01214,arabic,Positive,high,Very positive ('very beautiful') with encouraging suggestions for more organization and events.
+AR-TOUR-01217,arabic,Negative,medium,"Opens with 'good place' but follows with serious criticisms regarding needed development, overpriced items, and poor food/drink hygiene requiring inspection."
+AR-TOUR-01218,arabic,Negative,medium,Lukewarm 'not bad' followed by a clear complaint that the entry fee is unjustified given inside spending.
+AR-TOUR-01222,arabic,Negative,high,"Lists multiple negatives (far location, high family entry cost, recycled old rides) and states they won't return unless changed or made free."
+AR-TOUR-01224,arabic,Positive,medium,Favorable overall ('the place is beautiful') with a standard caveat about limited and pricey games.
+AR-TOUR-01225,arabic,Positive,medium,"Notes games and entry are a bit pricey, but concludes on a positive note that the place is nice."
+AR-TOUR-01227,arabic,Negative,high,"Explicitly states they didn't like it, citing lack of care, dim lighting, and closed shops."
+AR-TOUR-01230,arabic,Negative,medium,"Brief 'good' is outweighed by complaints of expensive games and very few, overcrowded restaurants."
+AR-TOUR-01235,arabic,Negative,medium,"Describes the venue as 'very ordinary, not bad' and highlights a major accessibility failure for wheelchair users."
+AR-TOUR-01241,arabic,Negative,high,"Expresses boredom, lack of novelty, one-time-only appeal, and very expensive food prices."
+AR-TOUR-01242,arabic,Positive,high,"Clearly positive ('very good', reasonable prices, parking, accessibility, quiet) with only a minor note about the distant location."
+AR-TOUR-01249,arabic,Positive,high,Strong praise ('very beautiful') with a polite request to review ride prices.
+AR-TOUR-01255,arabic,Negative,low,Calls the place 'good' but immediately counters with two significant negatives: very far location and exaggerated prices.
+AR-TOUR-01257,arabic,Negative,high,"All points are critical: very ordinary events, high prices especially for kids' games, and annoying music."
+AR-TOUR-01264,arabic,Positive,low,Likes the place ('nice') while wishing for more reasonable ticket/game prices and noting empty country booths.
+AR-TOUR-01272,arabic,Negative,high,"Strongly negative: very ordinary cafes/restaurants, not worth the fee, wouldn't repeat even if free."
+AR-TOUR-01273,arabic,Negative,medium,"Purely critical list of deficiencies: needs more shops, variety, organization, and lighting."
+AR-TOUR-01277,arabic,Negative,medium,Lukewarm 'acceptable' venue paired with a strong complaint about heavily exaggerated prices.
+AR-TOUR-01278,arabic,Negative,medium,Lukewarm 'acceptable for a start' outweighed by complaints that entry fees are unnecessary and items are expensive.
+AR-TOUR-01281,arabic,Negative,high,"Dismisses the venue as very ordinary, like a basic exhibition, and not worth the 15-20 SAR entry fee."
+AR-TOUR-02767,arabic,Positive,high,Favorable ('nice') with a gentle suggestion to add a cafe to bring more life to it.
+AR-TOUR-02773,arabic,Negative,medium,"Calls it beautiful as a park, but dirty restrooms and lack of children's playground equipment create a negative net impression."
+AR-TOUR-02777,arabic,Negative,high,"Describes the park as scary, deserted, and completely lacking basic services even for buying water."
+AR-TOUR-02787,arabic,Positive,low,Calls the park 'excellent' despite noting zero services and few kids' rides needing attention.
+AR-TOUR-02796,arabic,Negative,medium,"Past-tense praise ('was nice') outweighed by dirty restrooms and scarce, poorly maintained children's rides."
+AR-TOUR-02800,arabic,Positive,medium,"Describes the park as beautiful and tidy, with minor caveats about its small size and missing services."
+AR-TOUR-02803,arabic,Positive,high,"Praises the park as beautiful, quiet, and clean, while nostalgically noting the absence of an island map feature."
+AR-TOUR-02804,arabic,Positive,high,"Calls it one of the best places for families with parking, rides, and restrooms, noting only the lack of nearby shops."
+AR-TOUR-02808,arabic,Negative,high,"Complains about extreme crowding, wait times, lack of seating and parking, and slightly high prices."
+AR-TOUR-02814,arabic,Positive,low,"Describes the place as beautiful and modest, though noting the absence of services."
+AR-TOUR-02826,arabic,Neutral,medium,"Short, balanced statement: nice place, but lacks family seating areas."
+AR-TOUR-02827,arabic,Positive,high,Calls it a beautiful park with a constructive note that it needs more services.
+AR-TOUR-02839,arabic,Positive,medium,"Describes the park as clean and quiet, while noting it is small with few rides."
+AR-TOUR-02861,arabic,Neutral,medium,"Likes the place in winter, but emphasizes that paid parking is a major drawback."
+AR-TOUR-02888,arabic,Positive,high,"Strong praise ('very quiet, very romantic, and very clean') with a helpful heads-up to bring supplies due to no nearby shops."
+AR-TOUR-02889,arabic,Negative,medium,"Although called beautiful and quiet, the complete lack of services requiring driving out for water/food and 'never clean' restrooms tilt it negative."
+AR-TOUR-02898,arabic,Negative,medium,"Praises the layout, but primitive water rides and the firm statement 'visited once and do not wish to repeat' make the net impression negative."
+AR-TOUR-02924,arabic,Negative,medium,"Calls the park excellent, but the bulk of the review is intense disgust and shock over the filthy restrooms."
+AR-TOUR-02941,arabic,Negative,high,"Entirely negative: very ordinary, unbearable heat, and expensive parking."
+EN-VT-0026623,english,Positive,high,Expresses appreciation for supporting a local hardware store that offers delivery and saves a 30-minute drive.
+EN-VT-0038915,english,Neutral,medium,"Praises trail conditions and impressive maintenance, but warns off hikers seeking tranquility due to crowds and unruly dogs."
+EN-VT-0222846,english,Positive,high,"Praises the nicely maintained trail and lovely waterfall, adding factual notes about the summit view and brook crossing."
+EN-VT-0231860,english,Negative,high,"Disappointed by lack of things to see, no sap boiling, and bizarre brochure selection."
+EN-VT-0231866,english,Positive,high,Enthusiastic and appreciative of the large tree operation and surprising variety of syrups.
+EN-VT-0264619,english,Neutral,medium,"Mixed experience: poorly marked trail caused them to get lost, view was beautiful once found, but unexpected road visibility detracted from it."
+EN-VT-0292815,english,Positive,high,Starts with 'Awesome!' and a playful reference to the local ghost legend.
+EN-VT-0295231,english,Negative,medium,"Acknowledges the picturesque setting, but the main point is disappointment that many resort facilities and food services were closed."
+EN-VT-0295264,english,Neutral,medium,"Balanced overview: terrible icy snow and limited standard downhill runs, offset by acknowledgement of bad luck with weather and a 'fun vibe' at the water park/apres ski."
+EN-VT-0295291,english,Negative,high,"Despite praising housekeeping, harshly condemns management, front desk, and overpriced frozen food, recommending competitors instead."
+EN-VT-0295429,english,Negative,high,"Explicitly states 'Other than the water park, this was a horrible experience' and will not return."
+EN-VT-0295906,english,Positive,medium,Favorable 'Nice resort' with a minor caveat about limited dining options.
+EN-VT-0296404,english,Positive,high,Enthusiastic praise for the indoor water park ('The pump house was great!') on a freezing day.
+EN-VT-0302792,english,Negative,medium,"Calls it beautiful, but focuses on poor maintenance, trash, fallen logs, and a past broken ankle from hidden mud."
+EN-VT-0302811,english,Neutral,medium,"Equally weighted two-part statement: great fishing, disrespectful tourists."
+EN-VT-0302842,english,Positive,medium,States the place is appreciated/popular among local Vermont fishermen.
+EN-VT-0390399,english,Negative,medium,"Calls the park great, but expresses strong distress over the abused, 'sad sad sad' state of the lake."
+EN-VT-0390483,english,Positive,high,Describes the place as 'a hidden treasure in my very own backyard.'
+EN-VT-0414441,english,Negative,high,Lukewarm 'ok in the spring' outweighed by 'smells horrid' once algae grows.
+EN-VT-0508005,english,Positive,medium,"Favorable TOWARD the place ('Loved by locals and tourists alike'), with frustration directed at a recent visitor not picking up dog poop."
+EN-VT-0531428,english,Positive,high,Calls it 'A community gem.'
+EN-VT-0563622,english,Positive,high,"Strong praise for soup, seafood, and hospitable service, explicitly stating it is worth the slightly high prices."
+EN-VT-0563704,english,Negative,high,"Although the waiter was great, both dishes ordered were overcooked and disappointing."
+EN-VT-0563792,english,Negative,high,"Excellent service is completely outweighed by bland food, margarine blend, and nauseated emojis."
+EN-VT-0605862,english,Positive,medium,"Praises the trails as well-marked and well-maintained, while offering practical warnings about busy parking and car break-ins."
+EN-VT-0605883,english,Positive,medium,Praises the nearby waterfalls as very scenic and provides factual information about trail closures and distances.
+EN-VT-0605983,english,Positive,high,Enthusiastic praise: 'Great view... To do and redo... 360 view'.
+EN-VT-0657386,english,Positive,high,"Clearly favorable ('Fine campground', 'Quiet and well kept', 'Negative reviews were unfounded'), excusing weak WiFi as an area issue."
+EN-VT-0657387,english,Negative,medium,"Starts with positives about cabin size, laundry, and clean bathrooms, but concludes with strong complaints about slip hazards, golf cart noise, no WiFi, and rude/patronizing staff."
+EN-VT-0677571,english,Negative,high,Expresses annoyance at being stuck on a boat just to watch the sunset.
+EN-VT-0735477,english,Negative,low,"Calls the ski resort itself great, but the entire review is a fierce complaint about the horrible website and implies a low rating until fixed."
+EN-VT-0735592,english,Negative,high,Focuses on frustration navigating the mountain and disappointment with the true skiable vertical drop.
+EN-VT-0735632,english,Negative,high,Warns potential visitors about the strict no-refund policy during severe thunderstorms.
+EN-VT-0735698,english,Positive,high,"Pure, enthusiastic praise for the mountain, terrain, summer activities, and bars."
+EN-VT-0735784,english,Negative,high,"Bitter sarcasm criticizing long lines and overpriced, low-quality food."
+EN-VT-0735932,english,Negative,high,"While skiing was great, the review is a scathing condemnation of 'ABYSMAL' housing service and an unfair $150 cleaning fee."
+EN-VT-0735952,english,Negative,medium,"Lists numerous severe complaints (crowded, expensive, icy runs, mediocre instructors, crappy rentals) that outweigh nice Mexican staff and long runs."
+EN-VT-0736200,english,Negative,medium,"Acknowledges nice skiing, but explicitly states it is 'completely not worth the $115.00 price tag'."
+EN-VT-0736352,english,Positive,medium,"Calls it the 'Best mountain on the east', with a humorous/sad personal mishap about getting lost and missing the bus."
+EN-VT-0736403,english,Neutral,medium,Brief conditional recommendation ('Only go for spring april skiing') without clear overall positive or negative sentiment.
+EN-VT-0736567,english,Negative,high,Unfavorable comparison stating a competitor ('thunder ridge') is better.
+EN-VT-0736569,english,Neutral,high,Purely factual two-word description ('Big resort').
+EN-VT-0736627,english,Neutral,high,Factual assessment of size and trail difficulty with no clear emotional lean.
+EN-VT-0769626,english,Positive,medium,Affectionate endorsement ('Love the family vibe... like home') that fondly tolerates imperfect service after 30 years of loyalty.
+EN-WY-0044653,english,Neutral,high,Lukewarm 'Its an ok' followed by a factual statement about friends living there.
+EN-WY-0064135,english,Neutral,medium,"Sharp contrast between 'Nice clean family-friendly park' and 'Park management is rude if you are a resident', resulting in no clear net lean."
+EN-WY-0064147,english,Negative,high,Sarcastic 'NOT!!!!!' expressing strong dislike of the landlords.
+EN-WY-0066081,english,Positive,high,"Original text says 'asome' (awesome), which Google Translate mistranslated."
+EN-WY-0113795,english,Positive,high,Calls it 'Amazing' for a trip back in time when in the middle of nowhere.
+EN-WY-0113850,english,Neutral,high,"Deadpan, literal description of a grassland with no clear positive or negative judgment."
+EN-WY-0113874,english,Negative,medium,Dismissive statement that there is 'Nothing out here to see'.
+EN-WY-0113940,english,Negative,low,"Describes an unpleasant experience ('Got caught in a nasty storm'), though unrelated to venue quality."
+EN-WY-0113942,english,Negative,high,"Humorous, cynical remark implying being at this location is the result of 'bad decisions'."
+EN-WY-0149667,english,Negative,high,"Direct, unambiguous complaint ('Management sucks here')."
+EN-WY-0182338,english,Negative,high,Criticizes the sketchy parking lot and terrible pit toilets.
+EN-WY-0198083,english,Negative,high,Explicitly calls weekend closure 'Terrible.'
+EN-WY-0206940,english,Negative,high,Frustrated complaint in all-caps about an RV park closing at noon on Saturday.
+EN-WY-0223029,english,Negative,medium,Expresses disappointment that the place has declined compared to childhood memories.
+EN-WY-0297671,english,Negative,high,Complains about receiving the wrong coffee order and the staff member's lack of basic barista knowledge.
+EN-WY-0318133,english,Neutral,high,Purely factual statement ('It is a trailer cort').
+EN-WY-0358947,english,Neutral,medium,Factual notice that the location is closed.
+EN-WY-0373633,english,Negative,medium,Expresses disappointment that the water has completely dried up before the end of July.
+EN-WY-0373743,english,Neutral,high,Descriptive statement about remote location without clear positive or negative sentiment.
+EN-WY-0384062,english,Neutral,medium,Descriptive one-word observation with emojis ('Frozen') lacking clear evaluative sentiment.
+EN-WY-0409288,english,Positive,high,Compliments the store as 'well stocked'.
+EN-WY-0409300,english,Negative,medium,Complaint about customers not wearing masks.
+EN-WY-0483646,english,Neutral,medium,Balanced between praising the campground as neat and clean and complaining that the $61 RV fee is too high.
+EN-WY-0483880,english,Neutral,high,Purely factual personal status update with no evaluation.
+EN-WY-0495438,english,Positive,medium,"Concludes it is 'a good spot, albeit pricey, for an overnight stop' with neat, well-maintained facilities, despite lacking vacation hub ambiance."
+EN-WY-0495547,english,Neutral,medium,"Mixed bag of pros and cons: clean bathrooms, small spaces, and annoying (though not terrible) highway noise."
+EN-WY-0495553,english,Neutral,medium,"Mix of positives (fast overnight, great staff) and negatives (way too tight, hidden $30 Pioneer Days upcharge)."
+EN-WY-0495556,english,Negative,high,Complains about loud interstate noise and very cramped spaces.
+EN-WY-0495597,english,Negative,medium,"While staff were courteous and facilities clean, the review focuses heavily on incessant dog barking, poor store stock, slow WiFi, and lack of scenery."
+EN-WY-0495601,english,Positive,medium,"Concludes 'Otherwise, it was pleasant' after noting highway/truck stop noise and understandable seasonal water shutoff."
+EN-WY-0495609,english,Negative,medium,"Clean bathroom/laundry is outweighed by being surrounded by a dilapidated trailer park, highway proximity, and 'No frills what so ever!'"
+EN-WY-0526812,english,Negative,high,"Despite beautiful river atmosphere, details cramped sites, bad road, filthy moldy bathrooms, and states 'I wouldnât book again.'"
+EN-WY-0526898,english,Positive,medium,"Praises the cabin as 'Very cozy' with 'Great scenery', noting factually/mildly that loft beds are floor mattresses."
+EN-WY-0532325,english,Neutral,medium,Contrasts the 'flat dirt parking lot without much going for it' with the 'beautiful mountains which surrounds on three sides'.
+EN-WY-0543394,english,Positive,medium,Favorable note on having plenty of spring equipment and pet food.
+EN-WY-0543449,english,Negative,high,Complains about waiting a long time for help and understaffing.
+EN-WY-0543465,english,Neutral,medium,Balanced short trade-off: 'Interesting store but very pricey'.
+EN-WY-0543469,english,Negative,high,"Explicitly mentions giving only 2 stars because the store is 'SO CLUTTERED' with junk, despite friendly people."
+EN-WY-0543500,english,Negative,high,Frustrated about driving over an hour only to find the item out of stock.
+EN-WY-0543528,english,Positive,low,"Says 'Very economical?', which leans positive despite the question mark."
+EN-WY-0622389,english,Negative,high,Criticizes unfair pricing ('Sells high and buys extremely low') and advises going out of town instead.
+EN-WY-0639582,english,Positive,high,States 'it was a good hike' despite not being what was initially expected.
+EN-WY-0642430,english,Neutral,medium,Factual statement intending to say 'It was closed'.
+EN-WY-0699202,english,Positive,medium,"Describes the attraction as 'big and impressive', though a one-time visit."
+EN-WY-0735921,english,Negative,medium,Calls the experience 'lackluster' and 'ok' due to no guide for the price and Covid closures.
+EN-WY-0735927,english,Positive,high,Clarifies the museum's focus and praises the carriage and wagon exhibit as 'fascinating'.
+EN-WY-0735950,english,Negative,medium,"Notes admission is high and the museum wasn't to their taste, softened slightly by a philosophical shrug."
+EN-WY-0736011,english,Positive,medium,Calls it 'Really fun' despite limited activities.
+EN-WY-0736041,english,Negative,high,Upset about being denied entry with an emotional support dog for PTSD.
+EN-WY-0741694,english,Negative,medium,"Praises the skate park's features, but concludes it isn't well maintained or respected due to tasteless graffiti ('it's a shame')."
+EN-WY-0753845,english,Positive,high,"Calls the ski area 'great', 'cheaply priced', and 'beautiful' on good days, while advising visitors to watch out for high winds."
+EN-WY-0777929,english,Negative,high,Dismisses the historic section as a 'small uninteresting area' that charges $4 entry.
+EN-WY-0786836,english,Positive,high,"Calls it a 'pretty good place in town' with reasonable lot rent, adding realistic caveats about the nosy manager and trailer park neighbors."
+EN-WY-0826878,english,Neutral,medium,"Mostly informational list of pros (scenic, late check-in), lukewarm food (pasta okay, limited veg), and rustic limitations (slow WiFi, no cell/TV/microwave)."
+EN-WY-0827011,english,Positive,high,"Favorable ('Nice location, comfy rooms') with a minor note about no WiFi."
+EN-WY-0827019,english,Positive,high,"Glowing review of the charming, clean cabin and 'best Blueberry Pancakes I have ever eaten'."
+EN-WY-0827041,english,Neutral,medium,Sharp contrast between shock at 'how primitive the rooms were' and enthusiasm that 'The restaurant was delicious!!!!'
+EN-WY-0827043,english,Positive,high,"Praises convenient location and good rooms, with a minor note on the limited food menu."
+EN-WY-0827129,english,Neutral,high,"Explicitly frames the review as conditional ('Whether you like this place or not will depend very much on what you are after'), detailing both severe cabin/security limitations and lovely restaurant service."
+EN-WY-0827189,english,Positive,low,Satisfied with a brief restroom stop ('It was what we needed').
+EN-WY-0886557,english,Negative,high,"Criticizes the slow, boring, untended tubing hill and poorly marked trails, with 'Staff are friendly' as a minor saving grace."
+EN-WY-0948473,english,Neutral,medium,"lukewarm observation: good for a morning photo, 'not much else going on'."
+EN-WY-0985106,english,Negative,high,"Extended rant about crowded camping, constant road noise, ATVs, and a neglected horse, concluding 'it is not a good place to relax' and recommending Colorado instead."
+EN-WY-0985166,english,Neutral,medium,"Mixed brief assessment: food was ok, server was lovely but sloppy."
+EN-WY-1028237,english,Neutral,medium,"Lukewarm, mildly underwhelming assessment ('Sort of interesting not the most interesting museum I've been to')."
+EN-WY-1120109,english,Negative,medium,"Complains about refusal to take a local guild check and locked bathrooms, with 'Good parking' as the only positive."

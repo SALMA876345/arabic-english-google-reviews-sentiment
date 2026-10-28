@@ -1,0 +1,91 @@
+{
+  "E1_marbert": {
+    "out_name": "E1_marbert",
+    "model_id": "UBC-NLP/MARBERT",
+    "fine_tuning_method": "LoRA",
+    "lora_config": {
+      "r": 8,
+      "lora_alpha": 16,
+      "lora_dropout": 0.1,
+      "target_modules": [
+        "query",
+        "value"
+      ]
+    },
+    "epochs_requested": 3,
+    "epochs_actually_run": 3,
+    "best_val_macro_f1": 0.582298333866251,
+    "train_n": 2786,
+    "val_n": 370,
+    "test_n": 369,
+    "elapsed_sec": 2692.1014790534973,
+    "history": [
+      {
+        "epoch": 1,
+        "train_loss": 0.9543338248073884,
+        "val_macro_f1": 0.25962596259625964
+      },
+      {
+        "epoch": 2,
+        "train_loss": 0.7388663580561095,
+        "val_macro_f1": 0.48577820791828047
+      },
+      {
+        "epoch": 3,
+        "train_loss": 0.4972176042446776,
+        "val_macro_f1": 0.582298333866251
+      }
+    ],
+    "test_metrics": {
+      "n": 369,
+      "accuracy": 0.8102981029810298,
+      "precision_macro": 0.6473770403780069,
+      "recall_macro": 0.6469747899159665,
+      "macro_f1": 0.6177122890709182,
+      "weighted_f1": 0.7740385306435997,
+      "per_class": {
+        "Negative": {
+          "precision": 0.6804123711340206,
+          "recall": 0.88,
+          "f1": 0.7674418604651163,
+          "support": 75
+        },
+        "Neutral": {
+          "precision": 0.375,
+          "recall": 0.10714285714285714,
+          "f1": 0.16666666666666666,
+          "support": 56
+        },
+        "Positive": {
+          "precision": 0.88671875,
+          "recall": 0.9537815126050421,
+          "f1": 0.9190283400809717,
+          "support": 238
+        }
+      },
+      "confusion_matrix": [
+        [
+          66,
+          3,
+          6
+        ],
+        [
+          27,
+          6,
+          23
+        ],
+        [
+          4,
+          7,
+          227
+        ]
+      ],
+      "label_order": [
+        "Negative",
+        "Neutral",
+        "Positive"
+      ]
+    },
+    "prediction_file": "C:\\Users\\Acer\\Downloads\\arabic-english-google-reviews-sentiment\\results\\predictions\\E1_marbert_test.csv"
+  }
+}

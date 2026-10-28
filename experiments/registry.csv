@@ -1,0 +1,12 @@
+run_id,experiment_id,model,model_version,dataset_version,train_count,validation_count,test_count,random_seed,hyperparameters,training_time_sec,hardware,timestamp,git_commit,status
+run_E1_tfidf_logreg_001,E1,tfidf_logreg,sklearn-1.7.2,frozen_v1,2786,370,369.0,42,"ngram=(1, 1);C=10.0;class_weight=balanced",0.682,cpu,2026-10-24T10:19:01.652221+00:00,uncommitted_no_git_history,completed
+run_E1_tfidf_svm_001,E1,tfidf_svm,sklearn-1.7.2,frozen_v1,2786,370,369.0,42,"ngram=(1, 1);C=1.0;class_weight=balanced",0.1433,cpu,2026-10-24T10:19:03.002311+00:00,uncommitted_no_git_history,completed
+run_E2_tfidf_logreg_001,E2,tfidf_logreg,sklearn-1.7.2,frozen_v1,2785,352,388.0,42,"ngram=(1, 2);C=1.0;class_weight=balanced",0.6324,cpu,2026-10-24T10:19:07.003243+00:00,uncommitted_no_git_history,completed
+run_E2_tfidf_svm_001,E2,tfidf_svm,sklearn-1.7.2,frozen_v1,2785,352,388.0,42,"ngram=(1, 2);C=1.0;class_weight=balanced",0.4244,cpu,2026-10-24T10:19:09.213913+00:00,uncommitted_no_git_history,completed
+jordan_aux_tfidf_logreg,E_jordan_binary_aux,tfidf_logreg,sklearn-1.7.2,jordan_auxiliary_v2,8364,1255,300.0,42,"ngram=(1,2);C=1.0;class_weight=None",,cpu,2026-10-24T14:44:10.009473,uncommitted_no_git_history,completed
+E1_xlmr,E1,xlm_roberta_lora,LoRA r=8/alpha=16/qv,frozen_v1,2786,370,369.0,42,max_len=64;batch=8;epochs<=3;lr=2e-5;early_stop_patience=1,3059.8,cpu,2026-10-24T18:13:06.795945,uncommitted_no_git_history,completed
+E1_marbert,E1,marbert_lora,LoRA r=8/alpha=16/qv,frozen_v1,2786,370,369.0,42,max_len=64;batch=8;epochs<=3;lr=2e-5;early_stop_patience=1,2692.1,cpu,2026-10-24T18:13:06.811942,uncommitted_no_git_history,completed
+E2_xlmr,E2,xlm_roberta_lora,LoRA r=8/alpha=16/qv,frozen_v1,2785,352,388.0,42,max_len=64;batch=8;epochs<=3;lr=2e-5;early_stop_patience=1,3145.7,cpu,2026-10-24T18:13:06.824944,uncommitted_no_git_history,completed
+E5_arTrain_enTest,E5,xlm_roberta_lora_crosslingual_inference,"LoRA r=8/alpha=16/qv (reused adapter, no retraining)",frozen_v1,0,0,388.0,42,inference_only;max_len=64,,cpu,2026-10-24T18:13:06.834949,uncommitted_no_git_history,completed
+E5_enTrain_arTest,E5,xlm_roberta_lora_crosslingual_inference,"LoRA r=8/alpha=16/qv (reused adapter, no retraining)",frozen_v1,0,0,369.0,42,inference_only;max_len=64,,cpu,2026-10-24T18:13:06.846494,uncommitted_no_git_history,completed
+E4_xlmr_combined,E4,xlm_roberta_lora,LoRA r=8/alpha=16/qv,frozen_v1,13935,722,,42,max_len=64;batch=4_then_2;epochs=1,,cpu,2026-10-24T18:13:06.846494,uncommitted_no_git_history,"NOT_RUN_COMPUTE_MEMORY_CONSTRAINT (3 OOM failures, see decisions.md D15)"

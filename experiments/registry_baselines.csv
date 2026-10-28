@@ -1,0 +1,6 @@
+run_id,experiment_id,model,model_version,dataset_version,train_count,validation_count,test_count,random_seed,hyperparameters,training_time_sec,hardware,timestamp,git_commit,status
+run_E1_tfidf_logreg_001,E1,tfidf_logreg,sklearn-1.7.2,frozen_v1,2786,370,369,42,"ngram=(1, 1);C=10.0;class_weight=balanced",0.682,cpu,2026-10-24T10:19:01.652221+00:00,uncommitted_no_git_history,completed
+run_E1_tfidf_svm_001,E1,tfidf_svm,sklearn-1.7.2,frozen_v1,2786,370,369,42,"ngram=(1, 1);C=1.0;class_weight=balanced",0.1433,cpu,2026-10-24T10:19:03.002311+00:00,uncommitted_no_git_history,completed
+run_E2_tfidf_logreg_001,E2,tfidf_logreg,sklearn-1.7.2,frozen_v1,2785,352,388,42,"ngram=(1, 2);C=1.0;class_weight=balanced",0.6324,cpu,2026-10-24T10:19:07.003243+00:00,uncommitted_no_git_history,completed
+run_E2_tfidf_svm_001,E2,tfidf_svm,sklearn-1.7.2,frozen_v1,2785,352,388,42,"ngram=(1, 2);C=1.0;class_weight=balanced",0.4244,cpu,2026-10-24T10:19:09.213913+00:00,uncommitted_no_git_history,completed
+

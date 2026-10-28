@@ -1,9 +1,26 @@
 __pycache__/
 *.pyc
+*.pyo
 .ipynb_checkpoints/
+.pytest_cache/
 venv/
 .venv/
 env/
+
+# Node / frontend build output
+node_modules/
+dist/
+build/
+.vite/
+
+*.log
+.DS_Store
+Thumbs.db
+
+.env
+.env.local
+*.key
+*.pem
 
 data/raw/*
 !data/raw/.gitkeep
@@ -13,12 +30,54 @@ data/processed/*
 results/predictions/*
 !results/predictions/.gitkeep
 
+# Model checkpoints and LoRA adapters -- large binaries and/or derivatives of the
+# not-yet-clearly-licensed English source; provenance tracked via configs/models.yaml
+# and experiments/registry*.csv instead, which ARE committed (metadata only, no weights/text).
 experiments/*
 !experiments/.gitkeep
+!experiments/registry.csv
+!experiments/registry_baselines.csv
 
-*.log
-.DS_Store
-Thumbs.db
+# Large model binaries -- do not commit, track provenance via configs/models.yaml instead
+backend/model/*.safetensors
+backend/model/training_args.bin
+backend/model/tokenizer.json
 
-.env
-*.key
+# ---------------------------------------------------------------------------
+# Restricted: files that embed raw review text (Arabic and/or English mixed).
+# The English source (UCSD/McAuley) has no confirmed public redistribution
+# license (see docs/data_availability.md / paper/notes/DATA_LICENSING_AND_RELEASE.md).
+# These files are withheld from the public repository as a conservative measure,
+# even where a given file is Arabic-only, because several of them interleave
+# Arabic and English rows. Full versions remain available locally for this
+# project's own reproducibility; ID-and-label-only companions (no "text" column)
+# are committed instead wherever they already exist (e.g. completed_raw/*.csv,
+# results/predictions/*.csv, results/human_gold_evaluation/*_metrics_*.csv).
+# Not released pending clarification of the source dataset's redistribution status.
+# ---------------------------------------------------------------------------
+paper/annotation/full/human_gold_757.csv
+paper/annotation/full/human_validation_757_master.csv
+paper/annotation/full/annotator_1_blinded.csv
+paper/annotation/full/annotator_2_blinded.csv
+paper/annotation/full/annotator_3_blinded.csv
+paper/annotation/full/annotator_1_interface.html
+paper/annotation/full/annotator_2_interface.html
+paper/annotation/full/annotator_3_interface.html
+paper/annotation/full/adjudication/master_adjudication_sheet.csv
+paper/annotation/full/adjudication/classification_all_757.csv
+paper/annotation/full/adjudication/adjudication_merged.csv
+paper/annotation/full/adjudication/adjudication_blinded.csv
+paper/annotation/full/adjudication/adjudicator_interface.html
+paper/annotation/pilot/pilot_annotation_sheet.csv
+data/annotations/mixed_manual_audit.csv
+data/annotations/annotation_template_pending.csv
+results/human_gold_evaluation/comparison_dataset_757.csv
+results/human_gold_evaluation/qualitative_error_examples.csv
+results/phase3b_kaggle_gpu/*_test_predictions.csv
+results/phase3b_kaggle_gpu/input_data_bundle_sent_to_kaggle/
+results/error_analysis/codeswitch_diagnostic_final.csv
+results/error_analysis/codeswitch_diagnostic_texts.csv
+results/error_analysis/error_cases*.csv
+archive/annotation_planning_v1_superseded/annotator_1_blinded.csv
+archive/annotation_planning_v1_superseded/annotator_2_blinded.csv
+archive/annotation_planning_v1_superseded/master_reference_DO_NOT_SHOW_ANNOTATORS.csv

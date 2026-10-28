@@ -1,0 +1,20 @@
+{
+  "overall": {
+    "Positive_vs_Neutral": 80,
+    "Positive_vs_Negative": 28,
+    "Neutral_vs_Negative": 53,
+    "three_way_all_classes": 18
+  },
+  "arabic": {
+    "Positive_vs_Neutral": 29,
+    "Positive_vs_Negative": 11,
+    "Neutral_vs_Negative": 18,
+    "three_way_all_classes": 11
+  },
+  "english": {
+    "Positive_vs_Neutral": 51,
+    "Positive_vs_Negative": 17,
+    "Neutral_vs_Negative": 35,
+    "three_way_all_classes": 7
+  }
+}

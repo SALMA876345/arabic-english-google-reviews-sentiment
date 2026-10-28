@@ -1,0 +1,42 @@
+{
+  "valid_model_keys": [
+    "E1_xlmr_lora",
+    "E1_marbert_lora",
+    "E1_tfidf_logreg",
+    "E1_tfidf_svm",
+    "E5_enTrain_arTest_lora",
+    "E2_xlmr_lora",
+    "E2_tfidf_logreg",
+    "E2_tfidf_svm",
+    "E5_arTrain_enTest_lora",
+    "E1_xlmr_fullft",
+    "E1_marbert_fullft",
+    "E4_multilingual_xlmr_arabic",
+    "E5B_zeroshot_en_to_ar",
+    "E2_xlmr_fullft",
+    "E4_multilingual_xlmr_english",
+    "E5A_zeroshot_ar_to_en"
+  ],
+  "excluded_or_missing_model_keys": [
+    "E1_xlmr_fullft_PRIMARY",
+    "E1_marbert_fullft_PRIMARY"
+  ],
+  "valid_model_keys_with_realization": {
+    "E1_xlmr_lora": "lora_primary",
+    "E1_marbert_lora": "lora_primary",
+    "E1_tfidf_logreg": "baseline_primary",
+    "E1_tfidf_svm": "baseline_primary",
+    "E5_enTrain_arTest_lora": "zeroshot_primary",
+    "E2_xlmr_lora": "lora_primary",
+    "E2_tfidf_logreg": "baseline_primary",
+    "E2_tfidf_svm": "baseline_primary",
+    "E5_arTrain_enTest_lora": "zeroshot_primary",
+    "E1_xlmr_fullft": "RERUN_REALIZATION_not_primary",
+    "E1_marbert_fullft": "RERUN_REALIZATION_not_primary",
+    "E4_multilingual_xlmr_arabic": "primary",
+    "E5B_zeroshot_en_to_ar": "primary",
+    "E2_xlmr_fullft": "primary",
+    "E4_multilingual_xlmr_english": "primary",
+    "E5A_zeroshot_ar_to_en": "primary"
+  }
+}

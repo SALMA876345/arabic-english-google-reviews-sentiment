@@ -21,7 +21,9 @@ classical:
 
 transformer_common:
   max_seq_length: 64          # revised down from the original 128 (see note) -- covers the ~90th percentile of word counts for both languages
-  batch_size: 8                # revised down from 16 after the OOM finding (decisions.md D14)
+  batch_size: 4                 # revised down from 16->8->4: E1 runs succeeded at batch=8, but
+                                 # E2_xlmr OOM'd at batch=8 when free RAM on this shared machine had
+                                 # dropped to ~747MB (other processes fluctuate it) -- batch=4 used from E2 onward (decisions.md D14)
   epochs: 3                    # revised down from 4 under the confirmed compute constraint
   optimizer: AdamW
   learning_rate: 2e-5
@@ -56,3 +58,34 @@ bootstrap:
 significance_testing:
   method: "paired bootstrap on macro-F1 difference between two models' predictions on the identical frozen test rows"
   multiple_comparison_correction: "Holm-Bonferroni across all pairwise model comparisons reported in a single experiment"
+
+# =============================================================================
+# PHASE 3B -- Kaggle GPU full fine-tuning protocol (separate track, see
+# docs/decisions.md D17 and paper/notes/phase3b_report.md). This section
+# documents what was ACTUALLY run on Kaggle; it does not replace the
+# transformer_common section above, which remains the accurate record of
+# the Phase 3A laptop/LoRA protocol.
+# =============================================================================
+phase3b_gpu:
+  hardware: "2x Tesla T4 GPUs (Kaggle)"
+  fine_tuning_method: "Full fine-tuning (100% of parameters trainable) -- NOT LoRA"
+  max_seq_length: 128
+  train_batch_size_per_gpu: 8
+  eval_batch_size_per_gpu: 16
+  learning_rate: 2e-5
+  epochs: 3
+  weight_decay: 0.01
+  precision: fp16
+  loss: "Weighted CrossEntropyLoss (class-weighted -- unlike the Phase 3A transformer runs, which used unweighted loss; see known_limitations.md Phase 3B addendum)"
+  seed: 42
+  data_seed: 42
+  checkpoint_selection: "best validation macro-F1; test sets touched only after checkpoint selection"
+  data_integrity: "input data bundle (results/phase3b_kaggle_gpu/input_data_bundle_sent_to_kaggle/) hash-verified identical to data/processed/frozen_v1 and data/splits/frozen_v1 -- confirmed byte-for-byte, same frozen split used as Phase 3A"
+  non_causal_framing_requirement: >
+    Phase 3A (laptop) and Phase 3B (Kaggle GPU) differ in multiple factors
+    simultaneously: fine-tuning method (LoRA vs full), class weighting
+    (unweighted vs weighted), max_seq_length (64 vs 128), and hardware.
+    Any Phase 3A-vs-3B performance difference MUST be framed as a
+    comparison between training configurations/environments, never as a
+    causal "GPU made it better" or "CPU made it worse" claim -- the
+    hardware change was never isolated as the sole varied factor.
